@@ -2500,3 +2500,44 @@ h6 {
 .card-img-overlay {
   background-color: rgba(255, 255, 255, 0.6);
 }
+
+
+
+
+/*Floating button*/
+
+.content {
+  height: 900px;
+}
+
+.floating-btn {
+  position: fixed;
+  background-color: #91be4b;
+  color: #f1f5f1;
+  right: 0%;
+  top: 30%;
+  height: 100px;
+  width: 50px;
+  margin: 0;
+  border-radius: 5px 0 0 5px;
+  transition: 0.3s linear;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.floating-btn:hover {
+  background-color: #41ae2b;
+  color: #f1f5f1;
+}
+
+
+p.float-txt {
+  transform:rotate(270deg);
+  text-align: center;
+  top: 30%;
+  margin: 0;
+  padding: 0;
+  left: 1%;
+  text-decoration: none;
+}
