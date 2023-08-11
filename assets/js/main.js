@@ -265,7 +265,7 @@
 
 /**
    * Preloader
-   */
+  
 const preloader = document.querySelector('#preloader');
 if (preloader) {
   window.addEventListener('load', () => {
@@ -276,6 +276,5 @@ if (preloader) {
       preloader.remove();
     }, 2000);
   });
-}
+}*/ 
 
-/**
