@@ -3009,3 +3009,10 @@ h6 {
   writing-mode: vertical-rl;
   -ms-writing-mode: bt-rl
 }
+
+
+/* The class for justify the text contents */
+
+.text-justify{
+  text-align: justify;
+}
