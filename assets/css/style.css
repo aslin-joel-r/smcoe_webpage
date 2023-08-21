@@ -2966,26 +2966,16 @@ h6 {
   margin-right: .5rem;
   width:3rem
 }
-
-
-
-
-
-
-
 .contactus-slider-HES-Base, .contactus-slider-HES-Base-APJCountry {
   color: #fff;
   width: 54px;
   font-size: 18px;
   font-family:Roboto-Medium
 }
-
-
 .contact-slider *, .contact-slider ::after, .contact-slider ::before {
   -webkit-box-sizing: border-box;
   box-sizing:border-box
 }
-
 .contact-slider .stretched-link::after {
   position: absolute;
   top: 0;
@@ -2997,14 +2987,11 @@ h6 {
   content: "";
   background-color:transparent
 }
-
-
 .contactus-slider-HES-Base {
   writing-mode: vertical-rl;
   -ms-writing-mode: bt-rl;
   transform:rotate(-180deg)
 }
-
 .contactus-slider-HES-Base-APJCountry {
   writing-mode: vertical-rl;
   -ms-writing-mode: bt-rl
