@@ -3068,3 +3068,99 @@ h6 {
 .recent-blog-posts .post-box:hover .post-img img {
   transform: rotate(6deg) scale(1.2);
 }
+
+
+/*--------------------------------------------------------------
+# Features Section
+--------------------------------------------------------------*/
+.clubs .nav-tabs {
+  border: 0;
+}
+
+.clubs .nav-link {
+  border: 0;
+  padding: 25px 20px;
+  color: var(--color-secondary);
+  box-shadow: 5px 5px 25px rgba(var(--color-secondary-rgb), 0.15);
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: 0s;
+  cursor: pointer;
+  height: 100%;
+}
+
+.clubs .nav-link i {
+  font-size: 32px;
+  line-height: 0;
+}
+
+.clubs .nav-link h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 10px 0 0 0;
+  color: var(--color-secondary);
+}
+
+.clubs .nav-link:hover {
+  color: var(--color-primary);
+}
+
+.clubs .nav-link.active {
+  transition: 0.3s;
+  background: var(--color-secondary) linear-gradient(rgba(var(--color-primary-rgb), 0.95), rgba(var(--color-primary-rgb), 0.6));
+  border-color: var(--color-primary);
+}
+
+.clubs .nav-link.active h4 {
+  color: var(--color-white);
+}
+
+.clubs .nav-link.active i {
+  color: var(--color-white) !important;
+}
+
+.clubs .tab-content {
+  margin-top: 30px;
+}
+
+.clubs .tab-pane.active {
+  animation: fadeIn 0.5s ease-out;
+}
+
+.clubs .tab-pane h3 {
+  font-weight: 600;
+  font-size: 36px;
+  color: var(--color-secondary);
+}
+
+.clubs .tab-pane ul {
+  list-style: none;
+  padding: 0;
+}
+
+.clubs .tab-pane ul li {
+  padding-bottom: 10px;
+}
+
+.clubs .tab-pane ul i {
+  font-size: 24px;
+  margin-right: 4px;
+  color: var(--color-primary);
+}
+
+.clubs .tab-pane p:last-child {
+  margin-bottom: 0;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
