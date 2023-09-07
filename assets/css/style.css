@@ -3166,11 +3166,7 @@ h6 {
 }
 
 /* News & Updates */
-span, a, a:hover {
-  display: inline-block;
-  text-decoration: none;
-  color: inherit;
-}
+
 
 .blog img{
   max-width: 100%;
