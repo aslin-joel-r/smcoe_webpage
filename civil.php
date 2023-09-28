@@ -1,3 +1,15 @@
+<?php
+$servername = "172.18.0.1";
+$username = "root";
+$password = "root";
+$db="mysql";
+$port="33070";  
+$dbcon = mysqli_connect($servername, $username, $password,$db,$port);
+if (!$dbcon) {
+    die("Connection failed: " .  mysqli_connect_error());
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -134,21 +146,24 @@
     </div>
   </header><!-- End Header -->
 
-  <main id="main" class="text-justify">
+  <main id="main">
 
     <!-- ======= Breadcrumbs Section ======= -->
     <section class="breadcrumbs">
       <div class="container">
-          <h2>Science and Humanities</h2>
-          <p>The Department of Science and Humanities fosters a strong foundation in fundamental sciences and liberal arts, nurturing well-rounded individuals equipped with both scientific knowledge and critical thinking skills.</p>
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Civil Engineering</h2>
+          </div class="text-justify">
+          <p>Department specializes in the design, construction, and maintenance of physical structures and infrastructure, such as buildings, bridges, roads, and water supply systems </p>
     
-       
+          
         </div>
 
       </div>
     </section><!-- End Breadcrumbs Section -->
 
-    
+   
      
   </div><!-- End Breadcrumbs -->
 
@@ -158,14 +173,14 @@
 
       <div class="row">
         <div class="col-lg-7">
-          <img src="https://webdocs.pages.dev/assets/img/sh/sh.png" class="img-fluid" alt="">
+          <img src="https://webdocs.pages.dev/assets/img/CIVIL/civil.jpg" class="img-fluid" alt="">
           
         </div>
         <div class="col-lg-4">
 
           <div class="course-info d-flex justify-content-between align-items-center">
             <h5>Head of the Department</h5>
-            <p><a href="#">Mr.S.Ravi Kumar</a></p>
+            <p><a href="#">Dr.R.K.Madhumathi</a></p>
           </div>
 
           <div class="course-info d-flex justify-content-between align-items-center">
@@ -185,8 +200,8 @@
 
         </div>
         <h3> Overview</h3>
-          <p>
-            Curiosity-driven basic sciences have a fundamental role in our lives to enable the necessary means for addressing the global needs. Physics, Chemistry, Mathematics and English are a group of subjects which are essential in undergraduate engineering programs. The Department of Sciences and Humanities is the gateway of engineering education, and it is functions right from the inception of the College since 2013 and imparts core competency in English, Mathematics, Physics and Chemistry. The Department of Science and Humanities nurtures the essential principles and understanding of science among the students.    
+          <p class="text-justify">
+            Department of Civil Engineering was started in the academic year 2014-2015 with an aim of promoting high quality education in the field of Civil Engineering. The department currently offers Bachelor of Engineering (B.E.) degree program in Civil Engineering with an intake of 60 students. The department has well equipped laboratory facilities and highly qualified faculty members having rich experience in teaching with different specialization. The faculty members have constantly been involving themselves in research in addition to guiding students through innovative teaching learning techniques.  
         </p>
       </div>
 
@@ -231,7 +246,7 @@
                 <a class="nav-link" data-bs-toggle="tab" href="#tab-10">Newsletter</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#tab-11">Brochure</a>
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-11">Magazine</a>
             </li>
           </ul>
         </div>
@@ -248,12 +263,7 @@
               <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
                 <div class="icon"><i class="bx bxl-dribbble"></i></div>
                 <h4 class="title"><a href="">VISION</a></h4>
-                <li>To be a World-class Educational and Research Institution in the service of humanity by promoting high quality Engineering and Management education.</li>
-                  <li>Imbibe soft skills and technical skills.</li>
-                    <li>Develop the faculty to reach international standards.</li>
-                      <li>Maintain high academic standards and teaching quality that promote analytical thinking and Independent judgement.</li>
-                        <li>Promote research, innovation and product development in collaboration with reputable Foreign Universities.</li>
-                          <li>Offer collaborative industry program in the emerging areas and spirit of enterprise.</li>
+                <p class="description text-justify">To provide world class technical education with ethics and professionalism and to create civil engineer with high technical competencies who would full fill the challenges and needs of today’s scenario with the help of green technology.</p>
               </div>
             </div>
   
@@ -261,10 +271,11 @@
               <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
                 <div class="icon"><i class="bx bx-file"></i></div>
                 <h4 class="title"><a href="">MISSION</a></h4>
-                <li>To impart engineering fundamentals by providing Basic Science and Mathematics.</li>
-                  <li>To stimulate reading, listening and writing skills.</li>
-                    <li>To promote innovative culture among the students.</li>
-                </div>
+                <li class="text-justify">To impart quality technical education, imbibing lifelong learning and concern for environment.</li>
+                <li class="text-justify">To create job opportunities in research, industry and consultancy both nationally and internationally.</li>
+                <li class="text-justify">To provide technical skills, leadership qualities and team spirit among the students.</li>
+                <li class="text-justify">To establish center of excellence in emerging areas of research to find solution to the problem faced by the society.</li>
+              </div>
             </div>
   
           </div>
@@ -288,28 +299,18 @@
           </div>
   
           <div class="row justify-content-center">
-            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-              <div class="member" data-aos="fade-up" data-aos-delay="100">
-                <div class="member-img">
-                  <img src="assets/img/CIVIL/MADHUMATHI.png" class="img-fluid" alt="">
-                  <div class="social">
-                    <a href=""><i class="bi bi-twitter"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""><i class="bi bi-linkedin"></i></a>
-                  </div>
-                </div>
-                <div class="member-info">
-                  <h4 class="title"><a href="faculty.html">Mr.S.Ravi Kumar</a></h4>
-                  <span>Assistant Professor & Head of the Department</span>
-                </div>
-              </div>
-            </div>
-
+          
+            <?php
+$sql = "SELECT staff_master.staff_id AS staff_id,master_desigination.desigination desigination, GROUP_CONCAT(staff_promotion.md_id), staff_master.legend , CONCAT(staff_master.first_name,' ',staff_master.last_name)first_name , staff_master.department_id,master_department.dept_name , staff_photo.photo ,  staff_promotion.status, staff_qualification.status,staff_promotion.from_date, GROUP_CONCAT(deg_type ORDER BY staff_qualification.yop) deg_type FROM camps.staff_master INNER JOIN camps.master_department ON (staff_master.department_id = master_department.department_id  AND staff_master.sc_id=1) INNER JOIN camps.staff_photo ON (staff_photo.staff_id = staff_master.staff_id) INNER JOIN camps.staff_promotion ON (staff_promotion.staff_id = staff_master.staff_id) INNER JOIN camps.staff_qualification ON (staff_qualification.staff_id = staff_master.staff_id AND staff_qualification.status=1) INNER JOIN camps.master_desigination ON master_desigination.md_id=staff_promotion.md_id INNER JOIN camps.staff_degree_type ON (staff_qualification.degree_id = staff_degree_type.degree_id) WHERE staff_promotion.status=2 AND staff_degree_type.degree_id NOT IN (23,24) AND  staff_master.working_status='working' AND master_department.department_id='7' GROUP BY staff_master.staff_id;";
+$result = mysqli_query($dbcon, $sql);
+if (mysqli_num_rows($result) > 0) {
+    while($data = mysqli_fetch_assoc($result)) {
+        
+?>
             <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
                 <div class="member" data-aos="fade-up" data-aos-delay="100">
                   <div class="member-img">
-                    <img src="assets/img/CIVIL/RAGIN.png" class="img-fluid" alt="">
+                    <img src="data:image/jpeg;base64,<?php echo base64_encode($data['photo']);?>" class="img-fluid" alt="">
                     <div class="social">
                       <a href=""><i class="bi bi-instagram"></i></a>
                       <a href=""><i class="bi bi-facebook"></i></a>
@@ -318,29 +319,23 @@
                     </div>
                   </div>
                   <div class="member-info">
-                    <h4 class="title"><a href="faculty.html">Mr.T,Ragin</a></h4>
+                    <h4 class="title"><a href="faculty.html">
+                    <?php 
+                    printf("%s", $data["first_name"]);
+                    ?>
+                    </a></h4>
                     <span>Assistant Professor</span>
                   </div>
                 </div>
               </div>
+            <?php
+    } 
+}     
+            ?>
 
-            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-                <div class="member" data-aos="fade-up" data-aos-delay="100">
-                  <div class="member-img">
-                    <img src="assets/img/CIVIL/ASHNI.png" class="img-fluid" alt="">
-                    <div class="social">
-                      <a href=""><i class="bi bi-instagram"></i></a>
-                      <a href=""><i class="bi bi-facebook"></i></a>
-                      <a href=""><i class="bi bi-instagram"></i></a>
-                      <a href=""><i class="bi bi-linkedin"></i></a>
-                    </div>
-                  </div>
-                  <div class="member-info">
-                    <h4 class="title"><a href="faculty.html">Mrs.M.Ashni</a></h4>
-                    <span>Assistant Professor</span>
-                  </div>
-                </div>
-              </div>
+            
+
+            
           </div>
         </div>
       </section><!-- End Team Section -->
@@ -420,27 +415,11 @@
             <div class="tab-pane" id="tab-4">
               <div class="row">
                 <div class="col-lg-8 details order-2 order-lg-1">
-                  <h3>Physics Laboratory</h3>
-                   <strong>COURSE OBJECTIVES:</strong> <li> To learn the proper use of various kinds of physics laboratory equipment.</li>
-                  <li>To learn how data can be collected, presented and interpreted in a clear and concise manner.</li>
-                  <li>To learn problem solving skills related to physics principles and interpretation of experimental data.</li>
-                  <li>To determine error in experimental measurements and techniques used to minimize such error.</li>
-                  <li>To make the student as an active participant in each part of all lab exercises.</li>
-                  <strong>Experiments</strong> <li>Torsional pendulum - Determination of rigidity modulus of wire and moment of inertia of regular and irregular objects.</li>
-                  <li>Simple harmonic oscillations of cantilever.</li>
-                  <li>Non-uniform bending - Determination of Young's modulus</li>
-                  <li>Uniform bending - Determination of Young's modulus</li>
-                  <li>Laser-Determination of the wave length of the laser using grating</li>
-                  <li>Air wedge - Determination of thickness of a thin sheet/wire</li>
-                  <li>Optical fibre -Determination of Numerical Aperture and acceptance angle </li>
-                  <li>Compact disc- Determination of width of the groove using laser.</li>
-                  <li>Acoustic grating- Determination of velocity of ultrasonic waves in liquids</li>
-                  <li>Ultrasonic interferometer - determination of the velocity of sound and compressibility of liquids</li>
-                  <li>Post office box -Determination of Band gap of a semiconductor.</li>
-                  <li>Photoelectric effect</li>
-                  <li>Michelson Interferometer.</li>
-                  <li>Melde's string experiment</li>
-                  <li>Experiment with lattice dynamics kit.</li>       
+                  <h3>Environmental Engineering Laboratory</h3>
+                  <p class="fst-italic text-justify">In this laboratory the students will be able to know the common environmental experiements relating to water and wastewater quality.</p>
+                  <strong>Experiments</strong> <li class="text-justify"> Determination of Ammonia Nitrogen in wastewater, Coagulation and Precipitation process for treating waste water, Determination of suspended, volatile, fixed and settleable solids in wastewater,B.O.D. test,C.O.D. test, Nitrate in wastewater,Phosphate in wastewater, Determination of Calcium, Potassium and Sodium, Heavy metals determination - Chromium, Lead and Zinc.(Demonstration only)</li>
+                  <strong>Equipments</strong> <li class="text-justify"> Oxygen analyzer,Spectrophotometer, Ion – selective electrode, Sodium Potassium Analyzer – Flame Photometer 5.Gas Chromatography, Atomic absorption spectroscopy (Ni, Zn, Pb),Nephlo-turbidity me ter, BOD Analyser,COD Analyser,Jar Test Apparatus.</li>
+                       
                 </div>
                 <div class="col-lg-4 text-center order-1 order-lg-2">
                   <img src="assets/img/CSE/CM.png" alt="" class="img-fluid">
@@ -449,29 +428,10 @@
             
               <div class="row">
                 <div class="col-lg-8 details order-2 order-lg-1">
-                  <h3>Chenmistry Laboratory</h3>
-                  <strong>COURSE OBJECTIVES:</strong> 
-                  <li> To inculcate experimental skills to test basic understanding of water quality parameters, such as, acidity, alkalinity, hardness, DO, chloride and copper.</li>
-                  <li>To induce the students to familiarize with electroanalytical techniques such as, pH metry, potentiometry and conductometry in the determination of impurities in aqueous solutions.</li>
-                  <li>To demonstrate the analysis of metals and alloys.</li>
-                  <li>To demonstrate the synthesis of nanoparticles</li>
-                  
-                  <strong>Experiments</strong> 
-                  <li>Preparation of Na2CO3 as a primary standard and estimation of acidity of a water sample using the primary standard</li>
-                  <li>Determination of types and amount of alkalinity in water sample. Split the first experiment into two</li>
-                  <li>Determination of total, temporary & permanent hardness of water by EDTA method.</li>
-                  <li>Determination of DO content of water sample by Winkler's method.</li>
-                  <li>Determination of chloride content water sample by Argentometric method.</li>
-                  <li>Estimation of copper content of the given solution by lodometry.</li>
-                  <li>Estimation of TDS of a water sample by gravimetry.</li>
-                  <li>Determination of strength of given hydrochloric acid using pH meter.</li>
-                  <li>Determination of strength of acids in a mixture of acids using conductivity meter.</li>
-                  <li>Conductometric titration of barium chloride against sodium sulphate (precipitation titration)</li>
-                  <li>Estimation of iron content of the given solution using potentiometer.</li>
-                  <li>Estimation of sodium /potassium present in water using flame photometer.</li>
-                  <li>Preparation of nanoparticles (TiO2/ZnO/CuO) by Sol-Gel method.</li>
-                  <li>Estimation of Nickel in steel</li>
-                  <li>Proximate analysis of Coal</li>  
+                  <h3>Soil Mechanics Laboratory</h3>
+                  <p class="fst-italic text-justify">Students will able to identify physical and mechanical properties of soil in the field and laboratory settings. This include preparing soil samples for testing, performing the test, collecting and analyzing data, interpreting the results and writing technical reports.</p>
+                  <strong>Experiments</strong> <li class="text-justify"> Determination of index properties, Permeability determination (constant head and falling head methods), One dimensional consolidation test (Determination of co-efficient of consolidation only),Direct shear test in cohesion-less soil,Unconfined compression test in cohesive soil,Laboratory vane Shear test in cohesive soil ,Tri-axial compression test in cohesion-less soil(Demonstration only),California Bearing Ratio Test.</li>
+                  <strong>Equipments</strong> <li class ="text-justify"> Sieves,Hydrometer,Liquid and plastic limit apparatu, Shinkage limit apparatus,Proctor compaction apparatus, UTM of minimum of 20KN capacity,Direct shear apparatus , Thermeometer, Field den sity measuring device ,Triaxial shear apparatus , Three gang consolidation test device,</li> 
                 </div>
                 <div class="col-lg-4 text-center order-1 order-lg-2">
                   <img src="assets/img/CSE/BD.jpg" alt="" class="img-fluid">
@@ -479,24 +439,48 @@
               </div>
               <div class="row">
                 <div class="col-lg-8 details order-2 order-lg-1">
-                  <h3>Computer Laboratory</h3>
-                   <strong>PROBLEM SOLVING AND PYTHON PROGRAMMING LABORATORY</strong> 
-                   <li> To understand the problem solving approaches.</li>
-                   <li> To learn the basic programming constructs in Python.</li>
-                   <li> To practice various computing strategies for Python-based solutions to real world problems.</li>
-                   <li> To use Python data structures - lists, tuples, dictionaries.</li>
-                   <li> To do input/output with files in Python</li>
-                  <strong>Experiments</strong> <li> Principles of planning, orientation and complete joinery details ,Buildings with load bearing walls 3. Buildings with sloping roof,R.C.C. framed structures, Industrial buildings – North light roof structures,Unconfined compression test in cohesive soil , Building Information Modeling.</li> 
-                  <strong>Equipments</strong> <li> Computer system of Pentium IV or equivalent (1 for each student) ,AUTOCAD (software).</li> 
-                
+                  <h3>Strength of materials Laboratory</h3>
+                  <p class="fst-italic text-justify">Demonstrating the basic principles in the area of strength and mechanics of materials and structural analysis to the students through a series of experiments.</p>
+                  <strong>Experiments</strong> <li class="text-justify"> Tension test on mild steel rod,Compression test on wood, Double shear test on metal,Torsion test on mild steel rod , Impact test on metal specimen (Izod and Charpy) , Hardness test on metals (Rockwell and Brinell Hardness Tests), Deflection test on metal beam,Compression test on helical spring, Deflection test on carriage spring,Test on Cement.</li>
+                  <strong>Equipments</strong> <li class="text-justify"> UTM of minimum 400 kN capacity,Torsion testing machine for steel rods,Izod impact testing machine,Hardness testing machine, Beam deflection test apparatus,Extensometer,Compressometer, Dial gauges,Le Chatelier’s apparatus,Vicat’s apparatus, Mortar cube moulds.</li> 
                 </div>
                 <div class="col-lg-4 text-center order-1 order-lg-2">
                   <img src="assets/img/CSE/BD.jpg" alt="" class="img-fluid">
                 </div>
               </div>
-              
-              
-              
+              <div class="row">
+                <div class="col-lg-8 details order-2 order-lg-1">
+                  <h3>Survey Laboratory</h3>
+                  <p class="fst-italic text-justify">Students learn techniques for gathering field data with both traditional and modern instruments and demonstrate their proficiency on weekly lab exercises and a comprehensive semester project and final exam.</p>
+                  <strong>Experiments</strong> <li class="text-justify"> Study of theodolite,Measurement of horizontal angles by reiteration and repetition and vertical angles,Theodolite survey traverse,Heights and distances - Triangulation - Single plane method,Tacheometry - Tangential system - Stadia system - Subtense system,Setting out works - Foundation marking - Simple curve (right/ left-handed) - Transition curve, Field observation for and Calculation of azimuth,Field work using Total Station.</li>
+                  <strong>Equipments</strong> <li class="text-justify"> Total Station,Theodolites Atleast 1 for every,Dumpy level, Plane table,Pocket stereoscope,Ranging rods,Levelling staff , Cross staff, Chains,Tapes, Arrows, Hand held GPS.</li> 
+                </div>
+                <div class="col-lg-4 text-center order-1 order-lg-2">
+                  <img src="assets/img/CSE/BD.jpg" alt="" class="img-fluid">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-8 details order-2 order-lg-1">
+                  <h3>Concrete and Highway Laboratory</h3>
+                  <p class="fst-italic">The behavior and properties of structural materials, e.g. concrete, asphalt and steel can be better understood by detailed, well-designed, first hand experience with these materials. The students will become familiar with the nature and properties of these materials by conducting laboratory tests.</p>
+                  <strong>Experiments</strong> <li class="text-justify"> Tests on fresh concrete,Test on hardener concrete,Theodolite survey traverse,Test on aggregates, Tests on bitumen, Test on bitumen mixes.</li>
+                  <strong>Equipments</strong> <li class="text-justify"> Concrete cube moulds,Concrete cylinder moulds,Concrete Prism moulds, Sieves,Concrete Mixer,Slump cone,Flow table,Vibrator,Trovels and planers, UTM – 400 kN capacity,Vee Bee Consistometer,Aggregate impact testing machine,CBR Apparatus,Los - Angeles abrasion testing machine, Marshall Stability Apparatus.</li> 
+                </div>
+                <div class="col-lg-4 text-center order-1 order-lg-2">
+                  <img src="assets/img/CSE/BD.jpg" alt="" class="img-fluid">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-8 details order-2 order-lg-1">
+                  <h3>Hydraulics Engineering laboratory</h3>
+                  <p class="fst-italic">The main objective of this lab is to build fundamental concepts combined with strong analytical and problem solving abilities that would form the backbone of many other subjects in higher educations</p>
+                  <strong>Experiments</strong> <li class="text-justify"> Flow measurement,Losses in pipes,Pumps,Turbines, Determination of metacentric height.</li>
+                  <strong>Equipments</strong> <li class="text-justify"> Bernoulli’s theorem – Verification Apparatus, Calculation of Metacentric height water tank Ship model with accessories,Measurement of velocity Pitot tube assembly, Venturimeter,Orificemeter,Flow through mouthpiece, Centrifugal pump assembly with accessories (single stage), Centrifugal pump assembly with accessories (multi stage), Reciprocating pump assembly with accessories, Deep well pump assembly set with accessories.</li> 
+                </div>
+                <div class="col-lg-4 text-center order-1 order-lg-2">
+                  <img src="assets/img/CSE/BD.jpg" alt="" class="img-fluid">
+                </div>
+              </div>
           
             </div>
             <div class="tab-pane" id="tab-5">
@@ -699,13 +683,13 @@
               <div class="col-md-6 col-lg-4 d-flex align-items-center mb-5 mb-lg-0">
                 <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
                   <div class="icon"><i class="bx bx-world"></i></div>
-                  <h4 class="title"><a href="">Regulation 2021</a></h4>
+                  <h4 class="title"><a href="https://webdocs.pages.dev/assets/docs/civil/syllabus/2021.pdf">Regulation 2021</a></h4>
                   </div>
               </div>
               <div class="col-md-6 col-lg-4 d-md-flex align-items-stretch mb-lg-0 mb-lg-0">
                 <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
                   <div class="icon"><i class="bx bx-world"></i></div>
-                  <h4 class="title"><a href="">Regulation 2017</a></h4>
+                  <h4 class="title"><a href="https://webdocs.pages.dev/assets/docs/civil/syllabus/2017.pdf">Regulation 2017</a></h4>
                   </div>
                 </div>
             </div>
@@ -747,43 +731,43 @@
               <div class="col-md-6 col-lg-5 d-flex align-items-center mb-5 mb-lg-0">
                 <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
                   <div class="icon"><i class="bx bi-calendar4-week"></i></div>
-                  <h4 class="title"><a href="">2018-19 ODD</a></h4>
+                  <h4 class="title"><a href="https://webdocs.pages.dev/assets/docs/civil/calender/CIVIL-2018-19-odd.pdf">2018-19 ODD</a></h4>
                 </div>
               </div>
               <div class="col-md-6 col-lg-5 d-md-flex align-items-stretch mb-lg-0 mb-lg-0">
                 <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
                   <div class="icon"><i class="bx bi-calendar4-week"></i></div>
-                  <h4 class="title"><a href="">2018-19 EVEN</a></h4>
+                  <h4 class="title"><a href="https://webdocs.pages.dev/assets/docs/civil/calender/CIVIL-2018-19-even.pdf">2018-19 EVEN</a></h4>
                 </div>
               </div>
               <div class="col-md-6 col-lg-5 d-flex align-items-center mb-5 mb-lg-0">
                 <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
                   <div class="icon"><i class="bx bi-calendar4-week"></i></div>
-                  <h4 class="title"><a href="">2019-20 ODD</a></h4>
+                  <h4 class="title"><a href="https://webdocs.pages.dev/assets/docs/civil/calender/CIVIL-2019-20-odd.pdf">2019-20 ODD</a></h4>
                 </div>
               </div>
               <div class="col-md-6 col-lg-5 d-md-flex align-items-stretch mb-lg-0 mb-lg-0">
                 <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
                   <div class="icon"><i class="bx bi-calendar4-week"></i></div>
-                  <h4 class="title"><a href="">2019-20 EVEN</a></h4>
+                  <h4 class="title"><a href="https://webdocs.pages.dev/assets/docs/civil/calender/CIVIL-2019-20-even.pdf">2019-20 EVEN</a></h4>
                 </div>
               </div>
               <div class="col-md-6 col-lg-5 d-flex align-items-center mb-5 mb-lg-0">
                 <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
                   <div class="icon"><i class="bx bi-calendar4-week"></i></div>
-                  <h4 class="title"><a href="">2020-21 ODD</a></h4>
+                  <h4 class="title"><a href="https://webdocs.pages.dev/assets/docs/civil/calender/CIVIL-2020-21-odd.pdf">2020-21 ODD</a></h4>
                 </div>
               </div>
               <div class="col-md-6 col-lg-5 d-md-flex align-items-stretch mb-lg-0 mb-lg-0">
                 <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
                   <div class="icon"><i class="bx bi-calendar4-week"></i></div>
-                  <h4 class="title"><a href="">2020-21 EVEN</a></h4>
+                  <h4 class="title"><a href="https://webdocs.pages.dev/assets/docs/civil/calender/CIVIL-2020-21-even.pdf">2020-21 EVEN</a></h4>
                 </div>
               </div>
               <div class="col-md-6 col-lg-5 d-md-flex align-items-stretch mb-lg-0 mb-lg-0">
                 <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
                   <div class="icon"><i class="bx bi-calendar4-week"></i></div>
-                  <h4 class="title"><a href="">2021-22 ODD</a></h4>
+                  <h4 class="title"><a href="https://webdocs.pages.dev/assets/docs/civil/calender/CIVIL-2021-22-odd.pdf">2021-22 ODD</a></h4>
                 </div>
               </div>
               <div class="col-md-6 col-lg-5 d-flex align-items-center mb-5 mb-lg-0">
@@ -835,52 +819,52 @@
                             <div class="col-lg-3 col-md-4">
                               <div class="icon-box">
                                 <i class="ri-calendar-todo-line" style="color: #ffbb2c;"></i>
-                                <h3><a href="">APRIL 2016</a></h3>
+                                <h3><a href="https://webdocs.pages.dev/assets/docs/civil/newsletter/Civolume1issue1.pdf">Volume I, Issue 1 : Dec 2017</a></h3>
                               </div>
                             </div>
                             <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
                               <div class="icon-box">
                                 <i class="ri-calendar-todo-line" style="color: #5578ff;"></i>
-                                <h3><a href="">NOVEMBER 2016</a></h3>
+                                <h3><a href="https://webdocs.pages.dev/assets/docs/civil/newsletter/Civolume1issue2.pdf">Volume I, Issue 2 : April 2018</a></h3>
                               </div>
                             </div>
                             <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
                               <div class="icon-box">
                                 <i class="ri-calendar-todo-line" style="color: #e80368;"></i>
-                                <h3><a href="">APRIL 2017</a></h3>
+                                <h3><a href="https://webdocs.pages.dev/assets/docs/civil/newsletter/Civolume2issue1.pdf">Volume II, Issue 1 : Dec 2018</a></h3>
                               </div>
                             </div>
                             <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
                               <div class="icon-box">
                                 <i class="ri-calendar-todo-line" style="color: #e361ff;"></i>
-                                <h3><a href="">NOVEMBER 2017</a></h3>
+                                <h3><a href="https://webdocs.pages.dev/assets/docs/civil/newsletter/Civolume2issue2.pdf">Volume II, Issue 2 : April 2019</a></h3>
                               </div>
                             </div>
                             <div class="col-lg-3 col-md-4 mt-4">
                               <div class="icon-box">
                                 <i class="ri-calendar-todo-line" style="color: #47aeff;"></i>
-                                <h3><a href="">APRIL 2018</a></h3>
+                                <h3><a href="https://webdocs.pages.dev/assets/docs/civil/newsletter/Civolume3issue1.pdf">Volume III, Issue 1 : Dec 2019</a></h3>
                               </div>
                             </div>
                             <div class="col-lg-3 col-md-4 mt-4">
                               <div class="icon-box">
                                 <i class="ri-calendar-todo-line" style="color: #ffa76e;"></i>
-                                <h3><a href="">NOVEMBER 2018</a></h3>
+                                <h3><a href="https://webdocs.pages.dev/assets/docs/civil/newsletter/Civolume3issue2.pdf">Volume III, Issue 2 : April 2020</a></h3>
                               </div>
                             </div>
                             <div class="col-lg-3 col-md-4 mt-4">
                               <div class="icon-box">
                                 <i class="ri-calendar-todo-line" style="color: #11dbcf;"></i>
-                                <h3><a href="">APRIL 2019</a></h3>
+                                <h3><a href="https://webdocs.pages.dev/assets/docs/civil/newsletter/Civolume4issue1.pdf">Volume IV, Issue 1 : Dec 2020</a></h3>
                               </div>
                             </div>
                             <div class="col-lg-3 col-md-4 mt-4">
                               <div class="icon-box">
                                 <i class="ri-calendar-todo-line" style="color: #4233ff;"></i>
-                                <h3><a href="">NOVEMBER 2019</a></h3>
+                                <h3><a href="https://webdocs.pages.dev/assets/docs/civil/newsletter/Civolume4issue2.pdf">Volume IV, Issue 2 : April 2021</a></h3>
                               </div>
                             </div>
-                            <div class="col-lg-3 col-md-4 mt-4">
+                            <!--<div class="col-lg-3 col-md-4 mt-4">
                               <div class="icon-box">
                                 <i class="ri-calendar-todo-line" style="color: #b2904f;"></i>
                                 <h3><a href="">APRIL 2020</a></h3>
@@ -903,7 +887,7 @@
                                 <i class="ri-calendar-todo-line" style="color: #29cc61;"></i>
                                 <h3><a href="">NOVEMBER 2021</a></h3>
                               </div>
-                            </div>
+                            </div>-->
                           </div>
                   
                         </div>
@@ -916,7 +900,7 @@
                                 <div class="container">
                           
                                   <div class="section-title" data-aos="fade-up">
-                                    <h2>Brochure</h2>
+                                    <h2>Magazine</h2>
                                     <!--<p>Necessitatibus eius consequatur ex aliquid fuga eum quidem</p>-->
                                   </div>
                           
@@ -924,28 +908,28 @@
                                     <div class="col-lg-3 col-md-4">
                                       <div class="icon-box">
                                         <i class="ri-file-list-3-line" style="color: #ffbb2c;"></i>
-                                        <h3><a href="">AJAX BASICS</a></h3>
+                                        <h3><a href="https://webdocs.pages.dev/assets/docs/civil/magazine/2017-18.pdf">2017-2018</a></h3>
                                       </div>
                                     </div>
                                     <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
                                       <div class="icon-box">
                                         <i class="ri-file-list-3-line" style="color: #5578ff;"></i>
-                                        <h3><a href="">BOOTSTRAP</a></h3>
+                                        <h3><a href="https://webdocs.pages.dev/assets/docs/civil/magazine/2018-19.pdf">2018-2019</a></h3>
                                       </div>
                                     </div>
                                     <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
                                       <div class="icon-box">
                                         <i class="ri-database-2-line" style="color: #e80368;"></i>
-                                        <h3><a href="">HADOOP</a></h3>
+                                        <h3><a href="https://webdocs.pages.dev/assets/docs/civil/magazine/2019-20.pdf">2019-2020</a></h3>
                                       </div>
                                     </div>
                                     <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
                                       <div class="icon-box">
                                         <i class="ri-file-list-3-line" style="color: #e361ff;"></i>
-                                        <h3><a href="">MACHINE LEARNING AND DATA ANALYTICS</a></h3>
+                                        <h3><a href="https://webdocs.pages.dev/assets/docs/civil/magazine/2020-21.pdf">2020-2021</a></h3>
                                       </div>
                                     </div>
-                                    <div class="col-lg-3 col-md-4 mt-4">
+                                    <!--<div class="col-lg-3 col-md-4 mt-4">
                                       <div class="icon-box">
                                         <i class="ri-bar-chart-box-line" style="color: #47aeff;"></i>
                                         <h3><a href="">MATLAB</a></h3>
@@ -986,7 +970,7 @@
                                         <i class="ri-check-double-line" style="color: #ff5828;"></i>
                                         <h3><a href="">WEB DEVELOPMENT</a></h3>
                                       </div>
-                                    </div>
+                                    </div>-->
                                   </div>
                           
                                 </div>

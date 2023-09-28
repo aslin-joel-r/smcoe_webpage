@@ -1,3 +1,15 @@
+<?php
+$servername = "172.18.0.1";
+$username = "root";
+$password = "root";
+$db="mysql";
+$port="33070";  
+$dbcon = mysqli_connect($servername, $username, $password,$db,$port);
+if (!$dbcon) {
+    die("Connection failed: " .  mysqli_connect_error());
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -136,32 +148,35 @@
 
   <main id="main" class="text-justify">
 
-
-
-
-
     <!-- ======= Breadcrumbs Section ======= -->
     <section class="breadcrumbs">
       <div class="container">
-          <h2>Mechanical Engineering</h2>
-          <p>Department encompasses the design, analysis, and manufacturing of mechanical systems and devices, including engines, machines, and structures, to address diverse engineering challenges and improve efficiency and functionality. </p>
-        </div>
+
+        <div class="container">
+          <h2>Electronics and Communication Engineering</h2>
+        <p>Department specializes in the design, development, and implementation of electronic systems, communication networks, and signal processing technologies to enable efficient information transmission and exchange.</p>
+      </div>
+
       </div>
     </section><!-- End Breadcrumbs Section -->
-    
+
+   
   </div><!-- End Breadcrumbs -->
+
   <!-- ======= Cource Details Section ======= -->
   <section id="course-details" class="course-details">
     <div class="container" data-aos="fade-up">
+
       <div class="row">
         <div class="col-lg-7">
-          <img src="https://webdocs.pages.dev/assets/img/mech/mech.jpg" class="img-fluid" alt="">
-          </div>
+          <img src="https://webdocs.pages.dev/assets/img/ece/ece.jpg" class="img-fluid" alt="">
+          
+        </div>
         <div class="col-lg-4">
 
           <div class="course-info d-flex justify-content-between align-items-center">
             <h5>Head of the Department</h5>
-            <p><a href="#">Dr.Michael Raj</a></p>
+            <p><a href="#">Mr.Michael Franklin</a></p>
           </div>
 
           <div class="course-info d-flex justify-content-between align-items-center">
@@ -182,10 +197,8 @@
         </div>
         <h3> Overview</h3>
           <p>
-            The Department of Mechanical Engineering has been in existence since 2013 with the intake of 60 students. The department has excellent infrastructure by keeping on par with the latest trends. The Department is grown into a full-fledged one with well-equipped lab facilities, Infrastructure and faculty members of various specializations. The faculty members are not only committed to the teaching profession but also involve themselves in research and constantly, filing patent publish papers in conference proceedings, International and National Journals with respect to their field of specialization. The department has been producing excellent results with distinction in the university examinations consistently.
-        </p>
-        <p>The Department provides high quality education along with discipline. The faculty members make it possible to give individual attention to the learners and to motivate them to achieve their professional goals. The curriculum structure of the department is designed to meet the present day requirement of Industries and corporate sectors. The interaction between the staff and students is excellent and all the laboratories are well equipped as per the requirements of the curriculum.</p>
-        
+            Electronics and Communications Engineering (ECE) is the application of science and mathematics to practical problems in the electronics and communications field. Electronics and communications engineers engage in research, design, development and testing of the electronic equipment used in various systems. This field is closely aligned with Computer Science and Engineering (CSE) and the advances in CSE play a significant role in the advancement of ECE. This is why a degree in ECE is always in high demand.  
+          </p>
       </div>
 
     </div>
@@ -210,11 +223,11 @@
             <li class="nav-item">
               <a class="nav-link" data-bs-toggle="tab" href="#tab-4">Laboratory</a>
             </li>
+            <!--<li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" href="#tab-5">Achievements</a>
+            </li>-->
             <li class="nav-item">
-              <a class="nav-link" data-bs-toggle="tab" href="#tab-5">Industrial Visit</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" data-bs-toggle="tab" href="#tab-6">Achievements</a>
+              <a class="nav-link" data-bs-toggle="tab" href="#tab-6">Industrial Visit</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" data-bs-toggle="tab" href="#tab-7">Syllabus</a>
@@ -229,7 +242,7 @@
                 <a class="nav-link" data-bs-toggle="tab" href="#tab-10">Newsletter</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#tab-11">Magazine</a>
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-11">Brochure</a>
             </li>
           </ul>
         </div>
@@ -246,7 +259,7 @@
               <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
                 <div class="icon"><i class="bx bxl-dribbble"></i></div>
                 <h4 class="title"><a href="">VISION</a></h4>
-                <p class="description">To impart nationally and internationally recognized education on Mechanical Engineering, leading to well qualified engineers who are innovative contributors to the profession and successful in advanced studies and research</p>
+                <p class="description">To excel in higher learning, innovative research and to produce creative solution for community based needs</p>
               </div>
             </div>
   
@@ -254,13 +267,12 @@
               <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
                 <div class="icon"><i class="bx bx-file"></i></div>
                 <h4 class="title"><a href="">MISSION</a></h4>
-                <li>To provide an international class of education enabling the students to have the ability to design, plan, engineer, administer and manage the latest technologies in the field of Mechanical Engineering.</li>
-                <li>To train students to face the future challenges of industries and society.</li>
-                <li>To equip the students to take leading positions in industry, academia, and PSUs both in India and abroad.</li>
+                <li>To impart quality education in Electronics and Communication Engineering.</li>
+                <li>To provide technical expertise along with professional ethics as per societal needs.</li>
+                <li>Continuous technical upgradation to reach global excellence and to make student entrepreneur.</li>
                 </div>
             </div>
- 
-
+  
           </div>
   
         </div>
@@ -278,32 +290,21 @@
   
           <div class="section-title" data-aos="fade-up">
             <h2>Teaching Faculty</h2>
-            <p>The pillars of Civil Engineering</p>
+            <p>The pillars of Electronics and Communication Engineering</p>
           </div>
   
           <div class="row justify-content-center">
-            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-              <div class="member" data-aos="fade-up" data-aos-delay="100">
-                <div class="member-img">
-                  <img src="assets/img/CIVIL/MADHUMATHI.png" class="img-fluid" alt="">
-                  <div class="social">
-                    <a href=""><i class="bi bi-twitter"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""><i class="bi bi-linkedin"></i></a>
-                  </div>
-                </div>
-                <div class="member-info">
-                  <h4 class="title"><a href="faculty.html">Dr.Michael Raj</a></h4>
-                  <span>Professor & Head of the Department</span>
-                </div>
-              </div>
-            </div>
-
+            <?php
+$sql = "SELECT staff_master.staff_id AS staff_id,master_desigination.desigination desigination, GROUP_CONCAT(staff_promotion.md_id), staff_master.legend , CONCAT(staff_master.first_name,' ',staff_master.last_name)first_name , staff_master.department_id,master_department.dept_name , staff_photo.photo ,  staff_promotion.status, staff_qualification.status,staff_promotion.from_date, GROUP_CONCAT(deg_type ORDER BY staff_qualification.yop) deg_type FROM camps.staff_master INNER JOIN camps.master_department ON (staff_master.department_id = master_department.department_id  AND staff_master.sc_id=1) INNER JOIN camps.staff_photo ON (staff_photo.staff_id = staff_master.staff_id) INNER JOIN camps.staff_promotion ON (staff_promotion.staff_id = staff_master.staff_id) INNER JOIN camps.staff_qualification ON (staff_qualification.staff_id = staff_master.staff_id AND staff_qualification.status=1) INNER JOIN camps.master_desigination ON master_desigination.md_id=staff_promotion.md_id INNER JOIN camps.staff_degree_type ON (staff_qualification.degree_id = staff_degree_type.degree_id) WHERE staff_promotion.status=2 AND staff_degree_type.degree_id NOT IN (23,24) AND  staff_master.working_status='working' AND master_department.department_id='3' GROUP BY staff_master.staff_id;";
+$result = mysqli_query($dbcon, $sql);
+if (mysqli_num_rows($result) > 0) {
+    while($data = mysqli_fetch_assoc($result)) {
+        
+?>
             <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
                 <div class="member" data-aos="fade-up" data-aos-delay="100">
                   <div class="member-img">
-                    <img src="assets/img/CIVIL/RAGIN.png" class="img-fluid" alt="">
+                    <img src="data:image/jpeg;base64,<?php echo base64_encode($data['photo']);?>" class="img-fluid" alt="">
                     <div class="social">
                       <a href=""><i class="bi bi-instagram"></i></a>
                       <a href=""><i class="bi bi-facebook"></i></a>
@@ -312,29 +313,23 @@
                     </div>
                   </div>
                   <div class="member-info">
-                    <h4 class="title"><a href="faculty.html">Mr.T,Ragin</a></h4>
+                    <h4 class="title"><a href="faculty.html">
+                    <?php 
+                    printf("%s", $data["first_name"]);
+                    ?>
+                    </a></h4>
                     <span>Assistant Professor</span>
                   </div>
                 </div>
               </div>
+            <?php
+    } 
+}     
+            ?>
 
-            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-                <div class="member" data-aos="fade-up" data-aos-delay="100">
-                  <div class="member-img">
-                    <img src="assets/img/CIVIL/ASHNI.png" class="img-fluid" alt="">
-                    <div class="social">
-                      <a href=""><i class="bi bi-instagram"></i></a>
-                      <a href=""><i class="bi bi-facebook"></i></a>
-                      <a href=""><i class="bi bi-instagram"></i></a>
-                      <a href=""><i class="bi bi-linkedin"></i></a>
-                    </div>
-                  </div>
-                  <div class="member-info">
-                    <h4 class="title"><a href="faculty.html">Mrs.M.Ashni</a></h4>
-                    <span>Assistant Professor</span>
-                  </div>
-                </div>
-              </div>
+           
+
+            
           </div>
         </div>
       </section><!-- End Team Section -->
@@ -348,10 +343,11 @@
   
           <div class="section-title" data-aos="fade-up">
             <h2>Non-Teaching Faculty</h2>
-            <p>The supporting hands of Civil Engineering</p>
+            <p>The supporting hands of Electronics and Communication Engineering</p>
           </div>
   
           <div class="row justify-content-center">
+  
             <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
               <div class="member" data-aos="fade-up" data-aos-delay="100">
                 <div class="member-img">
@@ -411,9 +407,6 @@
       </section><!-- End Team Section -->
               </div>
             </div>
-
-
-
             <div class="tab-pane" id="tab-4">
               <div class="row">
                 <div class="col-lg-8 details order-2 order-lg-1">
@@ -439,79 +432,53 @@
             
               <div class="row">
                 <div class="col-lg-8 details order-2 order-lg-1">
-                  <h3>Manufacturing Technology Laboratory</h3>
-                   <strong>Overview</strong> <li> This lab is to study and practice the various operations that can be performed in lathe, shaper, drilling, milling machines etc., and to acquire knowledge on various basic machining operations in special purpose machines and its applications in real life manufacture of components to equip with the practical knowledge required in the core manufacturing industries. The laboratory courses Manufacturing Technology-I and Manufacturing Technology-II will be taught using this laboratory.</li>
-                  <strong>Equipments</strong> <li> 
-                    Centre Lathes,
-                    Horizontal Milling Machine,
-                    Vertical Milling Machine,
-                    Shaper,
-                    Arc welding transformer with cables and holders,
-                    Oxygen and acetylene gas cylinders, blow pipe and other welding outfit,
-                    Molding table, Molding equipments,
-                    Sheet metal forming tools and equipments,
-                    Turret and Capstan Lathes,
-                    Horizontal Milling Machine,
-                    Vertical Milling Machine,
-                    Surface Grinding Machine,
-                    Radial Drilling Machine,
-                    Lathe Tool Dynamometer,
-                    Milling Tool Dynamometer,
-                    Gear Hobbing Machine,
-                    Tool Makers Microscope,
-                    CNC Lathe,
-                    CNC Milling machine,
-                    Gear Shaping machine,
-                    Centerless grinding machine,
-                    Tool and cutter grinder,
-                    Cylindrical Grinding Machine,
-                    Injection Molding Machine
+                  <h3>Linear Integrated Circuits</h3>
+                  <strong>Experiments</strong> <li> To expose the students to linear and integrated circuits,
+                    To understand the basics of linear integrated circuits and available ICs,
+                    To understand and apply operational amplifiers in linear and nonlinear applications,
+                    To acquire the basic knowledge of special function IC,
+                    To use P-SPICE software for circuit design.</li>
+                  <strong>Equipments</strong> <li> Function Generator,
+                    Cathode Ray Oscilloscope,
+                    Digital Storage Oscilloscope,
+                    P-SPICE software</li> 
+                </div>
+                <div class="col-lg-4 text-center order-1 order-lg-2">
+                  <img src="assets/img/CSE/BD.jpg" alt="" class="img-fluid">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-8 details order-2 order-lg-1">
+                  <h3>Electron Device And Circuits</h3>
+                  <strong>Experiments</strong> <li> Study the characteristics of Electron Devices,
+                    Study the characteristic of CE, CB, CC, CS and differential Amplifier,
+                    Design and implementation of combinational Logic circuits using logic gates,
+                    Construction and verification of sequential logic circuits using Flip Flops,
+                    To gain hands on experience in designing electronic circuits,
+                    To learn the fundamental principles of amplifier circuits,
+                    To differentiate feedback amplifiers and oscillators,
+                    To understand the concepts of multivibrators,</li>
+                  <strong>Equipments</strong> <li> Function Generator,
+                    Cathode Ray Oscilloscope,
+                    Digital Storage Oscilloscope,
+                    P-SPICE software</li> 
+                </div>
+                <div class="col-lg-4 text-center order-1 order-lg-2">
+                  <img src="assets/img/CSE/BD.jpg" alt="" class="img-fluid">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-8 details order-2 order-lg-1">
+                  <h3>Microprocessor</h3>
+                  <strong>Experiments</strong> <li> To Write ALP Programs for fixed and Floating Point and Arithmetic,
+                    To Interface different I/Os with processor,
+                    To Generate waveforms using Microprocessors,
+                    To Execute Programs in 8051.
                     </li>
-                       
-                </div>
-                <div class="col-lg-4 text-center order-1 order-lg-2">
-                  <img src="assets/img/CSE/BD.jpg" alt="" class="img-fluid">
-                </div>
-              </div>
-              <div class="col-lg-8 details order-2 order-lg-1">
-                <h3>Metrology And Measurement Laboratory</h3>
-                <strong>Objective</strong> <li>This laboratory is to familiarize the students with different measurement aids and equipments and its use in the industries for quality inspection.</li>
-                <strong>Equipments</strong> <li> 
-                  Micrometer,
-                  Vernier Caliper,
-                  Vernier Height Gauge,
-                  Vernier depth Gauge,
-                  Slip Gauge Set,
-                  Gear Tooth Vernier,
-                  Sine Bar,
-                  Floating Carriage Micrometer,
-                  Profile Projector,
-                  Tool Makers Microscope,
-                  Mechanical / Electrical / Pneumatic Comparator,
-                  Autocollimator,
-                  Temperature Measuring Setup,
-                  Force Measuring Setup,
-                  Torque Measuring Setup,
-                  Coordinate measuring machine,
-                  Surface finish measuring equipment,
-                  Bore gauge,
-                  Telescope gauge.
-                  </li> 
-              </div>
-              
-              <div class="row">
-                <div class="col-lg-8 details order-2 order-lg-1">
-                  <h3>MECHATRONICS LABORATORY</h3>
-                  <strong>Objective</strong> <li> This lab is to familiarizing the students with the method of programming the microprocessor and also with the design, modeling & analysis of basic electrical, hydraulic & pneumatic systems which enable the students to understand the concept of mechatronics.</li>
-                  <strong>Equipments</strong> <li> 
-                    Transducers ( Pressure , Temperature , Strain , LVDT),
-                    Basic Hydraulic Trainer Kit,
-                    Basic Pneumatic Trainer Kit with manual and electrical controls,
-                    Basic Pneumatic Trainer Kit with PLC Control,
-                    Hydraulics Systems Simulation Software,
-                    Pneumatics Systems Simulation Software,
-                    8051 - Microcontroller kit with stepper motor and drive circuit sets , Traffic control,
-                    Image processing system with hardware & software</li> 
+                  <strong>Equipments</strong> <li> 8279,8251,8253,8255,8259,Stepper motor, DC motor, ADC,DAC, Traffic light, Printer Interfacing boards,
+                    8085 Microprocessor Kit,
+                    8086 Microprocessor Kit,
+                    8051 Microcontroller Kit</li> 
                 </div>
                 <div class="col-lg-4 text-center order-1 order-lg-2">
                   <img src="assets/img/CSE/BD.jpg" alt="" class="img-fluid">
@@ -519,18 +486,14 @@
               </div>
               <div class="row">
                 <div class="col-lg-8 details order-2 order-lg-1">
-                  <h3>Strength Of Materials Laboratory</h3>
-                  <strong>Objective</strong> <li> To supplement the theoretical knowledge gained in the theory courses like Engineering Metallurgy and Strength of Material with practical testing for determining the material behavior and strength of materials under externally applied loads. This would enable the student to have a clear understanding of the design for strength and stiffness.</li>
-                  <strong>Equipments</strong> <li> 
-                    Universal Tensile Testing machine with double shear attachment – 40 Ton Capacity
-                    Torsion Testing Machine (60 NM Capacity),
-                    Impact Testing Machine (300 J Capacity),
-                    Brinell Hardness Testing Machine,
-                    Rockwell Hardness Testing Machine,
-                    Spring Testing Machine for tensile and compressive loads (2500 N),
-                    Metallurgical Microscopes,
-                    Muffle Furnace (1200 C).
-                    </li> 
+                  <h3>Digital Signal Processing</h3>
+                   <strong>Experiments</strong> <li> To carry out simulation of DSP systems,
+                    To demonstrate their abilities towards DSP processor based implementation of DSP systems,
+                    To Analyze Finite word length effect on DSP systems,
+                    To demonstrate the applications of FFT to DSP.</li>
+                  <strong>Equipments</strong> <li> Fixed point DSP processor kit,
+                    Floating point DSP processor kit,
+                    MATLAB/ SIMULINK software</li> 
                 </div>
                 <div class="col-lg-4 text-center order-1 order-lg-2">
                   <img src="assets/img/CSE/BD.jpg" alt="" class="img-fluid">
@@ -538,28 +501,14 @@
               </div>
               <div class="row">
                 <div class="col-lg-8 details order-2 order-lg-1">
-                  <h3>Fluid Mechanics and Machinery Laboratory</h3>
-                   <strong>Objective</strong> <li> This lab is to study the applications of the conservation laws to flow through pipes and hydraulic machines. To understand the importance of dimensional analysis. To understand the importance of various types of flow in pumps and turbines. Upon Completion of this lab, the students can able to have hands on experience in flow measurements using different devices and also perform calculation related to losses in pipes and also perform characteristic study of pumps, turbines etc.,</li>
-                  <strong>Equipments</strong> <li> 
-                    Orifice meter setup,
-                    Venturi meter setup,
-                    Rotameter setup,
-                    Pipe Flow analysis setup,
-                    Centrifugal pump / submergible pump setup,
-                    Reciprocating pump setup,
-                    Gear pump setup,
-                    Pelton wheel turbine setup,
-                    Francis turbine setup,
-                    Kaplan turbine setup,
-                    Notch Apparatus,
-                    Minor Losses Apparatus,
-                    Multi Stage Centrifugal Pump,
-                    Orifice and Mouth piece setup,
-                    Bernoulli’s setup,
-                    Meta Centric Height Setup,
-                    Pitot Tube,
-                    Hydraulic Flume Test setup
-                    </li> 
+                  <h3>VLSI Design Laboratory</h3>
+                   <strong>Experiments</strong> <li> To Write HDL code for basic as well as advanced digital integrated circuits,
+                    To Import the logic modules into FPGA Boards,
+                    To Synthesize Place and Route the digital IPs,
+                    To Design Simulate and Extract the layouts of Analog IC Blocks using EDA tools,</li>
+                  <strong>Equipments</strong> <li> Cadence - 20 User License,
+                    FPGA-Spartan 6,
+                    X- link</li> 
                 </div>
                 <div class="col-lg-4 text-center order-1 order-lg-2">
                   <img src="assets/img/CSE/BD.jpg" alt="" class="img-fluid">
@@ -567,25 +516,10 @@
               </div>
               <div class="row">
                 <div class="col-lg-8 details order-2 order-lg-1">
-                  <h3>Kinematics And Dynamics Laboratory</h3>
-                  <strong>Objective</strong> <li> This laboratory is used to supplement the principles taught in the theory courses like kinematics of Machinery and Dynamics of Machinery to make understand how certain measuring devices are used for dynamic and kinematics testing.</li>
-                  <strong>Equipments</strong> <li> 
-                    Cam follower setup,
-                    Motorized gyroscope,
-                    Governor apparatus - Watt, Porter, Proell and Hartnell governors,
-                    Whirling of shaft apparatus,
-                    Dynamic balancing machine,
-                    Two rotor vibration setup,
-                    Spring mass vibration system,
-                    Torsional Vibration of single rotor system setup,
-                    Gear Models,
-                    Kinematic Models to study various mechanisms,
-                    Turn table apparatus,
-                    Transverse vibration setup of
-                    cantilever,
-                    Free-Free beam,
-                    Simply supported beam.
-                    </li> 
+                  <h3>Computer Networks Laboratory</h3>
+                   <strong>Experiments</strong> <li> To communicate between two desktop computers,
+                    To Implement the different protocols</li>
+                  <strong>Equipments</strong> <li> LAN Trainer Kit</li> 
                 </div>
                 <div class="col-lg-4 text-center order-1 order-lg-2">
                   <img src="assets/img/CSE/BD.jpg" alt="" class="img-fluid">
@@ -593,49 +527,16 @@
               </div>
               <div class="row">
                 <div class="col-lg-8 details order-2 order-lg-1">
-                  <h3>Engineering Practices Laboratory</h3>
-                  <strong>Objective</strong> <li> This laboratory is to train the students in the basic engineering practices in the field of civil, mechanical, electrical and electronics engineering. All the first year engineering students will be taking this laboratory course in their second semester of the program.</li>
-                  <strong>Facilities for Civil Engineering Practices</strong> <li>
-                    Assorted components for plumbing consisting of metallic pipes, plastic pipes, flexible pipes, couplings, unions, elbows, plugs and other fittings. 15 Sets.
-                    Carpentry vice (fitted to work bench) 15 Nos,
-                    Standard woodworking tools 15 Sets,
-                    Models of industrial trusses, door joints, furniture joints 5 each,
-                    Power Tools:
-                    Rotary Hammer 2 Nos,
-                    Demolition Hammer 2 Nos,
-                    Circular Saw 2 Nos,
-                    Planer 2 Nos,
-                    Hand Drilling Machine 2 Nos,
-                    Jigsaw 2 Nos. </li>
-                  <strong>Facilities for Mechanical Engineering Practices</strong> <li> 
-                    Arc welding transformer with cables and holders 5 Nos,
-                    Welding booth with exhaust facility 5 Nos,
-                    Welding accessories like welding shield, chipping hammer, wire brush, etc. 5 Sets,
-                    Oxygen and acetylene gas cylinders, blow pipe and other welding outfit. 2 Nos. 34
-                    Centre lathe 2 Nos,
-                    Hearth furnace, anvil and smithy tools 2 Sets,
-                    Moulding table, foundry tools 2 Sets,
-                    Power Tool: Angle Grinder 2 Nos.
-                    Study-purpose items: centrifugal pump, air-conditioner One each.</li> 
-                  <strong>Facilities for Electrical Engineering Practices</strong> <li> Assorted electrical components for house wiring 15 Sets
-                    Electrical measuring instruments 10 Sets,
-                    Study purpose items: Iron box, fan and regulator, emergency lamp 1 each
-                    Megger (250V/500V) 1 No.
-                    Power Tools:
-                    Range Finder 2 Nos,
-                    Digital Live-wire detector 2 Nos,
-                    4.Facilities for Electronics Engineering Practices,
-                    Soldering guns 10 Nos,
-                    Assorted electronic components for making circuits 50 Nos,
-                    Small PCBs 10 Nos,
-                    Multimeters 10 Nos,
-                    Study purpose items: Telephone, FM radio, low-voltage power,
-                    Faculty In-charge:</li> 
-                  <strong>Facilities for Electronics Engineering Practices</strong> <li> Soldering guns 10 Nos,
-                    Assorted electronic components for making circuits 50 Nos,
-                    Small PCBs 10 Nos,
-                    Multimeters 10 Nos,
-                    Study purpose items: Telephone, FM radio, low-voltage power</li>  
+                  <h3>Microwave And Fiber Optics</h3>
+                   <strong>Experiments</strong> <li> To analyze the performance of simple optical link,
+                    To Test microwave and optical components,
+                    To analyze the mode characteristics of fiber,
+                    To analyze the radiation of pattern of antenna,
+                    To Formulate the S-Parameters for Microwave components,</li>
+                  <strong>Equipments</strong> <li> Klystron Test Bench(X-Band),
+                    Gunn Oscillator Test Bench(X-Band),
+                    Advanced fiber Optic trainer Kit,
+                    Single Mode Fiber Characteristics Trainer</li> 
                 </div>
                 <div class="col-lg-4 text-center order-1 order-lg-2">
                   <img src="assets/img/CSE/BD.jpg" alt="" class="img-fluid">
@@ -643,138 +544,138 @@
               </div>
               <div class="row">
                 <div class="col-lg-8 details order-2 order-lg-1">
-                  <h3>CADEM CENTRE</h3>
-                  <strong>Experiments</strong> <li> CADEM Centre is established to impart practical experience in handling 2D drafting and 3D modeling software. To understand the features of CNC Machine tool and to know the application of various CNC machines like CNC lathe, CNC Vertical Machining centre. To give exposure to software tools needed to analyze engineering problems. To expose the students to different applications of simulation and analysis tools. Students of Mechanical Engineering program use the center for laboratory courses like Computer Aided Machine Drawing, Computer Aided Design and Computer Aided Manufacturing lab, Simulation and Analysis laboratory and Interpersonal skill & listening and speaking laboratory as per their curriculum. They also use this centre for the preparation of Technical Seminar laboratory, mini project and main project.</li>
-                  <strong>Equipments</strong> <li> 
-                    CNC Lathe,
-                    CNC Vertical Milling Machine,
-                    Desktops 61 Nos,
-                    CreO License 50 Nos,
-                    ANSYS License 50 Nos,
-                    LCD Projector,
-                    Adequate no of head sets,
-                    Internet and Intranet Connectivity,
-                    Wi-fi Facility,
-                    Document scanner and copier</li> 
+                  <h3>Embedded System Laboratory</h3>
+                  <strong>Experiments</strong> <li> To Learn the working of ARM processor,
+                    To Understand the Building Blocks of Embedded Systems,
+                    To Learn the concept of memory map and memory interface,
+                    To Know the characteristics of Real Time Systems,
+                    To Write programs to interface memory, I/Os with processor,
+                    To Study the interrupt performance</li>
+                  <strong>Equipments</strong> <li> Embedded trainer kits with ARM board,
+                    ARM CORTEX M3,
+                    Zigbee Module, Temperature sensor for Embedded trainer kits,
+                    Stepper Motor, Keyboard, LCD, ADC, DAC Starter Kit,
+                    On Board RTC & Serial port using UART Interface,
+                    On Board EEPROM Interface & Interrupt,
+                    On-chip PWM Interface</li> 
                 </div>
                 <div class="col-lg-4 text-center order-1 order-lg-2">
                   <img src="assets/img/CSE/BD.jpg" alt="" class="img-fluid">
                 </div>
               </div>
-              
-              
-              
-            </div>
-
-           
-            <div class="tab-pane" id="tab-5">
-              <div class="row">
-                <div class="col-lg-8 details order-2 order-lg-1">
-                  
-<!-- ======= Resume Section ======= -->
-<section id="resume" class="resume">
-  <div class="container">
-
-
-
-    <div class="row">
-      <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
-        <h3 class="resume-title">Industrial Visit</h3>
-        <div class="resume-item">
-          <h4>Department of Mechanical Engineering</h4>
-          <h5>2019</h5>
           
-          <ul>
-            <li> Civil engineering students Industrial Visit on Alipuram Erectors, Kollam on 01/10/2019.</li>
-            <li> Civil engineering students Industrial Visit on Bridge Project, Azhikal on 03/10/2019. </li>
-            <li> Stella Mary’s civil engineering students Two days industrial visit to various sites for at Moonar, Wayanad on 22/02/2019.</li>
-            <li> Three days Educational Tour was organized to Wayanad, Moonar, and Kochi on 12/03/2019.</li>
-            <li> One day industrial visit to Neyyar dam and Pechiparai on 02/03/2019.</li>
-          </ul>
-        </div>
-        <div class="resume-item">
-        
-          <h5>2018</h5>
-          
-          <ul>
-            <li>SMCE students Industrial Visit on Seshasayee. Paper &boards ltd on 08-09-2018.</li>
-            <li>Industrial Visit on Road Construction in hilly areas at kodaikanal on 03/08/18.</li>
-            <li>Industrial Visit on Road Construction in hilly areas at kodaikanal on 01/09/18.</li>
-            <li>Industrial visit Seshasayee.paper &boards ltd.unit on 28/07/2018.</li>
-            <li>Educational visit to Sankar Cement factory on 17/03/2018.</li>
-            <li>Industrial Visit 1.Educational visit to SPK and Co.,Kapallur, Madurai on 12/03/2018.</li>
-            <li>Five days Eduactional Tour was Organised at Thekadi,Iduki,Mummar, Ooty, Kochin on 17/02/2018.</li>
-          </ul>
-        </div>
-        <div class="resume-item">
-          <h5>2017</h5>
-          <ul>
-            <li>Industrial Visit on Precast Production Company, Nagercoil on 08-08-2017.</li>
-            <li>Industrial visit to Pechiparai dam, Puthen Dam , Perunchani Dam(Drainage gallery visit for the students) Mathur Thottipalam (Aqueduct) on 16/09/2017.</li>
-            <li>Industrial Visit Our students visited SH-46 Road work. Nagercoil on 16/09/2017.</li>
-          </ul>
-        </div>
-        <div class="resume-item">
-          <h5>2016</h5>
-          <ul>
-            <li>One day industrial visit to cement factory, Tirunelveli on 16/08/2016.</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section><!-- End Resume Section -->
-
-
             </div>
-              </div>
-            </div>
-            <div class="tab-pane" id="tab-6">
+            <!--<div class="tab-pane" id="tab-5">
               <div class="row">
                 <div class="col-lg-12 details order-2 order-lg-1">
                   <h3>Achievements</h3>
-                  <!-- Default Accordion -->
+                  <p class="fst-italic">Omnis blanditiis saepe eos autem qui sunt debitis porro quia.</p>
+                  <p>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae ut non quam ut quod eius qui. Ipsum quia odit vero atque qui quibusdam amet. Occaecati sed est sint aut vitae molestiae voluptate vel</p>
+                 
               <div class="accordion" id="accordionExample">
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingOne">
                     <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      2019-2020
+                      2021
                     </button>
                   </h2>
                   <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                      <strong>M.S. Deva - Techincal Symposium Mechanize 19</strong> <li>won I  Prize in Pencil Drawing, held on 18-09-2019 organised by Bethlahem Institute of Engineering </li>
-                      <strong>A.Vigneshwar - Techincal Symposium Mechanize 19</strong> <li>Won II Prize in Mind Game held on 18-09-2019 organized by Bethlahem Institute of Engineering</li>
-                      <strong>Eldison	- Technical Symposium Cynosure 19</strong> <li>Won II Prize in a Mobile Competition held on 20-09-2019 organized by Stella Marys College of Engineering</li>
-                      <strong>M.S. Deva	- Technical Symposium Flaaga 19</strong> <li>Won II Prize in Pencil Sketching held on 31-08-2019 organized by Loyola Institute of Technology</li>
-                      <strong>R.K.Obisian	- Thekkan Kalari Varma Adimurai Silambam</strong> <li>Won I Prize in Pencil Sketching held on 25-01-2020 organized by Thekkan Kalari Varma Adimurai Silambam Tamilnadu Kalarippayattu Association,Coimbatore</li>
+                      <strong>All the computer science department students</strong> <li> haveparticipated in the Lecture Series on “ Mobile Application Development using Android Studio “ held on 22-05-2021 organized by Institution’s Innovative Councilin association with Department of Computer Science andEngineering,Stella Mary’s College of Engineering.</li>
+                      <strong>All the computer science department students</strong> <li>have participated in the Lecture Serieson “ InnovationinNetworkSimulationusingNS2 ” held on 29-05-2021 organized by Institution’s Innovative Councilin association with Department of Computer Science andEngineering,Stella Mary’s College of Engineering. </li>
+                      <strong>All the computer science department students</strong> <li> have participated in the Lecture Series on “Opportunities inSoftware Testing ”held on 21-05-2021 organized by Institution’s Innovative Councilin association with Department of Computer Science and Engineering, StellaMary’s College of Engineering.</li>
                       
-
+                    
                     </div>
                   </div>
                 </div>
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingTwo">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      2018-19
+                      2020
                     </button>
                   </h2>
                   <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                      <strong>J John Benjamin, Reslin R - Techincal Symposium Mechanize 18</strong> <li>won II  Prize in Water Rocketry, held on 28-09-2018 organised by Bethlahem Institute of Engineering </li>
-                      <strong>Jinu Kumar J K - Techincal Symposium Mechanize 18</strong> <li>Won I Prize in Best Engineer held on 18-09-2019 organized by Bethlahem Institute of Engineering</li>
-                      <strong>K.Surya, A. MuthuMani - National Techincal Symposium “MECHRAND 2K19”</strong> <li>Won II Prize in paper presentation held on 02-02-2019 organized by Ponjesly College of Engineering</li>
-                      <strong>A.Vigneshwar - National Techincal Symposium “MECHRAND 2K19”</strong> <li>Won I Prize in just a minute held on 02-02-2019 organized by Ponjesly College of Engineering</li>
-                      <strong>R.R.Rohith	- 3rd Kanyakumari book fair-2019</strong> <li>Won I Prize in Pencil Sketching held on 25-02-2019</li>
+                      <strong>K.Lakshmi Prabha</strong> <li> second year CSE participated a Webinar on "DEVOPS" organized by Star Certification on 11th May 2020.</li>
+                      <strong>J.ShaksiyaBrindha Mol</strong> <li> second year CSE participated in a Webinar on "Data Science for Engineers" organized by Sri Eswar College of Engineering, Coimbatore on 13th May 2020.</li>
+                      <strong>J.ShaksiyaBrindha Mol</strong> <li> econd year CSE participated in a Webinar on "Artificial Intelligence and Machine Learning" organized by Sri Eswar College of Engineering, Coimbatore on 14th May 2020.</li>
+                      <strong>All the students of Computer Science Department</strong> <li> have attended One Day Live Webinar on "Employability Skills for the Future” presented by Mr. Daniel Jacob, Vice President, HR EC Group International on 20th May 2020.</li>
+                      <strong>All the students of Computer Science Department</strong> <li> have attended one day Live Webinar on "Data Science and its Applications” presented by Mr.DilipMuralidaran, Senior Technical Instructor, Splunk on 9th June 2020.</li>
+                      <strong>All the students of Computer Science Department</strong> <li> have attended one day Live Webinar on "Internet of Things” presented by Mr. Solomon Ashok, Director, Splendio Technologies on 18th June 2020.</li>
+                      <strong>All the students of Computer Science Department</strong> <li> have attended one day Live Webinar on "Explore Yourselves in Real time Projects” presented by Mrs. Sandhi Durairaj on 18th June 2020.</li>
+                      <strong>Dhamodaran.N</strong> <li> third year student won first prize inDebugging held at St.Xavier's College of Engineering on7th February 2020.</li>
+                      <strong>Renold.A</strong> <li>third year student won second prize in WebDesigning held at St.John's College of Arts and Science on11th February 2020. </li>
+                      <strong>Dhamodaran.N</strong> <li> third year student won second prize inSmart Coding held at St.John's College of Arts and Scienceon 11th February 2020.</li>
+                      <strong>Ashik Christo Mourin.M</strong> <li>second year student won firstprize in Paper Presentation and Cinematography held atPonjesly College of Engineering on 22nd February 2020. </li>
+                      <strong>Dhamodaran.N</strong> <li> third year student won first prize inCode Debugging held at Ponjesly College of Engineeringon 22nd February 2020.</li>
+                      <strong>Ashik Christo Mourin.M</strong> <li> second year student wonsecond prize in Project Presentation held at PonjeslyCollege of Engineering on 22nd February 2020.</li>
+                      <strong>Dhamodaran.N</strong> <li>third year student won second prize inWeb Designing and Technical Quiz held at PonjeslyCollege of Engineering on 22nd February 2020. </li>
+                  
+
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      2019
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>M.Jayindra, K.Lakshmi Prabha</strong> <li> second year haveparticipated and presented a paper as a part ofKRYPTOZ in Mar Ephraem College of Engineeringon 8th August 2019.</li>
+                      <strong>Minisha P.M</strong> <li> of final year presented a paper entitled"Sentimental Analysis of Twitter Data" in BethlehemCollege of Engineering on 9th August 2019.</li>
+                      <strong>K.Lakshmi Prabha</strong> <li>second year has participatedand presented a paper in Bethlehem College Of Engineering on 9th August 2019. </li>
+                      <strong>Minisha P.M </strong> <li> final year presented a paper entitled"Sentimental Analysis of Twitter Data " in LoyalaInstitute of Technology on 31st August 2019.</li>
+                      <strong>Ashik Christo Mourin.M</strong> <li> ofthird year presented a paperentitled "Integration of CloudComputing with Internet ofThings" and won second prizein Loyala Institute ofTechnology on 31st August2019.</li>
+                      <strong>Minisha M.P</strong> <li> third year student presented a paper entitled“Sentimental Analysis of Twitter Data" and secured first prize inStella Mary's College of Engineering, Azhikal on 20th February2019.</li>
+                      <strong>Minisha M.P</strong> <li> third year has participated and secured third prize in Tech Talk, National Level Technical Symposium held at Stella Mary’s College of Engineering on 20th February 2019.</li>
+                      <strong>Akshai.R</strong> <li>third year student presented a paper entitled"Crossed-Dipole Arrays for DS-CDMA Systems" held at PonjeslyCollege of Engineering on 2nd February 2019. </li>
+                      <strong>J. Joel David</strong> <li> third year student presented a paper entitled "Riskbased Estimation of Manufacturing Order Cost with ArtificialIntelligence" in Ponjesly College of Engineering on 2nd February2019.</li>
+                      <strong>Minisha.M.P</strong> <li> third year has participated and secured first prizein the paper presentation in Just a Minute & Quiz, National LevelTechnical Symposium held at Ponjesly College of Engineering on2nd February 2019.</li>
+                      <strong>J.Joel David</strong> <li> third year has participated and secured secondprize in Photography, National Level Technical Symposium held atRajas College of Engineering on 2nd February 2019. </li>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      2018
+                    </button>
+                  </h2>
+                  <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>B.Aishwarya</strong> <li> third year student presented a PaperPresentation on 5G Wireless Technology, National LevelTechnical Symposium held at Rajas International Instituteof Technology on 5th October 2018.</li>
+                      <strong>B.Aishwarya</strong> <li> third Year has participated and securedfirst prize in Code Debugging, National Level TechnicalSymposium held at Rajas College of Engineering on 5thOctober 2018.</li>
+                      <strong>B.Aishwarya</strong> <li> third year student presented a paper entitled "A Smart Home Energy Management System Using Big Data Analytics" on National Level Technical Symposium in Rajas International Institute of Technology on 28th September 2018.</li>
+                      <strong>Ajini A.V</strong> <li> Final year student got third place in Technical Quiz organized by Rohini college Of Engineering &Technology on 20th March 2018.</li>
+                      <strong>Ajini A.V</strong> <li> Final year student got second place in paper presentation in National Level Technical Symposium held at Kalaivanar N.S.K College of Engineering on 16th March 2018.</li>
+                      <strong>A.George Stalin Britto</strong> <li> Final year student wonfirst prize in ElocutionCompetition held at St.Hindu College,Nagercoil (NationalVoters Day on 25thJanuary 2018).</li>
                       
                     </div>
                   </div>
                 </div>
-                
-                
-                
-                <!--<div class="accordion-item">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                      2017
+                    </button>
+                  </h2>
+                  <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>Archana Vijayan and Catherine SethiRaj.K</strong> <li>secondyear have participated and presented a paper entitled"Location Privacy preserving using Semi-TTP Server" inHeera College of Engineering and Technology,Trivandrum on 11th September 2017. </li>
+                      <strong>Artheya R.S, Prabha.S and Priyanka Lidiya.P</strong> <li>secondyear have participated and presented a paper entitled "ANew Method of Text Categorization and Summarizationwith Fuzzy Confusion Matrix" in Heera College ofEngineering and Technology, Trivandrum on 11thSeptember 2017. </li>
+                      <strong>Ashwini Priya.J, JeyaBrintha.M.R</strong> <li> hird year have participated and presented a paper entitled "Novel Algorithm for Finding the Closest l-mers in Biological Data" and secured second prize held at Marian Engineering College, Trivandrum on 4th September 2017.</li>
+                      <strong>M.SornaRevathy and W.SherlinVivitha</strong> <li>Second year students presented a paper entitled "Effective Method for Energy Saving" in Rohini College of Engineering on 21st February 2017. </li>
+                      <strong>M.SoranaRevathy and W.SherlinVivitha</strong> <li> Second yearstudents presented a paper entitled "Effective Method forEnergy Saving" in Arunachala College of Engineering forWomen on 25th January 2017.</li>
+                      <strong>Sheeba Ann Thomas and SahayaNishanthini.M</strong> <li> Finalyear students presented a paper entitled "A Real Time EventDetection and Notification Listing Social Media" inArunachala College of Engineering for Women on 25thJanuary 2017.</li>
+                      <strong>Ajini.A.V and Gokul Priya.C</strong> <li> third year studentspresented a paper entitled "Security Issues IRV6:AComprehensive Overview" in Arunachala College ofEngineering for Women on 25th January 2017.</li>
+                     
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
                   <h2 class="accordion-header" id="headingSix">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
                       2016
@@ -796,15 +697,73 @@
                       <strong>Third year CSE girls</strong> <li>attended one day workshop on "Mobile Application Development” organized by Arunachala College of Engineering on 8th February 2016. </li>
                     </div>
                   </div>
-                </div>-->
-              </div><!-- End Default Accordion Example -->
+                </div>
+              </div>
                 
                 </div>
                 <div class="col-lg-4 text-center order-1 order-lg-2">
                   <img src="assets/img/course-details-tab-5.png" alt="" class="img-fluid">
                 </div>
               </div>
+            </div>-->
+
+
+
+            <div class="tab-pane" id="tab-6">
+              <div class="row">
+                <div class="col-lg-8 details order-2 order-lg-1">
+                  
+<!-- ======= Resume Section ======= -->
+<section id="resume" class="resume">
+  <div class="container">
+
+
+
+    <div class="row">
+      <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
+        <h3 class="resume-title">Industrial Visit</h3>
+        <div class="resume-item">
+          <h4>Department of Electronics and Communication Engineering</h4>
+          <h5>2019</h5>
+          
+          <ul>
+            <li> Our Third year and Final year students visited Caliber Interconnect Solutions Coimbatore on 24/08/2019. About Caliber Interconnect Solutions they are the leading IC testing and designing core based company.</li>
+          </ul>
+        </div>
+        <div class="resume-item">
+        
+          <h5>2018</h5>
+          
+          <ul>
+            <li>Our Second year and third year students visited Signals and Systems, Chennai on 30/09/2018 and 01/10/2018. About Signals and Systems they are the manufactures for Synchronous clock and Energy meters. Students get good exposure about Synchronous clock.</li>
+            <li>Students from third year visited Traco cable company Limited, Ernakulam on 01/03/2018.About Traco cable Company; it has the product mix overhead conductors,power cables,control and signaling cables.This company has the customers like various Electricity Boards,BSNL and ESCOMS of other states</li>
+          </ul>
+        </div>
+        <div class="resume-item">
+          <h5>2017</h5>
+          <ul>
+            <li>Our Second year and third year students along with faculty members of ECE department visited Vikram Sarabhai Space Centre,Trivandrum on 24/03/2017as a part of Industrial - Institute Interaction, The students witnessed the rocket launching session organised by VSSC and that really inspired the students.</li>
+            <li>Our final year students visited Kirloskar Brothers Private Ltd; Coimbatore on 23/02/2017.Students got more ideas related to manufacturing and testing of electronic components.</li>
+          </ul>
+        </div>
+        <div class="resume-item">
+          <h5>2015</h5>
+          <ul>
+            <li>Our third year students visited KELTRON; Trivandrum on 23/09/2015.It produces discrete electronics components for complex equipment and systems.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section><!-- End Resume Section -->
+
+
             </div>
+              </div>
+            </div>
+
+            
             <div class="tab-pane" id="tab-7">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
@@ -815,13 +774,13 @@
               <div class="col-md-6 col-lg-4 d-flex align-items-center mb-5 mb-lg-0">
                 <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
                   <div class="icon"><i class="bx bx-world"></i></div>
-                  <h4 class="title"><a href="https://webdocs.pages.dev/assets/docs/mech/syllabus/2021.pdf">Regulation 2021</a></h4>
+                  <h4 class="title"><a href="https://webdocs.pages.dev/assets/docs/ece/syllabus/2021.pdf">Regulation 2021</a></h4>
                   </div>
               </div>
               <div class="col-md-6 col-lg-4 d-md-flex align-items-stretch mb-lg-0 mb-lg-0">
                 <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
                   <div class="icon"><i class="bx bx-world"></i></div>
-                  <h4 class="title"><a href="https://webdocs.pages.dev/assets/docs/mech/syllabus/2017.pdf">Regulation 2017</a></h4>
+                  <h4 class="title"><a href="https://webdocs.pages.dev/assets/docs/ece/syllabus/2017.pdf">Regulation 2017</a></h4>
                   </div>
                 </div>
             </div>
@@ -839,13 +798,13 @@
               <div class="col-md-7 col-lg-5 d-flex align-items-center mb-5 mb-lg-0">
                 <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
                   <div class="icon"><i class="bx bi-journal-richtext"></i></div>
-                  <h4 class="title"><a href="">Programme Outcomes</a></h4>
+                  <h4 class="title"><a href="https://webdocs.pages.dev/assets/docs/ece/po/Programme-Outcomes.pdf">Programme Outcomes</a></h4>
                   </div>
               </div>
               <div class="col-md-7 col-lg-5 d-md-flex align-items-stretch mb-lg-0 mb-lg-0">
                 <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
                   <div class="icon"><i class="bx bi-journal-richtext"></i></div>
-                  <h4 class="title"><a href="">Program Specfic Outcomes</a></h4>
+                  <h4 class="title"><a href="https://webdocs.pages.dev/assets/docs/ece/po/PSO-ECE.pdf">Program Specfic Outcomes</a></h4>
                   </div>
                 </div>
             </div>
@@ -863,43 +822,43 @@
               <div class="col-md-6 col-lg-5 d-flex align-items-center mb-5 mb-lg-0">
                 <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
                   <div class="icon"><i class="bx bi-calendar4-week"></i></div>
-                  <h4 class="title"><a href="https://webdocs.pages.dev/assets/docs/mech/calender/Mech-2018-19-Odd.pdf">2018-19 ODD</a></h4>
+                  <h4 class="title"><a href="">2018-19 ODD</a></h4>
                 </div>
               </div>
               <div class="col-md-6 col-lg-5 d-md-flex align-items-stretch mb-lg-0 mb-lg-0">
                 <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
                   <div class="icon"><i class="bx bi-calendar4-week"></i></div>
-                  <h4 class="title"><a href="https://webdocs.pages.dev/assets/docs/mech/calender/Mech-2018-19-Even.pdf">2018-19 EVEN</a></h4>
+                  <h4 class="title"><a href="">2018-19 EVEN</a></h4>
                 </div>
               </div>
               <div class="col-md-6 col-lg-5 d-flex align-items-center mb-5 mb-lg-0">
                 <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
                   <div class="icon"><i class="bx bi-calendar4-week"></i></div>
-                  <h4 class="title"><a href="https://webdocs.pages.dev/assets/docs/mech/calender/Mech-2019-20-Odd.pdf">2019-20 ODD</a></h4>
+                  <h4 class="title"><a href="">2019-20 ODD</a></h4>
                 </div>
               </div>
               <div class="col-md-6 col-lg-5 d-md-flex align-items-stretch mb-lg-0 mb-lg-0">
                 <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
                   <div class="icon"><i class="bx bi-calendar4-week"></i></div>
-                  <h4 class="title"><a href="https://webdocs.pages.dev/assets/docs/mech/calender/Mech-2019-20-Even.pdf">2019-20 EVEN</a></h4>
+                  <h4 class="title"><a href="">2019-20 EVEN</a></h4>
                 </div>
               </div>
               <div class="col-md-6 col-lg-5 d-flex align-items-center mb-5 mb-lg-0">
                 <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
                   <div class="icon"><i class="bx bi-calendar4-week"></i></div>
-                  <h4 class="title"><a href="https://webdocs.pages.dev/assets/docs/mech/calender/Mech-2020-21-Odd.pdf">2020-21 ODD</a></h4>
+                  <h4 class="title"><a href="">2020-21 ODD</a></h4>
                 </div>
               </div>
               <div class="col-md-6 col-lg-5 d-md-flex align-items-stretch mb-lg-0 mb-lg-0">
                 <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
                   <div class="icon"><i class="bx bi-calendar4-week"></i></div>
-                  <h4 class="title"><a href="https://webdocs.pages.dev/assets/docs/mech/calender/Mech-2020-21-Even.pdf">2020-21 EVEN</a></h4>
+                  <h4 class="title"><a href="">2020-21 EVEN</a></h4>
                 </div>
               </div>
               <div class="col-md-6 col-lg-5 d-md-flex align-items-stretch mb-lg-0 mb-lg-0">
                 <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
                   <div class="icon"><i class="bx bi-calendar4-week"></i></div>
-                  <h4 class="title"><a href="https://webdocs.pages.dev/assets/docs/mech/calender/Mech-2021-22-Odd.pdf">2021-22 ODD</a></h4>
+                  <h4 class="title"><a href="">2021-22 ODD</a></h4>
                 </div>
               </div>
               <div class="col-md-6 col-lg-5 d-flex align-items-center mb-5 mb-lg-0">
@@ -951,40 +910,40 @@
                             <div class="col-lg-3 col-md-4">
                               <div class="icon-box">
                                 <i class="ri-calendar-todo-line" style="color: #ffbb2c;"></i>
-                                <h3><a href="https://webdocs.pages.dev/assets/docs/mech/newsletter/Mevolume1issue1.pdf">Volume I, Issue 1 : June-Dec 2017</a></h3>
+                                <h3><a href="">APRIL 2016</a></h3>
                               </div>
                             </div>
                             <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
                               <div class="icon-box">
                                 <i class="ri-calendar-todo-line" style="color: #5578ff;"></i>
-                                <h3><a href="https://webdocs.pages.dev/assets/docs/mech/newsletter/Mevolume2issue2.pdf">Volume I, Issue 2 : Jan-May 2018</a></h3>
+                                <h3><a href="">NOVEMBER 2016</a></h3>
                               </div>
                             </div>
                             <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
                               <div class="icon-box">
                                 <i class="ri-calendar-todo-line" style="color: #e80368;"></i>
-                                <h3><a href="https://webdocs.pages.dev/assets/docs/mech/newsletter/Mevolumeissue3.pdf">Volume II, Issue 3 : June-Dec 2018</a></h3>
+                                <h3><a href="">APRIL 2017</a></h3>
                               </div>
                             </div>
                             <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
                               <div class="icon-box">
                                 <i class="ri-calendar-todo-line" style="color: #e361ff;"></i>
-                                <h3><a href="https://webdocs.pages.dev/assets/docs/mech/newsletter/Mevolume2issue4.pdf">Volume II, Issue 4 : Jan-May 2019</a></h3>
+                                <h3><a href="">NOVEMBER 2017</a></h3>
                               </div>
                             </div>
                             <div class="col-lg-3 col-md-4 mt-4">
                               <div class="icon-box">
                                 <i class="ri-calendar-todo-line" style="color: #47aeff;"></i>
-                                <h3><a href="https://webdocs.pages.dev/assets/docs/mech/newsletter/Mevolumeissue5.pdf">Volume III, Issue 5 : June-Dec 2019</a></h3>
+                                <h3><a href="">APRIL 2018</a></h3>
                               </div>
                             </div>
                             <div class="col-lg-3 col-md-4 mt-4">
                               <div class="icon-box">
                                 <i class="ri-calendar-todo-line" style="color: #ffa76e;"></i>
-                                <h3><a href="https://webdocs.pages.dev/assets/docs/mech/newsletter/Mevolume2issue6.pdf">Volume III, Issue 6 : Jan-May 2020</a></h3>
+                                <h3><a href="">NOVEMBER 2018</a></h3>
                               </div>
                             </div>
-                            <!--<div class="col-lg-3 col-md-4 mt-4">
+                            <div class="col-lg-3 col-md-4 mt-4">
                               <div class="icon-box">
                                 <i class="ri-calendar-todo-line" style="color: #11dbcf;"></i>
                                 <h3><a href="">APRIL 2019</a></h3>
@@ -1019,7 +978,7 @@
                                 <i class="ri-calendar-todo-line" style="color: #29cc61;"></i>
                                 <h3><a href="">NOVEMBER 2021</a></h3>
                               </div>
-                            </div>-->
+                            </div>
                           </div>
                   
                         </div>
@@ -1032,7 +991,7 @@
                                 <div class="container">
                           
                                   <div class="section-title" data-aos="fade-up">
-                                    <h2>Magazine</h2>
+                                    <h2>Brochure</h2>
                                     <!--<p>Necessitatibus eius consequatur ex aliquid fuga eum quidem</p>-->
                                   </div>
                           
@@ -1040,22 +999,22 @@
                                     <div class="col-lg-3 col-md-4">
                                       <div class="icon-box">
                                         <i class="ri-file-list-3-line" style="color: #ffbb2c;"></i>
-                                        <h3><a href="https://webdocs.pages.dev/assets/docs/mech/magazine/2017-18.pdf">2017-2018</a></h3>
+                                        <h3><a href="">AJAX BASICS</a></h3>
                                       </div>
                                     </div>
                                     <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
                                       <div class="icon-box">
                                         <i class="ri-file-list-3-line" style="color: #5578ff;"></i>
-                                        <h3><a href="https://webdocs.pages.dev/assets/docs/mech/magazine/2018-19.pdf">2018-2019</a></h3>
+                                        <h3><a href="">BOOTSTRAP</a></h3>
                                       </div>
                                     </div>
                                     <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
                                       <div class="icon-box">
                                         <i class="ri-database-2-line" style="color: #e80368;"></i>
-                                        <h3><a href="https://webdocs.pages.dev/assets/docs/mech/magazine/2019-20.pdf">2019-2020</a></h3>
+                                        <h3><a href="">HADOOP</a></h3>
                                       </div>
                                     </div>
-                                    <!--<div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
+                                    <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
                                       <div class="icon-box">
                                         <i class="ri-file-list-3-line" style="color: #e361ff;"></i>
                                         <h3><a href="">MACHINE LEARNING AND DATA ANALYTICS</a></h3>
@@ -1102,7 +1061,7 @@
                                         <i class="ri-check-double-line" style="color: #ff5828;"></i>
                                         <h3><a href="">WEB DEVELOPMENT</a></h3>
                                       </div>
-                                    </div>-->
+                                    </div>
                                   </div>
                           
                                 </div>

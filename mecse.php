@@ -1,3 +1,14 @@
+<?php
+$servername = "172.18.0.1";
+$username = "root";
+$password = "root";
+$db="mysql";
+$port="33070";  
+$dbcon = mysqli_connect($servername, $username, $password,$db,$port);
+if (!$dbcon) {
+    die("Connection failed: " .  mysqli_connect_error());
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -134,22 +145,13 @@
     </div>
   </header><!-- End Header -->
 
-  <main id="main" class="text-justify">
-
-    <!-- ======= Breadcrumbs Section ======= -->
-    <section class="breadcrumbs">
-      <div class="container">
-
-        <div class="container">
-          <h2>Electrical and Electronics Engineering</h2>
-        <p>Department focuses on the study and application of electrical principles, systems, and devices to design, develop, and optimize power generation, distribution, and electronic systems for various industries and applications.</p>
-      </div>
-
-      </div>
-    </section><!-- End Breadcrumbs Section -->
-
-    
-     
+  <main id="main">
+<!-- ======= Breadcrumbs ======= -->
+<div class="breadcrumbs" data-aos="fade-in">
+    <div class="container">
+      <h2>M.E Computer Science and Engineering</h2>
+      <p>Department focuses on the study and application of computing technologies, algorithms, and software systems to solve complex problems and drive technological innovation. </p>
+    </div>
   </div><!-- End Breadcrumbs -->
 
   <!-- ======= Cource Details Section ======= -->
@@ -157,36 +159,41 @@
     <div class="container" data-aos="fade-up">
 
       <div class="row">
-        <div class="col-lg-7">
-          <img src="https://webdocs.pages.dev/assets/img/eee/eee.jpg" class="img-fluid" alt="">
+        <div class="col-lg-8">
+          <img src="assets/img/cse.jpg" class="img-fluid" alt="">
           
         </div>
         <div class="col-lg-4">
 
           <div class="course-info d-flex justify-content-between align-items-center">
             <h5>Head of the Department</h5>
-            <p><a href="#"><Dr class="Gayathri"></Dr></a></p>
+            <p><a href="#">Dr.F.R.Shiny Malar</a></p>
           </div>
 
           <div class="course-info d-flex justify-content-between align-items-center">
             <h5>Total Intake</h5>
-            <p>120</p>
+            <p>24</p>
           </div>
 
           <div class="course-info d-flex justify-content-between align-items-center">
-            <h5>Happy Students</h5>
-            <p>200</p>
+            <h5>Budding Engineers</h5>
+            <p>20</p>
           </div>
 
           <div class="course-info d-flex justify-content-between align-items-center">
             <h5>Proud Alumni</h5>
-            <p>250</p>
+            <p>24</p>
           </div>
 
         </div>
         <h3> Overview</h3>
-          <p>Electrical & Electronics Engineering broadly involves electricity, electromagnetism and electronics. It is one of the fundamental branches of science and technology on which all other modern branches of engineering have evolved from. Electrical and Electronics engineers work in a variety of fields including power sector, machine design, renewable energy sector, biomedical engineering, aerospace industry, communications industry and information technology.
-            </p>
+          <p>
+            The Department of Computer Science and Engineering was started in the year 2013. The strengths of the department include its high faculty-to-student ratio, state of the art facilities, renowned faculty, strong focus on undergraduate education balanced with leading-edge research, and emphasis on leadership, service, community and teamwork.
+
+The Department strives with an outlined vision in producing socially responsible and employable engineers. It has a team of well qualified and highly experienced faculty members and technical staff who deliver their skills to the students through 360◦ teaching-learning environment which includes deployment of Module, Video Tutorials from NPTEL.
+
+The faculty members impart knowledge through curriculum based formal education and industry focused informal education which enhances the aptitude and reasoning skills of the students to make them readily employable. We strive for academic excellence in Computer Science and Engineering through a creative teaching-learning process. We create centers of excellence in leading areas of Computer Science and Engineering and transform students into technically competent, socially responsible and ethical Computer Science professionals. We incubate, apply and spread innovative ideas by collaborating with relevant industries. We attain these through continuous team work by a group of committed faculty, transforming the Computer Science and Engineering department as a leader in imparting Computer Science and Engineering education.
+          </p>
       </div>
 
     </div>
@@ -215,22 +222,19 @@
               <a class="nav-link" data-bs-toggle="tab" href="#tab-5">Achievements</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" data-bs-toggle="tab" href="#tab-6">Industrial Visit</a>
+              <a class="nav-link" data-bs-toggle="tab" href="#tab-6">Syllabus</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" data-bs-toggle="tab" href="#tab-7">Syllabus</a>
+              <a class="nav-link" data-bs-toggle="tab" href="#tab-7">Program Outcome</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" data-bs-toggle="tab" href="#tab-8">Program Outcome</a>
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-8">Calender</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#tab-9">Calender</a>
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-9">Newsletter</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#tab-10">Newsletter</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#tab-11">Brochure</a>
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-10">Brochure</a>
             </li>
           </ul>
         </div>
@@ -247,7 +251,7 @@
               <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
                 <div class="icon"><i class="bx bxl-dribbble"></i></div>
                 <h4 class="title"><a href="">VISION</a></h4>
-                <p class="description">To transform the rural student community into internationally competent electrical engineers by providing a venue for resourceful teaching learning process, research and inculcating human values.</p>
+                <p class="description">To produce Computer Science professionals who can accomplish path-breaking solutions for a better society, through quality technical education, on gaining the required inter- personal, entrepreneurial and computing skills.</p>
               </div>
             </div>
   
@@ -255,11 +259,10 @@
               <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
                 <div class="icon"><i class="bx bx-file"></i></div>
                 <h4 class="title"><a href="">MISSION</a></h4>
-                <li>By empowering the graduates with superior knowledge and technical skills in Electrical and Electronics Engineering.</li>
-                <li>By evaluating, synthesizing, and applying scientific and electrical engineering principles to deal with industrial problems by means of creative research.</li>
-                <li>By producing technically competent graduates who are able to offer practicable solutions to meet the energy scarcity of the nation.</li>
-                <li>By facilitating the students to become experts and entrepreneurs to resolve technologies of the electrical & allied engineering with the motive of developing the society.</li>
-                  
+                <li>To impart a holistic and experiential learning experience by making use of innovative teaching methodologies.</li>
+                <li>To provide optimal technology solutions through collaborative and life-long learning for industry and societal needs with universal ethical values.</li>
+                <li>To nurture leadership skills and facilitate various co-curricular and extra-curricular activities to implant the spirit of entrepreneurship.</li>
+                <li>To provide industry-institute-interaction opportunities in order to motivate inter-disciplinary research capabilities with an inquiring mind.</li>
               </div>
             </div>
   
@@ -268,7 +271,7 @@
         </div>
       </section><!-- End Services Section --></div>
                 <div class="col-lg-4 text-center order-1 order-lg-2">
-                  <img src="assets/img/course-details-tab-1.png" alt="" class="img-fluid">
+                  <img src="https://webdocs.pages.dev/assets/img/mecse/mecse.jpeg" alt="" class="img-fluid">
                 </div>
               </div>
             </div>
@@ -280,63 +283,44 @@
   
           <div class="section-title" data-aos="fade-up">
             <h2>Teaching Faculty</h2>
-            <p>The pillars of Electronics and Communication Engineering</p>
+            <p>The pillars of Computert Science and Engineering</p>
           </div>
   
           <div class="row justify-content-center">
-            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-              <div class="member" data-aos="fade-up" data-aos-delay="100">
-                <div class="member-img">
-                  <img src="assets/img/CIVIL/MADHUMATHI.png" class="img-fluid" alt="">
-                  <div class="social">
-                    <a href=""><i class="bi bi-twitter"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""><i class="bi bi-linkedin"></i></a>
-                  </div>
-                </div>
-                <div class="member-info">
-                  <h4 class="title"><a href="faculty.html"><a href="">Dr.Gayathri</a></h4>
-                  <span>Professor & Head of the Department</span>
-                </div>
-              </div>
-            </div>
+            <?php
+            $sql = "SELECT staff_master.staff_id AS staff_id,master_desigination.desigination desigination, GROUP_CONCAT(staff_promotion.md_id), staff_master.legend , CONCAT(staff_master.first_name,' ',staff_master.last_name)first_name , staff_master.department_id,master_department.dept_name , staff_photo.photo ,  staff_promotion.status, staff_qualification.status,staff_promotion.from_date, GROUP_CONCAT(deg_type ORDER BY staff_qualification.yop) deg_type FROM camps.staff_master INNER JOIN camps.master_department ON (staff_master.department_id = master_department.department_id  AND staff_master.sc_id=1) INNER JOIN camps.staff_photo ON (staff_photo.staff_id = staff_master.staff_id) INNER JOIN camps.staff_promotion ON (staff_promotion.staff_id = staff_master.staff_id) INNER JOIN camps.staff_qualification ON (staff_qualification.staff_id = staff_master.staff_id AND staff_qualification.status=1) INNER JOIN camps.master_desigination ON master_desigination.md_id=staff_promotion.md_id INNER JOIN camps.staff_degree_type ON (staff_qualification.degree_id = staff_degree_type.degree_id) WHERE staff_promotion.status=2 AND staff_degree_type.degree_id NOT IN (23,24) AND  staff_master.working_status='working' AND master_department.department_id='7' GROUP BY staff_master.staff_id;";
+            $result = mysqli_query($dbcon, $sql);
+            if (mysqli_num_rows($result) > 0) {
+                while($data = mysqli_fetch_assoc($result)) {
+                    
+            ?>
+                        <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                            <div class="member" data-aos="fade-up" data-aos-delay="100">
+                              <div class="member-img">
+                                <img src="data:image/jpeg;base64,<?php echo base64_encode($data['photo']);?>" class="img-fluid" alt="">
+                                <div class="social">
+                                  <a href=""><i class="bi bi-instagram"></i></a>
+                                  <a href=""><i class="bi bi-facebook"></i></a>
+                                  <a href=""><i class="bi bi-instagram"></i></a>
+                                  <a href=""><i class="bi bi-linkedin"></i></a>
+                                </div>
+                              </div>
+                              <div class="member-info">
+                                <h4 class="title"><a href="faculty.html">
+                                <?php 
+                                printf("%s", $data["first_name"]);
+                                ?>
+                                </a></h4>
+                                <span>Assistant Professor</span>
+                              </div>
+                            </div>
+                          </div>
+                        <?php
+                } 
+            }     
+                        ?>
 
-            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-                <div class="member" data-aos="fade-up" data-aos-delay="100">
-                  <div class="member-img">
-                    <img src="assets/img/CIVIL/RAGIN.png" class="img-fluid" alt="">
-                    <div class="social">
-                      <a href=""><i class="bi bi-instagram"></i></a>
-                      <a href=""><i class="bi bi-facebook"></i></a>
-                      <a href=""><i class="bi bi-instagram"></i></a>
-                      <a href=""><i class="bi bi-linkedin"></i></a>
-                    </div>
-                  </div>
-                  <div class="member-info">
-                    <h4 class="title"><a href="faculty.html">Mr.T,Ragin</a></h4>
-                    <span>Assistant Professor</span>
-                  </div>
-                </div>
-              </div>
-
-            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-                <div class="member" data-aos="fade-up" data-aos-delay="100">
-                  <div class="member-img">
-                    <img src="assets/img/CIVIL/ASHNI.png" class="img-fluid" alt="">
-                    <div class="social">
-                      <a href=""><i class="bi bi-instagram"></i></a>
-                      <a href=""><i class="bi bi-facebook"></i></a>
-                      <a href=""><i class="bi bi-instagram"></i></a>
-                      <a href=""><i class="bi bi-linkedin"></i></a>
-                    </div>
-                  </div>
-                  <div class="member-info">
-                    <h4 class="title"><a href="faculty.html">Mrs.M.Ashni</a></h4>
-                    <span>Assistant Professor</span>
-                  </div>
-                </div>
-              </div>
+           
           </div>
         </div>
       </section><!-- End Team Section -->
@@ -350,7 +334,7 @@
   
           <div class="section-title" data-aos="fade-up">
             <h2>Non-Teaching Faculty</h2>
-            <p>The supporting hands of Electronics and Communication Engineering</p>
+            <p>The supporting hands of Computer Science and Engineering</p>
           </div>
   
           <div class="row justify-content-center">
@@ -358,7 +342,7 @@
             <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
               <div class="member" data-aos="fade-up" data-aos-delay="100">
                 <div class="member-img">
-                  <img src="assets/img/CIVIL/SATHEESH.png" class="img-fluid" alt="">
+                  <img src="assets/img/CSE/RAMYA.png" class="img-fluid" alt="">
                   <div class="social">
                     <a href=""><i class="bi bi-twitter"></i></a>
                     <a href=""><i class="bi bi-facebook"></i></a>
@@ -367,7 +351,7 @@
                   </div>
                 </div>
                 <div class="member-info">
-                  <h4 class="title"><a href="">Mr.Satheesh</a></h4>
+                  <h4>Mrs.Remya</h4>
                   <span>Lab Instructor</span>
                 </div>
               </div>
@@ -376,7 +360,7 @@
             <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
               <div class="member" data-aos="fade-up" data-aos-delay="100">
                 <div class="member-img">
-                  <img src="assets/img/CIVIL/JOHNABISHA.png" class="img-fluid" alt="">
+                  <img src="assets/img/CSE/DineshKumar.png" class="img-fluid" alt="">
                   <div class="social">
                     <a href=""><i class="bi bi-twitter"></i></a>
                     <a href=""><i class="bi bi-facebook"></i></a>
@@ -385,7 +369,7 @@
                   </div>
                 </div>
                 <div class="member-info">
-                  <h4 class="title"><a href="">Mrs.John Abisha</a></h4>
+                  <h4>Mr.Dinesh Kumar</h4>
                   <span>Lab Instructor</span>
                 </div>
               </div>
@@ -404,7 +388,7 @@
                     </div>
                   </div>
                   <div class="member-info">
-                    <h4 class="title"><a href="">Mr.V.Gopi</a></h4>
+                    <h4>Mr.V.Gopi</h4>
                     <span>Lab Instructor</span>
                   </div>
                 </div>
@@ -417,39 +401,17 @@
             <div class="tab-pane" id="tab-4">
               <div class="row">
                 <div class="col-lg-8 details order-2 order-lg-1">
-                  <h3>Electrical Engineering Practices Lab</h3>
-                  <strong>Background</strong> <li>This lab pioneers the students to the basic electrical measuring equipments that make them deal with some of the commonly used instruments and equipments, like the digital multimeter, tester etc. The students would gain the basic knowledge about different types of wiring circuits, behaviour of current, voltage, power, energy under different conditions and their determination. They can also add on to their knowledge about residential wiring, trouble shooting various electrical equipments like ceiling fan, mixer, air conditioner and other electrical gadgets. These experiments therefore aid in providing them the foundation they require to be Electrical engineers.
-                    </li>
-                  <strong>Equipments</strong> <li> Voltmeters, Ammeters, Single phase and three phase Energy meter, Power factor meter, Transformer winding machine, Wattmeter(LPF and UPF), Meggar, resistive load, inductive load, capacitive load, multimeter, Earth tester.</li>
-                       
+                  <h3>Common Computer Lab</h3>
+                  <p class="fst-italic">The Department of Computer Science and Engineering has a well-established Computer Practices Laboratory exclusively for First Year students. Computer Practices laboratory provides essential facilities to the students to enhance their knowledge in Programming. The common Lab is equipped with 125 Lenovo Desktop Computer with Intel i3 processor, Windows 7 Professional edition,4 LCD Projector, 2 ton carrier split AC-11,20 KVA UPS-2.</p>
                 </div>
                 <div class="col-lg-4 text-center order-1 order-lg-2">
                   <img src="assets/img/CSE/CM.png" alt="" class="img-fluid">
                 </div>
               </div>
-            
               <div class="row">
                 <div class="col-lg-8 details order-2 order-lg-1">
-                  <h3>Control And Instrumentation Laboratory</h3>
-                  <strong>Background</strong> <li> It is the duty of instrumentation and control engineers to research, design, install, develop, test and maintain instruments, electronics and computer control systems that are in use in the process industry. Many ways have been formulated to control these systems with the help of automation techniques and computer-aided processes. Their key focus is to ensure that the processes function efficiently and safely. This lab prepares students who seek to enter this stream by providing them with elaborate knowledge to supervise and control instruments.</li>
-                  <strong>Description</strong> <li> The laboratory utilizes both hardware and software facilities. The Control & Instrumentation lab is equipped with CRO, oscilloscopes, various trainer kits and earth tester such as megger, signal generators, sensors, tranducers, converters digital multimeters and loading inductor, capacitor, resistive loads, LCR meter & energy meter. The software used is MATLAB.</li> 
-                    <strong>Equipments</strong> <li> This lab is equipped with excellent facilities for Instrumentation and control. This lab includes various kits, Hardware/Software as well as specialized computer language compilers software (MATLAB).
-
-                      Bridge Kits,
-                      LVDT Trainer,
-                      P,PI,PID Controllers,
-                      Synchro Controllers,
-                      AC Servo Motors,
-                      Oscilloscope,
-                      DC Position Control System,
-                      AC Position Control System,
-                      AC Servo Motor,
-                      Resistive Load Single Phase,
-                      Inductive Load Three Phase,
-                      Capacitive Load,
-                      Earth Tester,
-                      Megger,
-                      Stepper Motor.</li>
+                  <h3>BigData Lab</h3>
+                  <p class="fst-italic">Big data lab is typically equipped with internet access. Computers in this lab are typically arranged in rows, so that every workstation has a similar view of one end of the room to facilitate lecturing or presentations, to facilitate small group work. The Big Data Lab is equipped with 40 Lenovo Desktop computers with Intel i7 Processor, 64 bit OS, 8GB Ram, on screen projector & centralized AC. Programming and Data Structures, Object Oriented Programming Systems, Operating Systems, Internet Programming, Grid and Cloud Computing Lab practical classes are conducted in this Laboratory.</p>
                 </div>
                 <div class="col-lg-4 text-center order-1 order-lg-2">
                   <img src="assets/img/CSE/BD.jpg" alt="" class="img-fluid">
@@ -457,154 +419,38 @@
               </div>
               <div class="row">
                 <div class="col-lg-8 details order-2 order-lg-1">
-                  <h3>Power Electronics And Drives Laboratory</h3>
-                  <strong>Background</strong> <li> The power electronics lab augments the knowledge of the EEE students by providing them a better understanding of the concepts and working of advanced power semiconductor devices and power electronics circuits.</li>
-                  <strong>Description</strong> <li> In this lab:
-                    R, RC and UJT triggering circuits are built to know the procedure to give and adjust the firing pulse to the SCR so as to make it to conduct. 1-phase semi converter and full converter experiments are performed to understand the conversion of AC supply to DC supply and the variation of average output voltage for different firing angles. 1-phase AC voltage controller using TRIAC is done to get the variable AC output voltage from fixed AC input voltage. For converting DC to AC, 1-phase series inverter, 1-phase parallel inverter and 1-phase Mc Murray inverter experiments inverter are conducted. Voltage and current commutated chopper circuits are built to understand the conversion of fixed DC to variable DC voltage by voltage commutation and current commutation respectively. Speed control of DC shunt motor, universal motor and three phase induction motor using respective power electronics circuits are also done.</li> 
-                    <strong>curriculum objectives </strong> <li> To set up circuits for various applications in power electronics
-                      To comprehend the operation of different types of power controllers
-                      Description
-                      In this lab:
-                      R, RC and UJT triggering circuits are built to know the procedure to give and adjust the firing pulse to the SCR so as to make it to conduct. 1-phase semi converter and full converter experiments are performed to understand the conversion of AC supply to DC supply and the variation of average output voltage for different firing angles. 1-phase AC voltage controller using TRIAC is done to get the variable AC output voltage from fixed AC input voltage. For converting DC to AC, 1-phase series inverter, 1-phase parallel inverter and 1-phase Mc Murray inverter experiments inverter are conducted. Voltage and current commutated chopper circuits are built to understand the conversion of fixed DC to variable DC voltage by voltage commutation and current commutation respectively. Speed control of DC shunt motor, universal motor and three phase induction motor using respective power electronics circuits are also done.
-                      
-                      The power electronics lab is equipped with the following prominent power electronics equipments:
-                      
-                      Voltage commutated chopper,
-                      Current commutated chopper,
-                      Series inverter,
-                      Parallel inverter,
-                      Mc Murray inverter,
-                      Universal motor speed control drive,
-                      DC motor speed control drive,
-                      AC voltage controller using SCR and TRIAC,
-                      1-phase half converter,
-                      1-phase full converter,
-                      3-phase half wave and full wave converter,
-                      1-phase cyclo-converter,
-                      Spectrum analyzer,
-                      TMS320F240 digital signal processor,
-                      Mc Murray Bedford inverter,
-                      CRO,
-                      Function generator,
-                      300V RPS,
-                      R, RC and UJT triggering circuits</li> 
-                  
-                  </div>
+                  <h3>Software Development Lab</h3>
+                  <p class="fst-italic"> Software Development Lab is typically equipped with internet access. Computers in this lab are typically arranged in rows, so that every workstation has a similar view of one end of the room to facilitate lecturing or presentations, to facilitate small group work. The Software Development Lab is equipped with 40 Dell Desktop computer with Intel i3 Processor, 32 bit OS,4 GB Ram and 3 AC. Compiler Laboratory and Database Management system, Software Development, Computer Graphics, Mobile Application Development and Network Laboratory practical classes are conducted in this Laboratory.</p>
+                </div>
                 <div class="col-lg-4 text-center order-1 order-lg-2">
-                  <img src="assets/img/CSE/BD.jpg" alt="" class="img-fluid">
+                  <img src="assets/img/CSE/SW.jpg" alt="" class="img-fluid">
                 </div>
               </div>
-              <div class="row">
-                <div class="col-lg-8 details order-2 order-lg-1">
-                  <h3>Power System Simulation Laboratory</h3>
-                  <strong>Background</strong> <li> The chief goal of the Power System Simulation lab is to provide assistance to students that will enhance their chances of succeeding in technology-based assignments and to provide access to equipment that will support the needs of instruction where we cherish life-long learning. The Simulation lab supports the curriculum of the Anna University and the assignments of the faculty.
-                    </li>
-                  <strong>Description</strong> <li> The aim of this laboratory is to provide required simulations facilities to the undergraduate students in order to meet their requirements in the field of the Electrical engineering profession. The major emphasis is laid on doing project works on designing Electrical and Electronics circuits using latest application packages such as MATLAB, PSPICE, ETAP and other engineering packages which are greatly used by the undergraduate students. It is equipped with computers and remains active during all working days. Required printing facilities are also available to all its users.</li> 
-                </div>
-                <div class="col-lg-4 text-center order-1 order-lg-2">
-                  <img src="assets/img/CSE/BD.jpg" alt="" class="img-fluid">
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-8 details order-2 order-lg-1">
-                  <h3>Electrical Machines Laboratory</h3>
-                   <strong>Background</strong> <li> This is our core set of laboratories, in terms of curriculum. Its overall needs are versatility and generality, in view of the many fundamental course needs it serves. This lab in general holds enough number of experiments appropriate for giving students a sufficient exposure thereby enabling them to easily adopt experiments in more advanced laboratories in the department.</li>
-                  <strong>Description</strong> <li> This is the major lab where experiments like load test on various machines, speed control tests, open circuit tests, short circuit tests, etc are carried out and also wide variety of experiments are performed here with combination of different rotating machines. The laboratory is also used for research activities in machines and to carry out project works on energy conversion.</li> 
-                  <strong>Major Equipments</strong> <li> Rectifier, motor-generator set, motor- alternator set, induction motor, synchronous motor, variety of transformers, lamploads, inductive loads, resistive loads, compound machines, tachometers, voltmeters ,ammeters, wattmeters, megger ,frequency meter, synchroscope, rheostats, variety of starters, DC motors, etc.</li> 
-                
-                </div>
-                <div class="col-lg-4 text-center order-1 order-lg-2">
-                  <img src="assets/img/CSE/BD.jpg" alt="" class="img-fluid">
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-8 details order-2 order-lg-1">
-                  <h3>Electric Circuits Laboratory</h3>
-                   <strong>Background</strong> <li>The students will learn the basic requirements for building simple DC/AC circuits, verification of circuit theorems, employ power supplies as well as measure electrical parameters of current, voltage, resistance with multimeters and oscilloscopes. The Electric Circuit Laboratory is utilised by EEE & ECE branches of students for lab work.</li>
-                  <strong>Major Equipments</strong> <li> Voltmeters, Ammeters, CRO, DSO, Regulated Power Supply, Single phase Energy meter, Power factor meter, Wattmeter(LPF and UPF), resistive load, inductive load, capacitive load, multimeter, DRB, DCB & DIB and consumables such as Resistors, Capacitors & Inductors.</li> 
-                </div>
-                <div class="col-lg-4 text-center order-1 order-lg-2">
-                  <img src="assets/img/CSE/BD.jpg" alt="" class="img-fluid">
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-8 details order-2 order-lg-1">
-                  <h3>Linear Integrated Circuits Laboratory</h3>
-                   <strong>Background</strong> <li> The main objective of this lab course is to gain the practical hands on experience by exposing the students to various linear IC applications. The lab also introduces to the students 555 timer and IC 741 and its applications, various voltage regulators. The testers for IC are available.</li>
-                  <strong>Major Equipments</strong> <li> Digital Multimeter, IC Tester (Analog), Cathode Ray Oscilloscope, Dual Power Supply, Function Generator (3MHz), Linear IC Trainer Kits, ADC & DAC Measurements & Controller, PSPICE Software, Digital IC’s.</li> 
-                </div>
-                <div class="col-lg-4 text-center order-1 order-lg-2">
-                  <img src="assets/img/CSE/BD.jpg" alt="" class="img-fluid">
-                </div>
-              </div>
-              <!--<div class="row">
-                <div class="col-lg-8 details order-2 order-lg-1">
-                  <h3>Microwave And Fiber Optics</h3>
-                   <strong>Experiments</strong> <li> To analyze the performance of simple optical link,
-                    To Test microwave and optical components,
-                    To analyze the mode characteristics of fiber,
-                    To analyze the radiation of pattern of antenna,
-                    To Formulate the S-Parameters for Microwave components,</li>
-                  <strong>Equipments</strong> <li> Klystron Test Bench(X-Band),
-                    Gunn Oscillator Test Bench(X-Band),
-                    Advanced fiber Optic trainer Kit,
-                    Single Mode Fiber Characteristics Trainer</li> 
-                </div>
-                <div class="col-lg-4 text-center order-1 order-lg-2">
-                  <img src="assets/img/CSE/BD.jpg" alt="" class="img-fluid">
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-8 details order-2 order-lg-1">
-                  <h3>Embedded System Laboratory</h3>
-                  <strong>Experiments</strong> <li> To Learn the working of ARM processor,
-                    To Understand the Building Blocks of Embedded Systems,
-                    To Learn the concept of memory map and memory interface,
-                    To Know the characteristics of Real Time Systems,
-                    To Write programs to interface memory, I/Os with processor,
-                    To Study the interrupt performance</li>
-                  <strong>Equipments</strong> <li> Embedded trainer kits with ARM board,
-                    ARM CORTEX M3,
-                    Zigbee Module, Temperature sensor for Embedded trainer kits,
-                    Stepper Motor, Keyboard, LCD, ADC, DAC Starter Kit,
-                    On Board RTC & Serial port using UART Interface,
-                    On Board EEPROM Interface & Interrupt,
-                    On-chip PWM Interface</li> 
-                </div>
-                <div class="col-lg-4 text-center order-1 order-lg-2">
-                  <img src="assets/img/CSE/BD.jpg" alt="" class="img-fluid">
-                </div>
-              </div>-->
-          
             </div>
             <div class="tab-pane" id="tab-5">
               <div class="row">
                 <div class="col-lg-12 details order-2 order-lg-1">
                   <h3>Achievements</h3>
                   
+                 <!-- Default Accordion -->
               <div class="accordion" id="accordionExample">
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingOne">
                     <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      2016
+                      2021
                     </button>
                   </h2>
                   <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                      <strong>A.J. Vijay & D. Joy Alex</strong> <li> Final Year won first prize in paper presentation event with a cash award of Rs. 1500/- at TECHNIX 2K 16 organized by V V college of engineering, Tisaiyanvilai on 14th September 2016 for the paper “An Experimental Investigation on MPPT Based Two Stage Battery Charging Scheme for a Solar PV Lighting System with Integrated Automatic Luminous Control Mechanism towards Energy.</li>
-                      <strong>S.Mary Stancy & V. Rakshana</strong> <li>Final Year won second prize in paper presentation event at a National level Technical Symposium EKRAFT’ 16 organized by Rajas International Institute of Technology For Women, Ozhuginasery, on 10th September 2016 for the paper “A Novel drowsiness detection on feature extraction capitalizing neural networks& sparse classifiers.”</li>
-                      <strong>G. Manikandan & C. Dhinesh</strong> <li>Final Year won first prize in Technical Quiz event with a cash award of Rs. 1000/- at TECHNIX 2K 16 organized by V V college of engineering, Tisaiyanvilai on 14th September 2016.</li>
-                      <strong>S. Mary Stancy</strong> <li>Final Year won first prize in on-spot speach event at a National level Technical Symposium EKRAFT’ 16 organized by Rajas International Institute of Technology For Women, Ozhuginasery, on 10th September 2016.</li>
-                      <strong>A.S. Aswini Kumari</strong> <li>Final Year won first prize in Circuit Tricks event at a National level Technical Symposium CEEMTEZ’ 16 organized by Sardar Raja College of Engineering, Alangulam, on 15th September 2016.</li>
-                      <strong>H. Thanisha</strong> <li>second Year won second prize in Circuit Tricks event at a National level Technical Symposium CEEMTEZ’ 16 organized by Sardar Raja College of Engineering, Alangulam, on 15th September 2016.</li>
-                      <strong>S. Mary Stancy & V. Rakshana</strong> <li>Final Year won second price in paper presentation event at a National level Technical Symposium EMERALD – 2K16 organized by Arunachala College of Engineering for Women, Manavilai, on 23rd& 24th September 2016 for the paper titled “A Novel drowsiness detection architecture using neural networks&sparse classifiers.”</li>
-                      <strong>G. Manikandan & C. Dhinesh</strong> <li>Final Year won first prize in paper presentation event with a cash award of Rs. 1500/- at 9th National Level Technical Symposium TECHNOBUZZ 16 organized by PSN College of Engineering & Technology, Melathediyoor, Tirunelveli District on 28th September 2016 for the paper “Design, Development and Performance Analysis of Grid Accessible Hybrid Solar and Wind Based Automatic Street Light System.”</li>
+                      <strong>All the computer science department students</strong> <li> haveparticipated in the Lecture Series on “ Mobile Application Development using Android Studio “ held on 22-05-2021 organized by Institution’s Innovative Councilin association with Department of Computer Science andEngineering,Stella Mary’s College of Engineering.</li>
+                      <strong>All the computer science department students</strong> <li>have participated in the Lecture Serieson “ InnovationinNetworkSimulationusingNS2 ” held on 29-05-2021 organized by Institution’s Innovative Councilin association with Department of Computer Science andEngineering,Stella Mary’s College of Engineering. </li>
+                      <strong>All the computer science department students</strong> <li> have participated in the Lecture Series on “Opportunities inSoftware Testing ”held on 21-05-2021 organized by Institution’s Innovative Councilin association with Department of Computer Science and Engineering, StellaMary’s College of Engineering.</li>
                       
                     
                     </div>
                   </div>
                 </div>
-                <!--<div class="accordion-item">
+                <div class="accordion-item">
                   <h2 class="accordion-header" id="headingTwo">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                       2020
@@ -712,8 +558,8 @@
                       <strong>Third year CSE girls</strong> <li>attended one day workshop on "Mobile Application Development” organized by Arunachala College of Engineering on 8th February 2016. </li>
                     </div>
                   </div>
-                </div>-->
-              </div>
+                </div>
+              </div><!-- End Default Accordion Example -->
                 
                 </div>
                 <div class="col-lg-4 text-center order-1 order-lg-2">
@@ -721,74 +567,7 @@
                 </div>
               </div>
             </div>
-
-
-
             <div class="tab-pane" id="tab-6">
-              <div class="row">
-                <div class="col-lg-8 details order-2 order-lg-1">
-                  
-<!-- ======= Resume Section ======= -->
-<section id="resume" class="resume">
-  <div class="container">
-
-
-
-    <div class="row">
-      <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
-        <h3 class="resume-title">Industrial Visit</h3>
-        <div class="resume-item">
-          <h4>Department of Electronics and Communication Engineering</h4>
-          <h5>2018-19</h5>
-          
-          <ul>
-            <li> Our II,III,IV year students visited Kudankulam Nuclear Power Project(KKNPP),Kudankulam on 25.07.2018</li>
-            <li> Our II year students visited Kudankulam Nuclear Power Project(KKNPP),Kudankulam on 25.07.2018</li>
-            <li> Our II,III year students visited 230 kV/110 kV Substation, Shenbagaramanputhoor on 29.09.2018</li>
-            <li> Our II,III year students visited 1.1MW Solar Power Plant, Flow Link Systems, Munajipatti on 10.01.2019</li>
-            
-          </ul>
-        </div>
-        <div class="resume-item">
-        
-          <h5>2017-18</h5>
-          
-          <ul>
-            <li> Our III,IV year students visited Thermal Power Plant, NTPL, Tutucorin on 07.09.2017</li>
-            <li> Our III year students visited JK Fenner India Ltd. 1MW Solar PV power plant, Aralvoimozhi on 29.09.2017</li>
-            <li> Our III year students visited Solar Observatory Centre, Kodaikanal on 16.03.2018</li>
-              
-          </ul>
-        </div>
-        <div class="resume-item">
-          <h5>2016-17</h5>
-          <ul>
-            <li> Our IV year students visited Pykara Mini Power House, Ooty on 16.02.2017</li>
-            <li> Our IV year students visited Doddabetta Tea Factory, Ooty on 17.02.2017</li>
-            <li> Our II,III year students visited 230 kV/110 kV Substation, Shenbagaramanputhoor on 13.04.2017</li>
-              </ul>
-        </div>
-        <div class="resume-item">
-          <h5>2015-16</h5>
-          <ul>
-        
-            
-            <li> Our II,III year students visited Kudankulam Nuclear Power Project (KKNPP), Kudankulam on 27.08.2015</li>
-             </ul>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section><!-- End Resume Section -->
-
-
-            </div>
-              </div>
-            </div>
-
-            
-            <div class="tab-pane" id="tab-7">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
                     <!-- ======= Services Section ======= -->
@@ -798,13 +577,13 @@
               <div class="col-md-6 col-lg-4 d-flex align-items-center mb-5 mb-lg-0">
                 <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
                   <div class="icon"><i class="bx bx-world"></i></div>
-                  <h4 class="title"><a href="https://webdocs.pages.dev/assets/docs/eee/syllabus/2021.pdf">Regulation 2021</a></h4>
+                  <h4 class="title"><a href="">Regulation 2021</a></h4>
                   </div>
               </div>
               <div class="col-md-6 col-lg-4 d-md-flex align-items-stretch mb-lg-0 mb-lg-0">
                 <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
                   <div class="icon"><i class="bx bx-world"></i></div>
-                  <h4 class="title"><a href="https://webdocs.pages.dev/assets/docs/eee/syllabus/2017.pdf">Regulation 2017</a></h4>
+                  <h4 class="title"><a href="">Regulation 2017</a></h4>
                   </div>
                 </div>
             </div>
@@ -812,7 +591,7 @@
         </section><!-- End Services Section --></div>
                 </div>
               </div>
-              <div class="tab-pane" id="tab-8">
+              <div class="tab-pane" id="tab-7">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
                     <!-- ======= Services Section ======= -->
@@ -822,13 +601,13 @@
               <div class="col-md-7 col-lg-5 d-flex align-items-center mb-5 mb-lg-0">
                 <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
                   <div class="icon"><i class="bx bi-journal-richtext"></i></div>
-                  <h4 class="title"><a href="https://webdocs.pages.dev/assets/docs/eee/po/Programme-Outcomes.pdf">Programme Outcomes</a></h4>
+                  <h4 class="title"><a href="">Programme Outcomes</a></h4>
                   </div>
               </div>
               <div class="col-md-7 col-lg-5 d-md-flex align-items-stretch mb-lg-0 mb-lg-0">
                 <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
                   <div class="icon"><i class="bx bi-journal-richtext"></i></div>
-                  <h4 class="title"><a href="https://webdocs.pages.dev/assets/docs/eee/po/PSO-EEE.pdf">Program Specfic Outcomes</a></h4>
+                  <h4 class="title"><a href="">Program Specfic Outcomes</a></h4>
                   </div>
                 </div>
             </div>
@@ -836,7 +615,7 @@
         </section><!-- End Services Section --></div>
                 </div>
               </div>
-              <div class="tab-pane" id="tab-9">
+              <div class="tab-pane" id="tab-8">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
                     <!-- ======= Services Section ======= -->
@@ -920,7 +699,7 @@
         </section><!-- End Services Section --></div>
                 </div>
               </div>
-              <div class="tab-pane" id="tab-10">
+              <div class="tab-pane" id="tab-9">
                 <div class="row">
                     <section id="features" class="features">
                         <div class="container">
@@ -1009,7 +788,7 @@
                       </section><!-- End Features Section -->
                       </div>
                       </div>
-                      <div class="tab-pane" id="tab-11">
+                      <div class="tab-pane" id="tab-10">
                         <div class="row">
                             <section id="features" class="features">
                                 <div class="container">
@@ -1092,8 +871,12 @@
                               </section><!-- End Features Section -->
                               </div>
                               </div>
+          </div>
+        </div>
       </div>
-    </section>
+
+    </div>
+  </section><!-- End Cource Details Tabs Section -->
 
   </main><!-- End #main -->
 

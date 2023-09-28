@@ -1,3 +1,14 @@
+<?php
+$servername = "172.18.0.1";
+$username = "root";
+$password = "root";
+$db="mysql";
+$port="33070";  
+$dbcon = mysqli_connect($servername, $username, $password,$db,$port);
+if (!$dbcon) {
+    die("Connection failed: " .  mysqli_connect_error());
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -139,16 +150,17 @@
     <!-- ======= Breadcrumbs Section ======= -->
     <section class="breadcrumbs">
       <div class="container">
-
-        <div class="container">
-          <h2>Electronics and Communication Engineering</h2>
-        <p>Department specializes in the design, development, and implementation of electronic systems, communication networks, and signal processing technologies to enable efficient information transmission and exchange.</p>
-      </div>
+          <h2>Science and Humanities</h2>
+          <p>The Department of Science and Humanities fosters a strong foundation in fundamental sciences and liberal arts, nurturing well-rounded individuals equipped with both scientific knowledge and critical thinking skills.</p>
+    
+       
+        </div>
 
       </div>
     </section><!-- End Breadcrumbs Section -->
 
-   
+    
+     
   </div><!-- End Breadcrumbs -->
 
   <!-- ======= Cource Details Section ======= -->
@@ -157,14 +169,14 @@
 
       <div class="row">
         <div class="col-lg-7">
-          <img src="https://webdocs.pages.dev/assets/img/ece/ece.jpg" class="img-fluid" alt="">
+          <img src="https://webdocs.pages.dev/assets/img/sh/sh.png" class="img-fluid" alt="">
           
         </div>
         <div class="col-lg-4">
 
           <div class="course-info d-flex justify-content-between align-items-center">
             <h5>Head of the Department</h5>
-            <p><a href="#">Mr.Michael Franklin</a></p>
+            <p><a href="#">Mr.S.Ravi Kumar</a></p>
           </div>
 
           <div class="course-info d-flex justify-content-between align-items-center">
@@ -185,8 +197,8 @@
         </div>
         <h3> Overview</h3>
           <p>
-            Electronics and Communications Engineering (ECE) is the application of science and mathematics to practical problems in the electronics and communications field. Electronics and communications engineers engage in research, design, development and testing of the electronic equipment used in various systems. This field is closely aligned with Computer Science and Engineering (CSE) and the advances in CSE play a significant role in the advancement of ECE. This is why a degree in ECE is always in high demand.  
-          </p>
+            Curiosity-driven basic sciences have a fundamental role in our lives to enable the necessary means for addressing the global needs. Physics, Chemistry, Mathematics and English are a group of subjects which are essential in undergraduate engineering programs. The Department of Sciences and Humanities is the gateway of engineering education, and it is functions right from the inception of the College since 2013 and imparts core competency in English, Mathematics, Physics and Chemistry. The Department of Science and Humanities nurtures the essential principles and understanding of science among the students.    
+        </p>
       </div>
 
     </div>
@@ -211,11 +223,11 @@
             <li class="nav-item">
               <a class="nav-link" data-bs-toggle="tab" href="#tab-4">Laboratory</a>
             </li>
-            <!--<li class="nav-item">
-              <a class="nav-link" data-bs-toggle="tab" href="#tab-5">Achievements</a>
-            </li>-->
             <li class="nav-item">
-              <a class="nav-link" data-bs-toggle="tab" href="#tab-6">Industrial Visit</a>
+              <a class="nav-link" data-bs-toggle="tab" href="#tab-5">Industrial Visit</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" href="#tab-6">Achievements</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" data-bs-toggle="tab" href="#tab-7">Syllabus</a>
@@ -247,7 +259,12 @@
               <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
                 <div class="icon"><i class="bx bxl-dribbble"></i></div>
                 <h4 class="title"><a href="">VISION</a></h4>
-                <p class="description">To excel in higher learning, innovative research and to produce creative solution for community based needs</p>
+                <li>To be a World-class Educational and Research Institution in the service of humanity by promoting high quality Engineering and Management education.</li>
+                  <li>Imbibe soft skills and technical skills.</li>
+                    <li>Develop the faculty to reach international standards.</li>
+                      <li>Maintain high academic standards and teaching quality that promote analytical thinking and Independent judgement.</li>
+                        <li>Promote research, innovation and product development in collaboration with reputable Foreign Universities.</li>
+                          <li>Offer collaborative industry program in the emerging areas and spirit of enterprise.</li>
               </div>
             </div>
   
@@ -255,9 +272,9 @@
               <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
                 <div class="icon"><i class="bx bx-file"></i></div>
                 <h4 class="title"><a href="">MISSION</a></h4>
-                <li>To impart quality education in Electronics and Communication Engineering.</li>
-                <li>To provide technical expertise along with professional ethics as per societal needs.</li>
-                <li>Continuous technical upgradation to reach global excellence and to make student entrepreneur.</li>
+                <li>To impart engineering fundamentals by providing Basic Science and Mathematics.</li>
+                  <li>To stimulate reading, listening and writing skills.</li>
+                    <li>To promote innovative culture among the students.</li>
                 </div>
             </div>
   
@@ -278,32 +295,21 @@
   
           <div class="section-title" data-aos="fade-up">
             <h2>Teaching Faculty</h2>
-            <p>The pillars of Electronics and Communication Engineering</p>
+            <p>The pillars of Civil Engineering</p>
           </div>
   
           <div class="row justify-content-center">
-            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-              <div class="member" data-aos="fade-up" data-aos-delay="100">
-                <div class="member-img">
-                  <img src="assets/img/CIVIL/MADHUMATHI.png" class="img-fluid" alt="">
-                  <div class="social">
-                    <a href=""><i class="bi bi-twitter"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""><i class="bi bi-linkedin"></i></a>
-                  </div>
-                </div>
-                <div class="member-info">
-                  <h4 class="title"><a href="faculty.html">Mr.Michael Franklin</a></h4>
-                  <span>Professor & Head of the Department</span>
-                </div>
-              </div>
-            </div>
-
+          <?php
+$sql = "SELECT staff_master.staff_id AS staff_id,master_desigination.desigination desigination, GROUP_CONCAT(staff_promotion.md_id), staff_master.legend , CONCAT(staff_master.first_name,' ',staff_master.last_name)first_name , staff_master.department_id,master_department.dept_name , staff_photo.photo ,  staff_promotion.status, staff_qualification.status,staff_promotion.from_date, GROUP_CONCAT(deg_type ORDER BY staff_qualification.yop) deg_type FROM camps.staff_master INNER JOIN camps.master_department ON (staff_master.department_id = master_department.department_id  AND staff_master.sc_id=1) INNER JOIN camps.staff_photo ON (staff_photo.staff_id = staff_master.staff_id) INNER JOIN camps.staff_promotion ON (staff_promotion.staff_id = staff_master.staff_id) INNER JOIN camps.staff_qualification ON (staff_qualification.staff_id = staff_master.staff_id AND staff_qualification.status=1) INNER JOIN camps.master_desigination ON master_desigination.md_id=staff_promotion.md_id INNER JOIN camps.staff_degree_type ON (staff_qualification.degree_id = staff_degree_type.degree_id) WHERE staff_promotion.status=2 AND staff_degree_type.degree_id NOT IN (23,24) AND  staff_master.working_status='working' AND master_department.department_id='6' GROUP BY staff_master.staff_id;";
+$result = mysqli_query($dbcon, $sql);
+if (mysqli_num_rows($result) > 0) {
+    while($data = mysqli_fetch_assoc($result)) {
+        
+?>
             <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
                 <div class="member" data-aos="fade-up" data-aos-delay="100">
                   <div class="member-img">
-                    <img src="assets/img/CIVIL/RAGIN.png" class="img-fluid" alt="">
+                    <img src="data:image/jpeg;base64,<?php echo base64_encode($data['photo']);?>" class="img-fluid" alt="">
                     <div class="social">
                       <a href=""><i class="bi bi-instagram"></i></a>
                       <a href=""><i class="bi bi-facebook"></i></a>
@@ -312,29 +318,24 @@
                     </div>
                   </div>
                   <div class="member-info">
-                    <h4 class="title"><a href="faculty.html">Mr.T,Ragin</a></h4>
+                    <h4 class="title"><a href="faculty.html">
+                    <?php 
+                    printf("%s", $data["first_name"]);
+                    ?>
+                    </a></h4>
                     <span>Assistant Professor</span>
                   </div>
                 </div>
               </div>
+            <?php
+    } 
+}     
+            ?>
+            
 
-            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-                <div class="member" data-aos="fade-up" data-aos-delay="100">
-                  <div class="member-img">
-                    <img src="assets/img/CIVIL/ASHNI.png" class="img-fluid" alt="">
-                    <div class="social">
-                      <a href=""><i class="bi bi-instagram"></i></a>
-                      <a href=""><i class="bi bi-facebook"></i></a>
-                      <a href=""><i class="bi bi-instagram"></i></a>
-                      <a href=""><i class="bi bi-linkedin"></i></a>
-                    </div>
-                  </div>
-                  <div class="member-info">
-                    <h4 class="title"><a href="faculty.html">Mrs.M.Ashni</a></h4>
-                    <span>Assistant Professor</span>
-                  </div>
-                </div>
-              </div>
+            
+
+            
           </div>
         </div>
       </section><!-- End Team Section -->
@@ -348,11 +349,10 @@
   
           <div class="section-title" data-aos="fade-up">
             <h2>Non-Teaching Faculty</h2>
-            <p>The supporting hands of Electronics and Communication Engineering</p>
+            <p>The supporting hands of Civil Engineering</p>
           </div>
   
           <div class="row justify-content-center">
-  
             <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
               <div class="member" data-aos="fade-up" data-aos-delay="100">
                 <div class="member-img">
@@ -415,20 +415,27 @@
             <div class="tab-pane" id="tab-4">
               <div class="row">
                 <div class="col-lg-8 details order-2 order-lg-1">
-                  <h3>Communication Systems</h3>
-                  <strong>Experiments</strong> <li>To visualize the effects of sampling and TDM,
-                    To Implement AM & FM modulation and demodulation,
-                    To implement PCM & DM, To implement FSK, PSK and DPSK schemes,
-                    To implement Equalization algorithms,
-                    To implement Error control coding schemes
-                    </li>
-                  <strong>Equipments</strong> <li> AM & FM modulation and demodulation Kit,
-                    Time Division Multiplexing Kit,
-                    Pulse Code Modulation & Delta Modulation Kit,
-                    Frequency Shift Keying, Phase Shift keying Kit,
-                    Frequency Division Multiplexing Kit,
-                    Sampling Kit</li>
-                       
+                  <h3>Physics Laboratory</h3>
+                   <strong>COURSE OBJECTIVES:</strong> <li> To learn the proper use of various kinds of physics laboratory equipment.</li>
+                  <li>To learn how data can be collected, presented and interpreted in a clear and concise manner.</li>
+                  <li>To learn problem solving skills related to physics principles and interpretation of experimental data.</li>
+                  <li>To determine error in experimental measurements and techniques used to minimize such error.</li>
+                  <li>To make the student as an active participant in each part of all lab exercises.</li>
+                  <strong>Experiments</strong> <li>Torsional pendulum - Determination of rigidity modulus of wire and moment of inertia of regular and irregular objects.</li>
+                  <li>Simple harmonic oscillations of cantilever.</li>
+                  <li>Non-uniform bending - Determination of Young's modulus</li>
+                  <li>Uniform bending - Determination of Young's modulus</li>
+                  <li>Laser-Determination of the wave length of the laser using grating</li>
+                  <li>Air wedge - Determination of thickness of a thin sheet/wire</li>
+                  <li>Optical fibre -Determination of Numerical Aperture and acceptance angle </li>
+                  <li>Compact disc- Determination of width of the groove using laser.</li>
+                  <li>Acoustic grating- Determination of velocity of ultrasonic waves in liquids</li>
+                  <li>Ultrasonic interferometer - determination of the velocity of sound and compressibility of liquids</li>
+                  <li>Post office box -Determination of Band gap of a semiconductor.</li>
+                  <li>Photoelectric effect</li>
+                  <li>Michelson Interferometer.</li>
+                  <li>Melde's string experiment</li>
+                  <li>Experiment with lattice dynamics kit.</li>       
                 </div>
                 <div class="col-lg-4 text-center order-1 order-lg-2">
                   <img src="assets/img/CSE/CM.png" alt="" class="img-fluid">
@@ -437,16 +444,29 @@
             
               <div class="row">
                 <div class="col-lg-8 details order-2 order-lg-1">
-                  <h3>Linear Integrated Circuits</h3>
-                  <strong>Experiments</strong> <li> To expose the students to linear and integrated circuits,
-                    To understand the basics of linear integrated circuits and available ICs,
-                    To understand and apply operational amplifiers in linear and nonlinear applications,
-                    To acquire the basic knowledge of special function IC,
-                    To use P-SPICE software for circuit design.</li>
-                  <strong>Equipments</strong> <li> Function Generator,
-                    Cathode Ray Oscilloscope,
-                    Digital Storage Oscilloscope,
-                    P-SPICE software</li> 
+                  <h3>Chenmistry Laboratory</h3>
+                  <strong>COURSE OBJECTIVES:</strong> 
+                  <li> To inculcate experimental skills to test basic understanding of water quality parameters, such as, acidity, alkalinity, hardness, DO, chloride and copper.</li>
+                  <li>To induce the students to familiarize with electroanalytical techniques such as, pH metry, potentiometry and conductometry in the determination of impurities in aqueous solutions.</li>
+                  <li>To demonstrate the analysis of metals and alloys.</li>
+                  <li>To demonstrate the synthesis of nanoparticles</li>
+                  
+                  <strong>Experiments</strong> 
+                  <li>Preparation of Na2CO3 as a primary standard and estimation of acidity of a water sample using the primary standard</li>
+                  <li>Determination of types and amount of alkalinity in water sample. Split the first experiment into two</li>
+                  <li>Determination of total, temporary & permanent hardness of water by EDTA method.</li>
+                  <li>Determination of DO content of water sample by Winkler's method.</li>
+                  <li>Determination of chloride content water sample by Argentometric method.</li>
+                  <li>Estimation of copper content of the given solution by lodometry.</li>
+                  <li>Estimation of TDS of a water sample by gravimetry.</li>
+                  <li>Determination of strength of given hydrochloric acid using pH meter.</li>
+                  <li>Determination of strength of acids in a mixture of acids using conductivity meter.</li>
+                  <li>Conductometric titration of barium chloride against sodium sulphate (precipitation titration)</li>
+                  <li>Estimation of iron content of the given solution using potentiometer.</li>
+                  <li>Estimation of sodium /potassium present in water using flame photometer.</li>
+                  <li>Preparation of nanoparticles (TiO2/ZnO/CuO) by Sol-Gel method.</li>
+                  <li>Estimation of Nickel in steel</li>
+                  <li>Proximate analysis of Coal</li>  
                 </div>
                 <div class="col-lg-4 text-center order-1 order-lg-2">
                   <img src="assets/img/CSE/BD.jpg" alt="" class="img-fluid">
@@ -454,233 +474,186 @@
               </div>
               <div class="row">
                 <div class="col-lg-8 details order-2 order-lg-1">
-                  <h3>Electron Device And Circuits</h3>
-                  <strong>Experiments</strong> <li> Study the characteristics of Electron Devices,
-                    Study the characteristic of CE, CB, CC, CS and differential Amplifier,
-                    Design and implementation of combinational Logic circuits using logic gates,
-                    Construction and verification of sequential logic circuits using Flip Flops,
-                    To gain hands on experience in designing electronic circuits,
-                    To learn the fundamental principles of amplifier circuits,
-                    To differentiate feedback amplifiers and oscillators,
-                    To understand the concepts of multivibrators,</li>
-                  <strong>Equipments</strong> <li> Function Generator,
-                    Cathode Ray Oscilloscope,
-                    Digital Storage Oscilloscope,
-                    P-SPICE software</li> 
+                  <h3>Computer Laboratory</h3>
+                   <strong>PROBLEM SOLVING AND PYTHON PROGRAMMING LABORATORY</strong> 
+                   <li> To understand the problem solving approaches.</li>
+                   <li> To learn the basic programming constructs in Python.</li>
+                   <li> To practice various computing strategies for Python-based solutions to real world problems.</li>
+                   <li> To use Python data structures - lists, tuples, dictionaries.</li>
+                   <li> To do input/output with files in Python</li>
+                  <strong>Experiments</strong> <li> Principles of planning, orientation and complete joinery details ,Buildings with load bearing walls 3. Buildings with sloping roof,R.C.C. framed structures, Industrial buildings – North light roof structures,Unconfined compression test in cohesive soil , Building Information Modeling.</li> 
+                  <strong>Equipments</strong> <li> Computer system of Pentium IV or equivalent (1 for each student) ,AUTOCAD (software).</li> 
+                
                 </div>
                 <div class="col-lg-4 text-center order-1 order-lg-2">
                   <img src="assets/img/CSE/BD.jpg" alt="" class="img-fluid">
                 </div>
               </div>
-              <div class="row">
-                <div class="col-lg-8 details order-2 order-lg-1">
-                  <h3>Microprocessor</h3>
-                  <strong>Experiments</strong> <li> To Write ALP Programs for fixed and Floating Point and Arithmetic,
-                    To Interface different I/Os with processor,
-                    To Generate waveforms using Microprocessors,
-                    To Execute Programs in 8051.
-                    </li>
-                  <strong>Equipments</strong> <li> 8279,8251,8253,8255,8259,Stepper motor, DC motor, ADC,DAC, Traffic light, Printer Interfacing boards,
-                    8085 Microprocessor Kit,
-                    8086 Microprocessor Kit,
-                    8051 Microcontroller Kit</li> 
-                </div>
-                <div class="col-lg-4 text-center order-1 order-lg-2">
-                  <img src="assets/img/CSE/BD.jpg" alt="" class="img-fluid">
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-8 details order-2 order-lg-1">
-                  <h3>Digital Signal Processing</h3>
-                   <strong>Experiments</strong> <li> To carry out simulation of DSP systems,
-                    To demonstrate their abilities towards DSP processor based implementation of DSP systems,
-                    To Analyze Finite word length effect on DSP systems,
-                    To demonstrate the applications of FFT to DSP.</li>
-                  <strong>Equipments</strong> <li> Fixed point DSP processor kit,
-                    Floating point DSP processor kit,
-                    MATLAB/ SIMULINK software</li> 
-                </div>
-                <div class="col-lg-4 text-center order-1 order-lg-2">
-                  <img src="assets/img/CSE/BD.jpg" alt="" class="img-fluid">
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-8 details order-2 order-lg-1">
-                  <h3>VLSI Design Laboratory</h3>
-                   <strong>Experiments</strong> <li> To Write HDL code for basic as well as advanced digital integrated circuits,
-                    To Import the logic modules into FPGA Boards,
-                    To Synthesize Place and Route the digital IPs,
-                    To Design Simulate and Extract the layouts of Analog IC Blocks using EDA tools,</li>
-                  <strong>Equipments</strong> <li> Cadence - 20 User License,
-                    FPGA-Spartan 6,
-                    X- link</li> 
-                </div>
-                <div class="col-lg-4 text-center order-1 order-lg-2">
-                  <img src="assets/img/CSE/BD.jpg" alt="" class="img-fluid">
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-8 details order-2 order-lg-1">
-                  <h3>Computer Networks Laboratory</h3>
-                   <strong>Experiments</strong> <li> To communicate between two desktop computers,
-                    To Implement the different protocols</li>
-                  <strong>Equipments</strong> <li> LAN Trainer Kit</li> 
-                </div>
-                <div class="col-lg-4 text-center order-1 order-lg-2">
-                  <img src="assets/img/CSE/BD.jpg" alt="" class="img-fluid">
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-8 details order-2 order-lg-1">
-                  <h3>Microwave And Fiber Optics</h3>
-                   <strong>Experiments</strong> <li> To analyze the performance of simple optical link,
-                    To Test microwave and optical components,
-                    To analyze the mode characteristics of fiber,
-                    To analyze the radiation of pattern of antenna,
-                    To Formulate the S-Parameters for Microwave components,</li>
-                  <strong>Equipments</strong> <li> Klystron Test Bench(X-Band),
-                    Gunn Oscillator Test Bench(X-Band),
-                    Advanced fiber Optic trainer Kit,
-                    Single Mode Fiber Characteristics Trainer</li> 
-                </div>
-                <div class="col-lg-4 text-center order-1 order-lg-2">
-                  <img src="assets/img/CSE/BD.jpg" alt="" class="img-fluid">
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-8 details order-2 order-lg-1">
-                  <h3>Embedded System Laboratory</h3>
-                  <strong>Experiments</strong> <li> To Learn the working of ARM processor,
-                    To Understand the Building Blocks of Embedded Systems,
-                    To Learn the concept of memory map and memory interface,
-                    To Know the characteristics of Real Time Systems,
-                    To Write programs to interface memory, I/Os with processor,
-                    To Study the interrupt performance</li>
-                  <strong>Equipments</strong> <li> Embedded trainer kits with ARM board,
-                    ARM CORTEX M3,
-                    Zigbee Module, Temperature sensor for Embedded trainer kits,
-                    Stepper Motor, Keyboard, LCD, ADC, DAC Starter Kit,
-                    On Board RTC & Serial port using UART Interface,
-                    On Board EEPROM Interface & Interrupt,
-                    On-chip PWM Interface</li> 
-                </div>
-                <div class="col-lg-4 text-center order-1 order-lg-2">
-                  <img src="assets/img/CSE/BD.jpg" alt="" class="img-fluid">
-                </div>
-              </div>
+              
+              
+              
           
             </div>
-            <!--<div class="tab-pane" id="tab-5">
+            <div class="tab-pane" id="tab-5">
+              <div class="row">
+                <div class="col-lg-8 details order-2 order-lg-1">
+                  
+<!-- ======= Resume Section ======= -->
+<section id="resume" class="resume">
+  <div class="container">
+
+
+
+    <div class="row">
+      <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
+        <h3 class="resume-title">Industrial Visit</h3>
+        <div class="resume-item">
+          <h4>Department of Civil Engineering</h4>
+          <h5>2019</h5>
+          
+          <ul>
+            <li> Civil engineering students Industrial Visit on Alipuram Erectors, Kollam on 01/10/2019.</li>
+            <li> Civil engineering students Industrial Visit on Bridge Project, Azhikal on 03/10/2019. </li>
+            <li> Stella Mary’s civil engineering students Two days industrial visit to various sites for at Moonar, Wayanad on 22/02/2019.</li>
+            <li> Three days Educational Tour was organized to Wayanad, Moonar, and Kochi on 12/03/2019.</li>
+            <li> One day industrial visit to Neyyar dam and Pechiparai on 02/03/2019.</li>
+          </ul>
+        </div>
+        <div class="resume-item">
+        
+          <h5>2018</h5>
+          
+          <ul>
+            <li>SMCE students Industrial Visit on Seshasayee. Paper &boards ltd on 08-09-2018.</li>
+            <li>Industrial Visit on Road Construction in hilly areas at kodaikanal on 03/08/18.</li>
+            <li>Industrial Visit on Road Construction in hilly areas at kodaikanal on 01/09/18.</li>
+            <li>Industrial visit Seshasayee.paper &boards ltd.unit on 28/07/2018.</li>
+            <li>Educational visit to Sankar Cement factory on 17/03/2018.</li>
+            <li>Industrial Visit 1.Educational visit to SPK and Co.,Kapallur, Madurai on 12/03/2018.</li>
+            <li>Five days Eduactional Tour was Organised at Thekadi,Iduki,Mummar, Ooty, Kochin on 17/02/2018.</li>
+          </ul>
+        </div>
+        <div class="resume-item">
+          <h5>2017</h5>
+          <ul>
+            <li>Industrial Visit on Precast Production Company, Nagercoil on 08-08-2017.</li>
+            <li>Industrial visit to Pechiparai dam, Puthen Dam , Perunchani Dam(Drainage gallery visit for the students) Mathur Thottipalam (Aqueduct) on 16/09/2017.</li>
+            <li>Industrial Visit Our students visited SH-46 Road work. Nagercoil on 16/09/2017.</li>
+          </ul>
+        </div>
+        <div class="resume-item">
+          <h5>2016</h5>
+          <ul>
+            <li>One day industrial visit to cement factory, Tirunelveli on 16/08/2016.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section><!-- End Resume Section -->
+
+
+            </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="tab-6">
               <div class="row">
                 <div class="col-lg-12 details order-2 order-lg-1">
                   <h3>Achievements</h3>
                   <p class="fst-italic">Omnis blanditiis saepe eos autem qui sunt debitis porro quia.</p>
                   <p>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae ut non quam ut quod eius qui. Ipsum quia odit vero atque qui quibusdam amet. Occaecati sed est sint aut vitae molestiae voluptate vel</p>
-                 
+                 <!-- Default Accordion -->
               <div class="accordion" id="accordionExample">
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingOne">
                     <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      2021
+                      2019-2020
                     </button>
                   </h2>
                   <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                      <strong>All the computer science department students</strong> <li> haveparticipated in the Lecture Series on “ Mobile Application Development using Android Studio “ held on 22-05-2021 organized by Institution’s Innovative Councilin association with Department of Computer Science andEngineering,Stella Mary’s College of Engineering.</li>
-                      <strong>All the computer science department students</strong> <li>have participated in the Lecture Serieson “ InnovationinNetworkSimulationusingNS2 ” held on 29-05-2021 organized by Institution’s Innovative Councilin association with Department of Computer Science andEngineering,Stella Mary’s College of Engineering. </li>
-                      <strong>All the computer science department students</strong> <li> have participated in the Lecture Series on “Opportunities inSoftware Testing ”held on 21-05-2021 organized by Institution’s Innovative Councilin association with Department of Computer Science and Engineering, StellaMary’s College of Engineering.</li>
+                      <strong>IrinSweeta, RajaSree Raj - National Conference</strong> <li>"Effects of plastic used in concrete" won II Prize in National Conference, held on 18.10.2019 organized by Marthandam College of Engineering and Technology</li>
+                      <strong>R.Abishiya - Connection</strong> <li>Won I Prize held on 14.03.2020 organized by Ponjesly College Of Engineering</li>
+                      <strong>Winfred	- Technical Quiz</strong> <li>Won I Prize held on 14.03.2020 organized by Ponjesly College Of Engineering</li>
+                      <strong>Subin.I	- Brick Bonding</strong> <li>Won II Prize held on 07.03.2020 organized by Rohini College Of Engineering</li>
+                      <strong>Subin.I	- Super Plumber</strong> <li>Won II Prize held on 07.03.2020 organized by Rohini College Of Engineering</li>
+                      <strong>J.Jamila - Rose	Technical Quiz</strong> <li>Won I Prize held on	02.03.2020 organized by Anna University-Konam</li>
+                      <strong>R.Abisha -	Technical Quiz	</strong> <li>Won II Prize held on 10.10.2019 organized by Universal College Of Engineering And Technology</li>
+                      <strong>R.Abishya, V.Bindhu, S.Anu -	Quiz</strong> <li>Won I Prize held on 14.03.2020 organized by Ponjesly College Of Engineering</li>
+                      <strong>Subin, Pavithran, Sam Berfin, Subin.I	- Quiz</strong> <li>Won I Prize held on 20.09.2019 organized by Stella Mary’s College Of Engineering</li>
                       
-                    
+
                     </div>
                   </div>
                 </div>
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingTwo">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      2020
+                      2018-19
                     </button>
                   </h2>
                   <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                      <strong>K.Lakshmi Prabha</strong> <li> second year CSE participated a Webinar on "DEVOPS" organized by Star Certification on 11th May 2020.</li>
-                      <strong>J.ShaksiyaBrindha Mol</strong> <li> second year CSE participated in a Webinar on "Data Science for Engineers" organized by Sri Eswar College of Engineering, Coimbatore on 13th May 2020.</li>
-                      <strong>J.ShaksiyaBrindha Mol</strong> <li> econd year CSE participated in a Webinar on "Artificial Intelligence and Machine Learning" organized by Sri Eswar College of Engineering, Coimbatore on 14th May 2020.</li>
-                      <strong>All the students of Computer Science Department</strong> <li> have attended One Day Live Webinar on "Employability Skills for the Future” presented by Mr. Daniel Jacob, Vice President, HR EC Group International on 20th May 2020.</li>
-                      <strong>All the students of Computer Science Department</strong> <li> have attended one day Live Webinar on "Data Science and its Applications” presented by Mr.DilipMuralidaran, Senior Technical Instructor, Splunk on 9th June 2020.</li>
-                      <strong>All the students of Computer Science Department</strong> <li> have attended one day Live Webinar on "Internet of Things” presented by Mr. Solomon Ashok, Director, Splendio Technologies on 18th June 2020.</li>
-                      <strong>All the students of Computer Science Department</strong> <li> have attended one day Live Webinar on "Explore Yourselves in Real time Projects” presented by Mrs. Sandhi Durairaj on 18th June 2020.</li>
-                      <strong>Dhamodaran.N</strong> <li> third year student won first prize inDebugging held at St.Xavier's College of Engineering on7th February 2020.</li>
-                      <strong>Renold.A</strong> <li>third year student won second prize in WebDesigning held at St.John's College of Arts and Science on11th February 2020. </li>
-                      <strong>Dhamodaran.N</strong> <li> third year student won second prize inSmart Coding held at St.John's College of Arts and Scienceon 11th February 2020.</li>
-                      <strong>Ashik Christo Mourin.M</strong> <li>second year student won firstprize in Paper Presentation and Cinematography held atPonjesly College of Engineering on 22nd February 2020. </li>
-                      <strong>Dhamodaran.N</strong> <li> third year student won first prize inCode Debugging held at Ponjesly College of Engineeringon 22nd February 2020.</li>
-                      <strong>Ashik Christo Mourin.M</strong> <li> second year student wonsecond prize in Project Presentation held at PonjeslyCollege of Engineering on 22nd February 2020.</li>
-                      <strong>Dhamodaran.N</strong> <li>third year student won second prize inWeb Designing and Technical Quiz held at PonjeslyCollege of Engineering on 22nd February 2020. </li>
-                  
-
+                      <strong>Kohila, Blessy - National Conference</strong> <li>"Sustainable Building Materials" won I Prize in National Conference, held on 22.03.2019 organized by Arunachala College of Engineering For Woman</li>
+                      <strong>S.S.Anu, Minimol, Ashminm Rejith - Connection</strong> <li>Won II Prize held on 08.03.2019 organized by Mar Ephraem College Of Engineering and Technology</li>
+                      <strong>S.Alan, I.R.Nizanth, Sujith	- Technical Event</strong> <li>Won I Prize held on 08.02.2019 organized by Bethlahem Institute Of Engineering</li>
+                      <strong>B.Nithish Nelson, M. IrinSweeta, Mini mol, Ram Prabu	- Technical Event</strong> <li>Won II Prize held on 08.02.2019 organized by Cape Institute Of Technology</li>
+                      <strong>S.Alan,I.R.Nizanth - Quiz</strong> <li>Won II Prize held on 14.09.2018 organized by Thamirabharani Engineering College</li>
+                      
                     </div>
                   </div>
                 </div>
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingThree">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                      2019
+                      2017-18
                     </button>
                   </h2>
                   <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                      <strong>M.Jayindra, K.Lakshmi Prabha</strong> <li> second year haveparticipated and presented a paper as a part ofKRYPTOZ in Mar Ephraem College of Engineeringon 8th August 2019.</li>
-                      <strong>Minisha P.M</strong> <li> of final year presented a paper entitled"Sentimental Analysis of Twitter Data" in BethlehemCollege of Engineering on 9th August 2019.</li>
-                      <strong>K.Lakshmi Prabha</strong> <li>second year has participatedand presented a paper in Bethlehem College Of Engineering on 9th August 2019. </li>
-                      <strong>Minisha P.M </strong> <li> final year presented a paper entitled"Sentimental Analysis of Twitter Data " in LoyalaInstitute of Technology on 31st August 2019.</li>
-                      <strong>Ashik Christo Mourin.M</strong> <li> ofthird year presented a paperentitled "Integration of CloudComputing with Internet ofThings" and won second prizein Loyala Institute ofTechnology on 31st August2019.</li>
-                      <strong>Minisha M.P</strong> <li> third year student presented a paper entitled“Sentimental Analysis of Twitter Data" and secured first prize inStella Mary's College of Engineering, Azhikal on 20th February2019.</li>
-                      <strong>Minisha M.P</strong> <li> third year has participated and secured third prize in Tech Talk, National Level Technical Symposium held at Stella Mary’s College of Engineering on 20th February 2019.</li>
-                      <strong>Akshai.R</strong> <li>third year student presented a paper entitled"Crossed-Dipole Arrays for DS-CDMA Systems" held at PonjeslyCollege of Engineering on 2nd February 2019. </li>
-                      <strong>J. Joel David</strong> <li> third year student presented a paper entitled "Riskbased Estimation of Manufacturing Order Cost with ArtificialIntelligence" in Ponjesly College of Engineering on 2nd February2019.</li>
-                      <strong>Minisha.M.P</strong> <li> third year has participated and secured first prizein the paper presentation in Just a Minute & Quiz, National LevelTechnical Symposium held at Ponjesly College of Engineering on2nd February 2019.</li>
-                      <strong>J.Joel David</strong> <li> third year has participated and secured secondprize in Photography, National Level Technical Symposium held atRajas College of Engineering on 2nd February 2019. </li>
+                    
+                      <strong>Raja Prija, Jenisha - National Conference</strong> <li>"Plastic as a soil stabilizer" won II Prize in National Conference, held on 16.09.2017 organized by Rohini College of Engineering</li>
+                      <strong>Akash, Sahaya Abith Akash - Quiz</strong> <li>Won II Prize held on 27.03.2018 organized by Noorul Islam Centre For Higher Education</li>
+                      <strong>Subin -	Technical Connections</strong> <li>Won I Prize held on 22.08.2017 organized by Stella Mary’s College Of Engineering</li>
+                      <strong>J.Karishma, Josema Koshy -	Connection</strong> <li>Won I Prize held on 19.08.2016 organized by Mar Ephraem College Of Engineering and Technology</li>
+                      <strong>J.Karishma,Josema Koshy - Quiz</strong> <li>Won II Prize held on 19.08.2016 organized by Mar Ephraem College Of Engineering and Technology</li>
+                      
+
                     </div>
                   </div>
                 </div>
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingFour">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                      2018
+                      2016-17
                     </button>
                   </h2>
                   <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                      <strong>B.Aishwarya</strong> <li> third year student presented a PaperPresentation on 5G Wireless Technology, National LevelTechnical Symposium held at Rajas International Instituteof Technology on 5th October 2018.</li>
-                      <strong>B.Aishwarya</strong> <li> third Year has participated and securedfirst prize in Code Debugging, National Level TechnicalSymposium held at Rajas College of Engineering on 5thOctober 2018.</li>
-                      <strong>B.Aishwarya</strong> <li> third year student presented a paper entitled "A Smart Home Energy Management System Using Big Data Analytics" on National Level Technical Symposium in Rajas International Institute of Technology on 28th September 2018.</li>
-                      <strong>Ajini A.V</strong> <li> Final year student got third place in Technical Quiz organized by Rohini college Of Engineering &Technology on 20th March 2018.</li>
-                      <strong>Ajini A.V</strong> <li> Final year student got second place in paper presentation in National Level Technical Symposium held at Kalaivanar N.S.K College of Engineering on 16th March 2018.</li>
-                      <strong>A.George Stalin Britto</strong> <li> Final year student wonfirst prize in ElocutionCompetition held at St.Hindu College,Nagercoil (NationalVoters Day on 25thJanuary 2018).</li>
+                      <strong>Kavitha, Karishma - National Conference</strong> <li>"Solar Building" won III Prize in National Conference, held on 25.03.2017 organized by Maria College of Engineering & Technology</li>
+                      <strong>J.Karishma, Josema Koshy	- Connection</strong> <li>Won I Prize held on 09.08.2016 organized by Mar Ephraem College Of Engineering And Technology	</li>
+                      <strong>J.Karishma, Josema Koshy -	Quiz</strong> <li>Won II Prize held on 09.08.2016 organized by Mar Ephraem College Of Engineering And Technology</li>
                       
+
                     </div>
                   </div>
                 </div>
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingFive">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                      2017
+                      2015-16
                     </button>
                   </h2>
                   <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                      <strong>Archana Vijayan and Catherine SethiRaj.K</strong> <li>secondyear have participated and presented a paper entitled"Location Privacy preserving using Semi-TTP Server" inHeera College of Engineering and Technology,Trivandrum on 11th September 2017. </li>
-                      <strong>Artheya R.S, Prabha.S and Priyanka Lidiya.P</strong> <li>secondyear have participated and presented a paper entitled "ANew Method of Text Categorization and Summarizationwith Fuzzy Confusion Matrix" in Heera College ofEngineering and Technology, Trivandrum on 11thSeptember 2017. </li>
-                      <strong>Ashwini Priya.J, JeyaBrintha.M.R</strong> <li> hird year have participated and presented a paper entitled "Novel Algorithm for Finding the Closest l-mers in Biological Data" and secured second prize held at Marian Engineering College, Trivandrum on 4th September 2017.</li>
-                      <strong>M.SornaRevathy and W.SherlinVivitha</strong> <li>Second year students presented a paper entitled "Effective Method for Energy Saving" in Rohini College of Engineering on 21st February 2017. </li>
-                      <strong>M.SoranaRevathy and W.SherlinVivitha</strong> <li> Second yearstudents presented a paper entitled "Effective Method forEnergy Saving" in Arunachala College of Engineering forWomen on 25th January 2017.</li>
-                      <strong>Sheeba Ann Thomas and SahayaNishanthini.M</strong> <li> Finalyear students presented a paper entitled "A Real Time EventDetection and Notification Listing Social Media" inArunachala College of Engineering for Women on 25thJanuary 2017.</li>
-                      <strong>Ajini.A.V and Gokul Priya.C</strong> <li> third year studentspresented a paper entitled "Security Issues IRV6:AComprehensive Overview" in Arunachala College ofEngineering for Women on 25th January 2017.</li>
-                     
+                      <strong>Kavitha, Ancelin Suga - National Conference</strong> <li>"Ground Improvement Techniques" won I Prize in National Conference, held on 01.04.2016 organized by C.S.I. Institute of Technology</li>
+                      <strong>Shifino G Sekhar, Mathana - National Conference</strong> <li>"Green Building" won II Prize in National Conference, held on 05.03.2016 organized by Bethlahem Institute of Engineering</li>
+                      
                     </div>
                   </div>
                 </div>
-                <div class="accordion-item">
+                <!--<div class="accordion-item">
                   <h2 class="accordion-header" id="headingSix">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
                       2016
@@ -702,73 +675,15 @@
                       <strong>Third year CSE girls</strong> <li>attended one day workshop on "Mobile Application Development” organized by Arunachala College of Engineering on 8th February 2016. </li>
                     </div>
                   </div>
-                </div>
-              </div>
+                </div>-->
+              </div><!-- End Default Accordion Example -->
                 
                 </div>
                 <div class="col-lg-4 text-center order-1 order-lg-2">
                   <img src="assets/img/course-details-tab-5.png" alt="" class="img-fluid">
                 </div>
               </div>
-            </div>-->
-
-
-
-            <div class="tab-pane" id="tab-6">
-              <div class="row">
-                <div class="col-lg-8 details order-2 order-lg-1">
-                  
-<!-- ======= Resume Section ======= -->
-<section id="resume" class="resume">
-  <div class="container">
-
-
-
-    <div class="row">
-      <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
-        <h3 class="resume-title">Industrial Visit</h3>
-        <div class="resume-item">
-          <h4>Department of Electronics and Communication Engineering</h4>
-          <h5>2019</h5>
-          
-          <ul>
-            <li> Our Third year and Final year students visited Caliber Interconnect Solutions Coimbatore on 24/08/2019. About Caliber Interconnect Solutions they are the leading IC testing and designing core based company.</li>
-          </ul>
-        </div>
-        <div class="resume-item">
-        
-          <h5>2018</h5>
-          
-          <ul>
-            <li>Our Second year and third year students visited Signals and Systems, Chennai on 30/09/2018 and 01/10/2018. About Signals and Systems they are the manufactures for Synchronous clock and Energy meters. Students get good exposure about Synchronous clock.</li>
-            <li>Students from third year visited Traco cable company Limited, Ernakulam on 01/03/2018.About Traco cable Company; it has the product mix overhead conductors,power cables,control and signaling cables.This company has the customers like various Electricity Boards,BSNL and ESCOMS of other states</li>
-          </ul>
-        </div>
-        <div class="resume-item">
-          <h5>2017</h5>
-          <ul>
-            <li>Our Second year and third year students along with faculty members of ECE department visited Vikram Sarabhai Space Centre,Trivandrum on 24/03/2017as a part of Industrial - Institute Interaction, The students witnessed the rocket launching session organised by VSSC and that really inspired the students.</li>
-            <li>Our final year students visited Kirloskar Brothers Private Ltd; Coimbatore on 23/02/2017.Students got more ideas related to manufacturing and testing of electronic components.</li>
-          </ul>
-        </div>
-        <div class="resume-item">
-          <h5>2015</h5>
-          <ul>
-            <li>Our third year students visited KELTRON; Trivandrum on 23/09/2015.It produces discrete electronics components for complex equipment and systems.</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section><!-- End Resume Section -->
-
-
             </div>
-              </div>
-            </div>
-
-            
             <div class="tab-pane" id="tab-7">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
@@ -779,13 +694,13 @@
               <div class="col-md-6 col-lg-4 d-flex align-items-center mb-5 mb-lg-0">
                 <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
                   <div class="icon"><i class="bx bx-world"></i></div>
-                  <h4 class="title"><a href="https://webdocs.pages.dev/assets/docs/ece/syllabus/2021.pdf">Regulation 2021</a></h4>
+                  <h4 class="title"><a href="">Regulation 2021</a></h4>
                   </div>
               </div>
               <div class="col-md-6 col-lg-4 d-md-flex align-items-stretch mb-lg-0 mb-lg-0">
                 <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
                   <div class="icon"><i class="bx bx-world"></i></div>
-                  <h4 class="title"><a href="https://webdocs.pages.dev/assets/docs/ece/syllabus/2017.pdf">Regulation 2017</a></h4>
+                  <h4 class="title"><a href="">Regulation 2017</a></h4>
                   </div>
                 </div>
             </div>
@@ -803,13 +718,13 @@
               <div class="col-md-7 col-lg-5 d-flex align-items-center mb-5 mb-lg-0">
                 <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
                   <div class="icon"><i class="bx bi-journal-richtext"></i></div>
-                  <h4 class="title"><a href="https://webdocs.pages.dev/assets/docs/ece/po/Programme-Outcomes.pdf">Programme Outcomes</a></h4>
+                  <h4 class="title"><a href="">Programme Outcomes</a></h4>
                   </div>
               </div>
               <div class="col-md-7 col-lg-5 d-md-flex align-items-stretch mb-lg-0 mb-lg-0">
                 <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
                   <div class="icon"><i class="bx bi-journal-richtext"></i></div>
-                  <h4 class="title"><a href="https://webdocs.pages.dev/assets/docs/ece/po/PSO-ECE.pdf">Program Specfic Outcomes</a></h4>
+                  <h4 class="title"><a href="">Program Specfic Outcomes</a></h4>
                   </div>
                 </div>
             </div>
