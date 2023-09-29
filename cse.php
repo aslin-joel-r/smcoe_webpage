@@ -288,13 +288,10 @@ The faculty members impart knowledge through curriculum based formal education a
   
           <div class="section-title" data-aos="fade-up">
             <h2>Teaching Faculty</h2>
-            <p>The pillars of Computert Science and Engineering</p>
+            <p>The pillars of Civil Edddngineering</p>
           </div>
   
           <div class="row justify-content-center">
-            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-              
-            </div>
 
             
 <?php
