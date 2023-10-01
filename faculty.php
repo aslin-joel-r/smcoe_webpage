@@ -190,22 +190,22 @@ if (!$dbcon) {
             magna aliqua.
           </p>-->
           <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-5">
               <ul><li></li>
                 <ul><li></li>
                 <li><i class="bi bi-chevron-right"></i> <strong>Name:</strong> <span>Dr.Pon.Partheeban</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.example.com</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Vidwan:</strong> <span>www.example.com</span></li>
                 <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+91-70100 00702</span></li>
                 <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Nagercoil</span></li>
               </ul>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-7">
               <ul><ul><li></li>
                 <ul><li></li>
                 <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>33</span></li>
                 <li><i class="bi bi-chevron-right"></i> <strong>Date of Joining:</strong> <span>07/01/2019</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Speciasation:</strong> <span>Cloud Computing, Machine Learning</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Experience</strong> <span>4 years & 7 Months</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>specialisation:</strong> <span>Cloud Computing, Machine Learning</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Experience:</strong> <span>4 years & 7 Months</span></li>
               </ul>
             </div>
           </div>

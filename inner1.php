@@ -1,3 +1,14 @@
+<?php
+$servername = "172.18.0.1";
+$username = "root";
+$password = "root";
+$db="mysql";
+$port="33070";  
+$dbcon = mysqli_connect($servername, $username, $password,$db,$port);
+if (!$dbcon) {
+    die("Connection failed: " .  mysqli_connect_error());
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -151,18 +162,7 @@
       </div>
     </section><!-- End Breadcrumbs Section -->
 
-    <section class="inner-page">
-      <div class="container">
-
-        <div id="divContactUsSlider" ><div class="contact-slider d-none d-flex hidden-xs open" style="top: 180px; display: flex!important;">
-            <div style="border-bottom:none;margin-left: 2px;" class="slider-icon">
-                <a class="slider-icon-anchor" href="cse.html"><span class="contactus-slider-HES-Base position-relative py-4 px-3" style="margin-top: 10px;">Online Admission</span></a></div>
-            
-             </div>
-             </div>
-
-              
-    </section>
+ 
 
   </main><!-- End #main -->
 

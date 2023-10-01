@@ -1,3 +1,14 @@
+<?php
+$servername = "172.18.0.1";
+$username = "root";
+$password = "root";
+$db="mysql";
+$port="33070";  
+$dbcon = mysqli_connect($servername, $username, $password,$db,$port);
+if (!$dbcon) {
+    die("Connection failed: " .  mysqli_connect_error());
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -152,10 +163,10 @@
       </div>
     </section><!-- End Breadcrumbs Section -->
 
-    <section class="Alumni">
+    <section class="IQAC">
       <div class="container text-center">
         <br>
-        <h2>Alumni Association</h2>
+        <h2>Internal Quality Assurance Cell (IQAC)</h2>
       </div>
   </div><!-- End Breadcrumbs -->
 
@@ -165,8 +176,10 @@
 
       <div class="row text-justify">
           <h3> Overview</h3>
-          <p class="text-justify">An Alumni association is an association of graduates or more broadly, former students. There associations often organize social events, publish newsletters or magazine. Many provide a variety of benefits and services that help alumni maintain connections to their educational institution and fellow graduates. Today alumni associations involves graduate of all age groups and demographics.</p>
-          </div>
+          <p class="text-justify">The National Assessment and Accreditation Council (NAAC), Bangalore proposes that every accredited institution should establish an Internal Quality Assurance Cell (IQAC) as a post-accreditation quality sustenance measure, in pursuance of its action plan in terms of performance evaluation, assessment and accreditation and quality up-gradation of institutions of higher education. The IQAC is a part of the institution’s system and work towards realisation of the goals of quality enhancement and sustenance, since quality enhancement is a continuous process. The key task of the IQAC is to evolve a system for conscious, consistent and catalytic improvement in the overall performance of institutions. IQAC will channelize all efforts and measures of the institution towards promoting its holistic academic excellence, during the post-accreditation period.
+          </p>
+          <p class="text-justify">The first step towards internalization and institutionalization of quality enhancement initiatives is the work of the IQAC. In all the constituents of the institution, its success depends upon the sense of belongingness and participation that it can implant. The IQAC will be a facilitative and participative voluntary system of the institution and it also has the potential to become a vehicle for steering in quality enhancement in terms of working out planned interventionist strategies thereby removing deficiencies and enhancing quality.</p>
+        </div>
         
   </section><!-- End Cource Details Section -->
 
@@ -181,16 +194,16 @@
               <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">Vision & MISSION</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" data-bs-toggle="tab" href="#tab-2">Objective</a>
+              <a class="nav-link" data-bs-toggle="tab" href="#tab-2">People</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" data-bs-toggle="tab" href="#tab-3">Activities</a>
+              <a class="nav-link" data-bs-toggle="tab" href="#tab-3">Contact us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" data-bs-toggle="tab" href="#tab-4">People</a>
+              <a class="nav-link" data-bs-toggle="tab" href="#tab-4">Gallery</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" data-bs-toggle="tab" href="#tab-5">Objectives and Activities</a>
+              <a class="nav-link" data-bs-toggle="tab" href="#tab-5">Functions & Benifits</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" data-bs-toggle="tab" href="#tab-6">Meeting Minutes</a>
@@ -216,20 +229,17 @@
           <div class="tab-content">
             <div class="tab-pane active show" id="tab-1">
               <div class="row">
-                <div class="col-lg-12 details order-2 order-lg-1">
+                <div class="col-lg-8 details order-2 order-lg-1">
                   <!-- ======= Services Section ======= -->
     <section id="services" class="services">
         <div class="container">
           <div class="row">
-            <div class="col-md-6 col-lg-10 d-flex align-items-stretch mb-5 mb-lg-0 text-justify">
+            <div class="col-md-6 col-lg-10 d-flex align-items-stretch mb-5 mb-lg-0">
               <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
                 <div class="icon"><i class="bx bxl-dribbble"></i></div>
                 <h4 class="title"><a href="">VISION</a></h4>
-                <li>Improve the relationship of Alumni with Faculty, students and the College management.</li>  
-                <li>Develop Alumni programs that encourage alumni fellowship and promote the institution’s physical, moral and spiritual development.</li>
-                <li>Support the institution in recruiting students.</li>
-                <li>Promoting intellectual, spiritual and emotional connections among the institution members.</li>
-                <li>Provide the institution and its programs with economic assistance.</li>
+                <li>To evolve a system to improve the academic and administrative performance of the institution for a conscious, consistent and catalytic action.</li>  
+                <li>To endorse measures essential for the quality enhancement of the institutional functioning through internalization of quality culture and institutionalization of best practices</li>
               </div>
             </div>
   
@@ -237,7 +247,14 @@
               <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
                 <div class="icon"><i class="bx bx-file"></i></div>
                 <h4 class="title"><a href="">MISSION</a></h4>
-              <li>The mission is to provide a beneficial relationship between the Stella Mary’s Alumni and the College by offering their support to the students for the growth of the institution.</li>  
+              <li>Making sure of a well-timed, proficient and progressive performance of academic, administrative and financial tasks.</li>  
+              <li>To significance and quality of academic an research programmes.</li>
+              <li>Equitable access to and affordability of academic programmes for various sections of society.</li>
+              <li>Optimizing and combining modern methods of teaching and learning.</li>
+              <li>The credibility of evaluation procedures.</li>
+              <li>Making certain the sufficiency, maintenance and proper allotment of support structure and services.</li>
+              <li>Knowledge sharing with other institutions in India and abroad, in the field of research and networking.</li>
+
               </div>
             </div>
   
@@ -253,55 +270,357 @@
             <div class="tab-pane" id="tab-2">
               <div class="row ">
                 <!-- ======= Team Section ======= -->
-                <section id="services" class="services">
-                    <div class="container">
-                      <div class="row">
-                        <div class="col-md-6 col-lg-10 d-flex align-items-stretch mb-5 mb-lg-0">
-                          <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-                            <div class="icon"><i class="bx bxl-dribbble"></i></div>
-                            <h4 class="title"><a href="">Objectives</a></h4>
-                            <li>To keep a roster of all alumni of College and their pertinent data.</li>  
-                            <li>Maintaining the updated and current information of all alumni.</li>
-                            <li>To encourage, foster and promote close relations among the alumni themselves.</li>
-                            <li>To promote a sustained sense of belonging to the alma mater its graduates,faculties and students to the Alumni</li>
-                            <li>To guide and assist alumni who have recently completed their courses of study.</li>
-                            <li>To keep them engaged in productive pursuits useful to the society.</li>
-                            <li>To provide a forum for the alumni for exchange of ideas on academic cultural & social issues of the day by organizing & coordinating reunion activities of the alumni.</li>
-                            <li>To let the alumni acknowledge their gratitude to their alma mater.</li>
-                          </div>
-                        </div>
-              
-                      </div>
-              
-                    </div>
-                  </section>
+    <section id="team" class="team section-bg">
+        <div class="container">
+  
+          <div class="section-title" data-aos="fade-up">
+            <h2>People</h2>
+            <p></p>
+          </div>
+  
+          <div class="row d-flex justify-content-center">
+            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+              <div class="member" data-aos="fade-up" data-aos-delay="100">
+                <div class="member-img">
+                  <img src="https://webdocs.pages.dev/assets/img/CIVIL/teaching/MADHUMATHI.png" class="img-fluid" alt="">
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="member-info">
+                  <h4 class="title"><a href="">Dr.R.Suresh Premil Kumar</a></h4>
+                  <h4>Chairperson</h4>
+                  <span>Principal</span>
+                </div>
+              </div>
+            </div>
 
-    <!-- End Team Section -->
+            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+              <div class="member" data-aos="fade-up" data-aos-delay="100">
+                <div class="member-img">
+                  <img src="https://webdocs.pages.dev/assets/img/CIVIL/teaching/MADHUMATHI.png" class="img-fluid" alt="">
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="member-info">
+                  <h4 class="title"><a href="">Dr.J.Jenix Rino</a></h4>
+                  <h4>Management Representative</h4>
+                  <span>Director</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+              <div class="member" data-aos="fade-up" data-aos-delay="100">
+                <div class="member-img">
+                  <img src="https://webdocs.pages.dev/assets/img/CIVIL/teaching/MADHUMATHI.png" class="img-fluid" alt="">
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="member-info">
+                  <h4 class="title"><a href="">Dr.Ezhil Vignesh</a></h4>
+                  <h4>Co-ordinator</h4>
+                  <span>Associate Professor / EEE</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+              <div class="member" data-aos="fade-up" data-aos-delay="100">
+                <div class="member-img">
+                  <img src="https://webdocs.pages.dev/assets/img/CIVIL/teaching/MADHUMATHI.png" class="img-fluid" alt="">
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="member-info">
+                  <h4 class="title"><a href="">Dr.R.K.Madhumathi</a></h4>
+                  <h4>Secretary</h4>
+                  <span>Joint Director - Research & Assistant Professor /CIVIL</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="section-title" data-aos="fade-up">
+              <h2>Administrative Members</h2>
+              <p></p>
+            </div>
+            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+              <div class="member" data-aos="fade-up" data-aos-delay="100">
+                <div class="member-img">
+                  <img src="https://webdocs.pages.dev/assets/img/CIVIL/teaching/MADHUMATHI.png" class="img-fluid" alt="">
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="member-info">
+                  <h4 class="title"><a href="">Dr.Michael Raj</a></h4>
+                  <span>Head & Associate Professor / MECH</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+              <div class="member" data-aos="fade-up" data-aos-delay="100">
+                <div class="member-img">
+                  <img src="https://webdocs.pages.dev/assets/img/CIVIL/teaching/MADHUMATHI.png" class="img-fluid" alt="">
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="member-info">
+                  <h4 class="title"><a href="">Dr.F.R.Shiny Malar</a></h4>
+                  <span>Head & Professor / CSE</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                <div class="member" data-aos="fade-up" data-aos-delay="100">
+                  <div class="member-img">
+                    <img src="https://webdocs.pages.dev/assets/img/CIVIL/teaching/MADHUMATHI.png" class="img-fluid" alt="">
+                    <div class="social">
+                      <a href=""><i class="bi bi-instagram"></i></a>
+                      <a href=""><i class="bi bi-facebook"></i></a>
+                      <a href=""><i class="bi bi-instagram"></i></a>
+                      <a href=""><i class="bi bi-linkedin"></i></a>
+                    </div>
+                  </div>
+                  <div class="member-info">
+                    <h4 class="title"><a href="">Mr.N.Michael Franklin</a></h4>
+                    <span>Head & Assistant Professor / ECE</span>
+                  </div>
+                </div>
+              </div>
+
+            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                <div class="member" data-aos="fade-up" data-aos-delay="100">
+                  <div class="member-img">
+                    <img src="https://webdocs.pages.dev/assets/img/CIVIL/teaching/MADHUMATHI.png" class="img-fluid" alt="">
+                    <div class="social">
+                      <a href=""><i class="bi bi-instagram"></i></a>
+                      <a href=""><i class="bi bi-facebook"></i></a>
+                      <a href=""><i class="bi bi-instagram"></i></a>
+                      <a href=""><i class="bi bi-linkedin"></i></a>
+                    </div>
+                  </div>
+                  <div class="member-info">
+                    <h4 class="title"><a href="">Dr.A.Gayathri</a></h4>
+                    <span>Head & Assistant Professor / EEE</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                <div class="member" data-aos="fade-up" data-aos-delay="100">
+                  <div class="member-img">
+                    <img src="https://webdocs.pages.dev/assets/img/CIVIL/teaching/MADHUMATHI.png" class="img-fluid" alt="">
+                    <div class="social">
+                      <a href=""><i class="bi bi-instagram"></i></a>
+                      <a href=""><i class="bi bi-facebook"></i></a>
+                      <a href=""><i class="bi bi-instagram"></i></a>
+                      <a href=""><i class="bi bi-linkedin"></i></a>
+                    </div>
+                  </div>
+                  <div class="member-info">
+                    <h4 class="title"><a href="">Mrs.A.L.Merlin Sheela</a></h4>
+                    <span>Assistant Professor / S&H</span>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="section-title" data-aos="fade-up">
+                <h2>Local Society Member</h2>
+                <p></p>
+              </div>
+
+              <div class="col-lg-3 col-md-4 d-flex align-items-stretch">
+                <div class="member" data-aos="fade-up" data-aos-delay="100">
+                  <div class="member-img">
+                    <img src="https://webdocs.pages.dev/assets/img/CIVIL/teaching/MADHUMATHI.png" class="img-fluid" alt="">
+                    <div class="social">
+                      <a href=""><i class="bi bi-instagram"></i></a>
+                      <a href=""><i class="bi bi-facebook"></i></a>
+                      <a href=""><i class="bi bi-instagram"></i></a>
+                      <a href=""><i class="bi bi-linkedin"></i></a>
+                    </div>
+                  </div>
+                  <div class="member-info">
+                    <h4 class="title"><a href="">Dr.M.Marsaline Beno</a></h4>
+                    <span>Dean Academics, St.Xavier Catholic College of Engineering, Nagercoil.</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="section-title" data-aos="fade-up">
+                <h2>Alumni</h2>
+                <p></p>
+              </div>
+
+              <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                <div class="member" data-aos="fade-up" data-aos-delay="100">
+                  <div class="member-img">
+                    <img src="https://webdocs.pages.dev/assets/img/CIVIL/teaching/MADHUMATHI.png" class="img-fluid" alt="">
+                    <div class="social">
+                      <a href=""><i class="bi bi-instagram"></i></a>
+                      <a href=""><i class="bi bi-facebook"></i></a>
+                      <a href=""><i class="bi bi-instagram"></i></a>
+                      <a href=""><i class="bi bi-linkedin"></i></a>
+                    </div>
+                  </div>
+                  <div class="member-info">
+                    <h4 class="title"><a href="">Mrs.Aswini Kumari.AS</a></h4>
+                    <span>Associate Engineer, Rising Star Mobile India Pvt.Ltd, Chennai.</span>
+                  </div>
+                </div>
+              </div>
+
+      
+
+
+              <div class="section-title" data-aos="fade-up">
+                <h2>Industrialist</h2>
+                <p></p>
+              </div>
+
+
+              <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                <div class="member" data-aos="fade-up" data-aos-delay="100">
+                  <div class="member-img align-items-center">
+                    <img src="https://webdocs.pages.dev/assets/img/CIVIL/teaching/MADHUMATHI.png" class="img-fluid" alt="">
+                    <div class="social">
+                      <a href=""><i class="bi bi-instagram"></i></a>
+                      <a href=""><i class="bi bi-facebook"></i></a>
+                      <a href=""><i class="bi bi-instagram"></i></a>
+                      <a href=""><i class="bi bi-linkedin"></i></a>
+                    </div>
+                  </div>
+                  <div class="member-info">
+                    <h4 class="title"><a href="">Mr.A.Jebresh Isaac</a></h4>
+                    <span>Managing Director, Jebby Engineers, Channel Street, Karavillai.</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                <div class="member" data-aos="fade-up" data-aos-delay="100">
+                  <div class="member-img">
+                    <img src="https://webdocs.pages.dev/assets/img/CIVIL/teaching/MADHUMATHI.png" class="img-fluid" alt="">
+                    <div class="social">
+                      <a href=""><i class="bi bi-instagram"></i></a>
+                      <a href=""><i class="bi bi-facebook"></i></a>
+                      <a href=""><i class="bi bi-instagram"></i></a>
+                      <a href=""><i class="bi bi-linkedin"></i></a>
+                    </div>
+                  </div>
+                  <div class="member-info">
+                    <h4 class="title"><a href="">Mr.Siva Kumar</a></h4>
+                    <span>Managing Director, Aruna Industries, Padanthalamoodu.</span>
+                  </div>
+                </div>
+              </div>
+           
+
+              <div class="section-title" data-aos="fade-up">
+                <h2>Students Members</h2>
+                <p></p>
+              </div>
+
+
+              <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                <div class="member" data-aos="fade-up" data-aos-delay="100">
+                  <div class="member-img">
+                    <img src="https://webdocs.pages.dev/assets/img/CIVIL/teaching/MADHUMATHI.png" class="img-fluid" alt="">
+                    <div class="social">
+                      <a href=""><i class="bi bi-instagram"></i></a>
+                      <a href=""><i class="bi bi-facebook"></i></a>
+                      <a href=""><i class="bi bi-instagram"></i></a>
+                      <a href=""><i class="bi bi-linkedin"></i></a>
+                    </div>
+                  </div>
+                  <div class="member-info">
+                    <h4 class="title"><a href="">Mr.Roshan Lal</a></h4>
+                    <span>CSE-IV</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                <div class="member" data-aos="fade-up" data-aos-delay="100">
+                  <div class="member-img">
+                    <img src="https://webdocs.pages.dev/assets/img/CIVIL/teaching/MADHUMATHI.png" class="img-fluid" alt="">
+                    <div class="social">
+                      <a href=""><i class="bi bi-instagram"></i></a>
+                      <a href=""><i class="bi bi-facebook"></i></a>
+                      <a href=""><i class="bi bi-instagram"></i></a>
+                      <a href=""><i class="bi bi-linkedin"></i></a>
+                    </div>
+                  </div>
+                  <div class="member-info">
+                    <h4 class="title"><a href="">Ms.XXXXXXX</a></h4>
+                    <span>XXXXXX</span>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+          </div>
+        </div>
+      </section><!-- End Team Section -->
               </div>
             </div>
             <div class="tab-pane" id="tab-3">
               <div class="row">
                 <!-- ======= Team Section ======= -->
-                <section id="services" class="services">
-                    <div class="container">
-                      <div class="row">
-                        <div class="col-md-6 col-lg-10 d-flex align-items-stretch mb-5 mb-lg-0">
-                          <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-                            <div class="icon"><i class="bx bxl-dribbble"></i></div>
-                            <h4 class="title"><a href="">Activities</a></h4>
-                            <li>Platform for meeting and exchange of ideas among the alumni.</li>  
-                            <li>Assist students for career guidance program.</li>
-                            <li>Technical seminars by alumni in reputed organization.</li>
-                            <li>Keep alumni posted through the website.</li>
-                            <li>Getting feedback for constant improvisation.</li>
-                          </div>
-                        </div>
+    <section id="team" class="team section-bg">
+        <div class="container">
+  
+          <div class="section-title" data-aos="fade-up">
+            <h2>Contact us</h2>
+            
+          </div>
+  
+          <div class="row d-flex justify-content-center">
+            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+              <div class="member" data-aos="fade-up" data-aos-delay="100">
+                <div class="member-img">
+                  <img src="assets/img/CIVIL/SATHEESH.png" class="img-fluid" alt="">
+                  <div class="social">
+                    <a href="tel:+916382490019"><i  class="ri-phone-line"></i></a>
+                    <a href="mailto:iqac@stellamaryscoe.edu.in"><i class="ri-mail-send-line"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="member-info">
+                  <h4 class="title"><a href="">Dr.Ezhil Vignesh</a></h4>
+                  <span>IQAC Coordinator, Associate Professor / EEE</span>
+                </div>
+              </div>
+            </div>
 
-                      </div>
-              
-                    </div>
-                  </section>
-                <!-- End Team Section -->
+          </div>
+        </div>
+      </section><!-- End Team Section -->
               </div>
             </div>
             <div class="tab-pane" id="tab-4">
@@ -309,231 +628,48 @@
             
               
               
-                <section id="team" class="team section-bg">
-                    <div class="container">
-              
-                      <div class="section-title" data-aos="fade-up">
-                        <h2>Patrons</h2>
-                        <p></p>
-                      </div>
-              
-                      <div class="row d-flex justify-content-center">
-                        <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-                          <div class="member" data-aos="fade-up" data-aos-delay="100">
-                            <div class="member-img">
-                              <img src="https://webdocs.pages.dev/assets/img/CIVIL/teaching/MADHUMATHI.png" class="img-fluid" alt="">
-                              <div class="social">
-                                <a href=""><i class="bi bi-twitter"></i></a>
-                                <a href=""><i class="bi bi-facebook"></i></a>
-                                <a href=""><i class="bi bi-instagram"></i></a>
-                                <a href=""><i class="bi bi-linkedin"></i></a>
-                              </div>
-                            </div>
-                            <div class="member-info">
-                              <h4 class="title"><a href="">Dr.Nazarth Charles</a></h4>
-                              <h4>Chairman</h4>
-                              <span></span>
-                            </div>
-                          </div>
-                        </div>
-            
-                        <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-                          <div class="member" data-aos="fade-up" data-aos-delay="100">
-                            <div class="member-img">
-                              <img src="https://webdocs.pages.dev/assets/img/CIVIL/teaching/MADHUMATHI.png" class="img-fluid" alt="">
-                              <div class="social">
-                                <a href=""><i class="bi bi-twitter"></i></a>
-                                <a href=""><i class="bi bi-facebook"></i></a>
-                                <a href=""><i class="bi bi-instagram"></i></a>
-                                <a href=""><i class="bi bi-linkedin"></i></a>
-                              </div>
-                            </div>
-                            <div class="member-info">
-                              <h4 class="title"><a href="">Dr .R. Suresh Premil Kumar</a></h4>
-                              <h4>Principal</h4>
-                              <span></span>
-                            </div>
-                          </div>
-                        </div>
-
-            
-                        <div class="section-title" data-aos="fade-up">
-                          <h2>Faculty Coordinators</h2>
-                          <p></p>
-                        </div>
-                        <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-                          <div class="member" data-aos="fade-up" data-aos-delay="100">
-                            <div class="member-img">
-                              <img src="https://webdocs.pages.dev/assets/img/CIVIL/teaching/MADHUMATHI.png" class="img-fluid" alt="">
-                              <div class="social">
-                                <a href=""><i class="bi bi-twitter"></i></a>
-                                <a href=""><i class="bi bi-facebook"></i></a>
-                                <a href=""><i class="bi bi-instagram"></i></a>
-                                <a href=""><i class="bi bi-linkedin"></i></a>
-                              </div>
-                            </div>
-                            <div class="member-info">
-                              <h4 class="title"><a href="">Mr. C. Senthil Kumar</a></h4>
-                              <span>Assistant Professor, CSE</span>
-                            </div>
-                          </div>
-                        </div>
-            
-                        <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-                          <div class="member" data-aos="fade-up" data-aos-delay="100">
-                            <div class="member-img">
-                              <img src="https://webdocs.pages.dev/assets/img/CIVIL/teaching/MADHUMATHI.png" class="img-fluid" alt="">
-                              <div class="social">
-                                <a href=""><i class="bi bi-twitter"></i></a>
-                                <a href=""><i class="bi bi-facebook"></i></a>
-                                <a href=""><i class="bi bi-instagram"></i></a>
-                                <a href=""><i class="bi bi-linkedin"></i></a>
-                              </div>
-                            </div>
-                            <div class="member-info">
-                              <h4 class="title"><a href="">Mrs. V.Jino Shiny</a></h4>
-                              <span>Assistant Professor, ECE</span>
-                            </div>
-                          </div>
-                        </div>
-            
-                        <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-                            <div class="member" data-aos="fade-up" data-aos-delay="100">
-                              <div class="member-img">
-                                <img src="https://webdocs.pages.dev/assets/img/CIVIL/teaching/MADHUMATHI.png" class="img-fluid" alt="">
-                                <div class="social">
-                                  <a href=""><i class="bi bi-instagram"></i></a>
-                                  <a href=""><i class="bi bi-facebook"></i></a>
-                                  <a href=""><i class="bi bi-instagram"></i></a>
-                                  <a href=""><i class="bi bi-linkedin"></i></a>
-                                </div>
-                              </div>
-                              <div class="member-info">
-                                <h4 class="title"><a href="">Mrs.J.Jasmine</a></h4>
-                                <span>Assistant Professor, EEE</span>
-                              </div>
-                            </div>
-                          </div>
-            
-                        <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-                            <div class="member" data-aos="fade-up" data-aos-delay="100">
-                              <div class="member-img">
-                                <img src="https://webdocs.pages.dev/assets/img/CIVIL/teaching/MADHUMATHI.png" class="img-fluid" alt="">
-                                <div class="social">
-                                  <a href=""><i class="bi bi-instagram"></i></a>
-                                  <a href=""><i class="bi bi-facebook"></i></a>
-                                  <a href=""><i class="bi bi-instagram"></i></a>
-                                  <a href=""><i class="bi bi-linkedin"></i></a>
-                                </div>
-                              </div>
-                              <div class="member-info">
-                                <h4 class="title"><a href="">Mr.Ragin</a></h4>
-                                <span>Assistant Professor, CIVIL</span>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-                            <div class="member" data-aos="fade-up" data-aos-delay="100">
-                              <div class="member-img">
-                                <img src="https://webdocs.pages.dev/assets/img/CIVIL/teaching/MADHUMATHI.png" class="img-fluid" alt="">
-                                <div class="social">
-                                  <a href=""><i class="bi bi-instagram"></i></a>
-                                  <a href=""><i class="bi bi-facebook"></i></a>
-                                  <a href=""><i class="bi bi-instagram"></i></a>
-                                  <a href=""><i class="bi bi-linkedin"></i></a>
-                                </div>
-                              </div>
-                              <div class="member-info">
-                                <h4 class="title"><a href="">Mr.Rakesh I.P</a></h4>
-                                <span>Assistant Professor, Mechanical</span>
-                              </div>
-                            </div>
-                          </div>
-            
-            
-                         <!--<div class="section-title" data-aos="fade-up">
-                            <h2>Ex-Office Members</h2>
-                            <p></p>
-                          </div>
-            
-                          <div class="col-lg-3 col-md-4 d-flex align-items-stretch">
-                            <div class="member" data-aos="fade-up" data-aos-delay="100">
-                              <div class="member-img">
-                                <img src="https://webdocs.pages.dev/assets/img/CIVIL/teaching/MADHUMATHI.png" class="img-fluid" alt="">
-                                <div class="social">
-                                  <a href=""><i class="bi bi-instagram"></i></a>
-                                  <a href=""><i class="bi bi-facebook"></i></a>
-                                  <a href=""><i class="bi bi-instagram"></i></a>
-                                  <a href=""><i class="bi bi-linkedin"></i></a>
-                                </div>
-                              </div>
-                              <div class="member-info">
-                                <h4 class="title"><a href="">Dr.M.Marsaline Beno</a></h4>
-                                <span>Dean Academics, St.Xavier Catholic College of Engineering, Nagercoil.</span>
-                              </div>
-                            </div>
-                          </div>-->
-            
-                          <div class="section-title" data-aos="fade-up">
-                            <h2>Office Bearers</h2>
-                            <p></p>
-                          </div>
-            
-                          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-                            <div class="member" data-aos="fade-up" data-aos-delay="100">
-                              <div class="member-img">
-                                <img src="https://webdocs.pages.dev/assets/img/CIVIL/teaching/MADHUMATHI.png" class="img-fluid" alt="">
-                                <div class="social">
-                                  <a href=""><i class="bi bi-instagram"></i></a>
-                                  <a href=""><i class="bi bi-facebook"></i></a>
-                                  <a href=""><i class="bi bi-instagram"></i></a>
-                                  <a href=""><i class="bi bi-linkedin"></i></a>
-                                </div>
-                              </div>
-                              <div class="member-info">
-                                <h4 class="title"><a href="">Ms.Anithya</a></h4>
-                                <span>President</span>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-                            <div class="member" data-aos="fade-up" data-aos-delay="100">
-                              <div class="member-img">
-                                <img src="https://webdocs.pages.dev/assets/img/CIVIL/teaching/MADHUMATHI.png" class="img-fluid" alt="">
-                                <div class="social">
-                                  <a href=""><i class="bi bi-instagram"></i></a>
-                                  <a href=""><i class="bi bi-facebook"></i></a>
-                                  <a href=""><i class="bi bi-instagram"></i></a>
-                                  <a href=""><i class="bi bi-linkedin"></i></a>
-                                </div>
-                              </div>
-                              <div class="member-info">
-                                <h4 class="title"><a href="">Ms.Sangeetha</a></h4>
-                                <span>Secretary</span>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-                            <div class="member" data-aos="fade-up" data-aos-delay="100">
-                              <div class="member-img">
-                                <img src="https://webdocs.pages.dev/assets/img/CIVIL/teaching/MADHUMATHI.png" class="img-fluid" alt="">
-                                <div class="social">
-                                  <a href=""><i class="bi bi-instagram"></i></a>
-                                  <a href=""><i class="bi bi-facebook"></i></a>
-                                  <a href=""><i class="bi bi-instagram"></i></a>
-                                  <a href=""><i class="bi bi-linkedin"></i></a>
-                                </div>
-                              </div>
-                              <div class="member-info">
-                                <h4 class="title"><a href="">Mr.Ramesh Daniel</a></h4>
-                                <span>Treasurer</span>
-                              </div>
-                            </div>
-                          </div>
-
-                      </div>
+              <div class="col-md-10">
+      
+                <!--slider start here-->
+          
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="https://webdocs.pages.dev/assets/docs/cfi/sih2022/3.jpg" class="d-block w-100" alt="...">
                     </div>
-                  </section>
+                    <div class="carousel-item">
+                      <img src="https://webdocs.pages.dev/assets/docs/cfi/sih2022/2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="https://webdocs.pages.dev/assets/docs/cfi/sih2022/1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="https://webdocs.pages.dev/assets/docs/cfi/sih2022/4.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+                  <!--end here-->
+          
+              </div><!-- End Portfolio Section -->
+              
+              
+             
+          
             </div>
             <div class="tab-pane" id="tab-5">
               <div class="row">
