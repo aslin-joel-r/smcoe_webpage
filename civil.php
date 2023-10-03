@@ -185,7 +185,7 @@ if (!$dbcon) {
 
           <div class="course-info d-flex justify-content-between align-items-center">
             <h5>Total Intake</h5>
-            <p>120</p>
+            <p>60</p>
           </div>
 
           <div class="course-info d-flex justify-content-between align-items-center">

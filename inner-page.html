@@ -2,6 +2,27 @@
 <html lang="en">
 
 <head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage Preloader with GIF</title>
+    <!-- Include Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Your custom CSS for the preloader -->
+    <style>
+        /* Style the preloader overlay */
+        #preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
@@ -137,20 +158,45 @@
   <main id="main">
 
     <!-- ======= Breadcrumbs Section ======= -->
-    <section class="breadcrumbs">
-      <div class="container">
+    <section id="course-details" class="course-details">
+    <div class="container" data-aos="fade-up">
 
-        <div class="d-flex justify-content-between align-items-center">
-          <h2>Inner Page</h2>
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li>Inner Page</li>
-          </ol>
+      <div class="row">
+        <div class="col-lg-7">
+          <img src="https://webdocs.pages.dev/assets/img/ece/ece.jpg" class="img-fluid" alt="">
+          
         </div>
+        <div class="col-lg-4">
 
+          <div class="course-info d-flex justify-content-between align-items-center">
+            <h5>Head of the Department</h5>
+            <p><a href="#">Mr.Michael Franklin</a></p>
+          </div>
+
+          <div class="course-info d-flex justify-content-between align-items-center">
+            <h5>Total Intake</h5>
+            <p>120</p>
+          </div>
+
+          <div class="course-info d-flex justify-content-between align-items-center">
+            <h5>Budding Engineers</h5>
+            <p>200</p>
+          </div>
+
+          <div class="course-info d-flex justify-content-between align-items-center">
+            <h5>Proud Alumni</h5>
+            <p>250</p>
+          </div>
+
+        </div>
+        <h3> Overview</h3>
+          <p>
+            Electronics and Communications Engineering (ECE) is the application of science and mathematics to practical problems in the electronics and communications field. Electronics and communications engineers engage in research, design, development and testing of the electronic equipment used in various systems. This field is closely aligned with Computer Science and Engineering (CSE) and the advances in CSE play a significant role in the advancement of ECE. This is why a degree in ECE is always in high demand.  
+          </p>
       </div>
-    </section><!-- End Breadcrumbs Section -->
 
+    </div>
+  </section><!-- End Cource Details Section -->
     <section class="inner-page">
       <div class="container">
         <p>
@@ -191,6 +237,10 @@
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
+  <div id="preloader">
+    <div class=""></div>
+  </div>
+
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
@@ -203,6 +253,14 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
+<!-- Preloader Container -->
+<div id="preloader-container">
+    <img src="your-preloader.gif" alt="Loading GIF">
+</div>
+
+<!-- Include Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.bundle.min.js"></script>
+  
 </body>
 
 </html>
