@@ -196,7 +196,9 @@ if (!$dbcon) {
         <img src="<?php printf("%s", $data['imglink']);?>" class="img-fluid" alt="">
         </div>
         <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-          <h3>ASSISTANT PROFESSOR</h3>
+          <h3><?php 
+                    printf("%s", $data["desigination"]);
+                    ?></h3>
          <!-- <p class="fst-italic">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
             magna aliqua.
@@ -205,19 +207,37 @@ if (!$dbcon) {
             <div class="col-lg-5">
               <ul><li></li>
                 <ul><li></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Name:</strong> <span>Dr.Pon.Partheeban</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Vidwan:</strong> <span>www.example.com</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+91-70100 00702</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>ponparthee@stellamaryscoe.edu.in</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Name:</strong> <span><?php 
+                    printf("%s", $data["legend"]);
+                    ?><?php 
+                    printf("%s", $data["staff_name"]);
+                    ?></span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Vidwan:</strong> <span><?php 
+                    printf("%s", $data["desigination"]);
+                    ?></span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span><?php 
+                    printf("%s", $data["mobile_no"]);
+                    ?></span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span><?php 
+                    printf("%s", $data["institute_email_id"]);
+                    ?></span></li>
               </ul>
             </div>
             <div class="col-lg-7">
               <ul><ul><li></li>
                 <ul><li></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>33</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Date of Joining:</strong> <span>07/01/2019</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>specialisation:</strong> <span>Cloud Computing, Machine Learning</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Experience:</strong> <span>4 years & 7 Months</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span><?php 
+                    printf("%s", $data["age"]);
+                    ?></span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Date of Joining:</strong> <span><?php 
+                    printf("%s", $data["doj"]);
+                    ?></span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>specialisation:</strong> <span><?php 
+                    printf("%s", $data[""]);
+                    ?></span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Experience:</strong> <span><?php 
+                    printf("%s", $data[""]);
+                    ?></span></li>
               </ul>
             </div>
           </div>
