@@ -179,9 +179,21 @@ if (!$dbcon) {
         <h2>About</h2>
       </div>
 
+
+      
       <div class="row">
+
+
+      <?php
+            $sql = "SELECT sm.staff_id,TRIM(CONCAT(sm.`legend`,' ',IFNULL(sm.first_name,''),' ',IFNULL(sm.middle_name,''),' ',IFNULL(sm.last_name,''),' ')) staff_name,TIMESTAMPDIFF(YEAR,sm.dob,NOW()) age,sav.`text_val`,DATE_FORMAT(doj,'%d-%m-%Y') doj,sav2.`text_val`,sm.`institute_email_id`,sm.`mobile_no` FROM camps.`staff_master` sm LEFT JOIN documentation.`ss_additional_values` sav ON sav.`ss_am_id`=21 AND sav.`ss_id`=sm.staff_id LEFT JOIN documentation.`ss_additional_values` sav2 ON sav2.`ss_am_id`=10 AND sav2.`ss_id`=sm.staff_id WHERE sm.staff_id=1026";
+            $result = mysqli_query($dbcon, $sql);
+            if (mysqli_num_rows($result) > 0) {
+                while($data = mysqli_fetch_assoc($result)) {
+                    
+            ?>
+      
         <div class="col-lg-2" data-aos="fade-right">
-          <img src="assets/img/CSE/PARTHEBAN.png" class="img-fluid" alt="">
+        <img src="<?php printf("%s", $data['imglink']);?>" class="img-fluid" alt="">
         </div>
         <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
           <h3>ASSISTANT PROFESSOR</h3>
