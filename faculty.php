@@ -196,7 +196,7 @@ if (!$dbcon) {
                 <li><i class="bi bi-chevron-right"></i> <strong>Name:</strong> <span>Dr.Pon.Partheeban</span></li>
                 <li><i class="bi bi-chevron-right"></i> <strong>Vidwan:</strong> <span>www.example.com</span></li>
                 <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+91-70100 00702</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Nagercoil</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>ponparthee@stellamaryscoe.edu.in</span></li>
               </ul>
             </div>
             <div class="col-lg-7">
