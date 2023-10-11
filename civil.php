@@ -216,7 +216,7 @@ if (!$dbcon) {
         <div class="col-lg-3">
           <ul class="nav nav-tabs flex-column">
             <li class="nav-item">
-              <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">Vision & MISSION</a>
+              <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">Vission & Mission</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" data-bs-toggle="tab" href="#tab-2">Faculty</a>
@@ -307,6 +307,8 @@ if (!$dbcon) {
                 while($data = mysqli_fetch_assoc($result)) {
                     
             ?>
+
+
             <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
                 <div class="member" data-aos="fade-up" data-aos-delay="100">
                   <div class="member-img">
@@ -319,7 +321,7 @@ if (!$dbcon) {
                     </div>
                   </div>
                   <div class="member-info">
-                    <h4 class="title"><a href="faculty.html">
+                    <h4 class="title"><a href="faculty.php?staff_id=<?= $data['staff_id']?>">
                     <?php 
                     printf("%s", $data["first_name"]);
                     ?>
