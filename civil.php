@@ -307,8 +307,6 @@ if (!$dbcon) {
                 while($data = mysqli_fetch_assoc($result)) {
                     
             ?>
-
-
             <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
                 <div class="member" data-aos="fade-up" data-aos-delay="100">
                   <div class="member-img">
@@ -392,8 +390,6 @@ if (!$dbcon) {
                 </div>
               </div>
             </div>
-
-
             <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
                 <div class="member" data-aos="fade-up" data-aos-delay="100">
                   <div class="member-img">
@@ -404,7 +400,7 @@ if (!$dbcon) {
                       <a href=""><i class="bi bi-instagram"></i></a>
                       <a href=""><i class="bi bi-linkedin"></i></a>
                     </div>
-                  </div>
+                </div>
                   <div class="member-info">
                     <h4 class="title"><a href="">Mr.V.Gopi</a></h4>
                     <span>Lab Instructor</span>

@@ -312,7 +312,7 @@ if (!$dbcon) {
                     </div>
                   </div>
                   <div class="member-info">
-                    <h4 class="title"><a href="faculty.html">
+                  <h4 class="title"><a href="faculty.php?staff_id=<?= $data['staff_id']?>">
                     <?php 
                     printf("%s", $data["first_name"]);
                     ?>
