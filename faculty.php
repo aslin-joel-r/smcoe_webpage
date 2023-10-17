@@ -182,16 +182,14 @@ if (!$dbcon) {
 
       
       <div class="row">
-
-
       <?php
-            $sql = "SELECT link FROM camps.`staff_photo` sp WHERE sp.staff_id=1026";
+            $sql = "SELECT link FROM camps.`staff_photo` sp WHERE sp.staff_id=".$_GET['staff_id'];
             $result = mysqli_query($dbcon, $sql);
             if (mysqli_num_rows($result) > 0) {
                 while($data = mysqli_fetch_assoc($result)) {
-                     $sil= $data['link'];
-                     /*echo "<script>alert($data['link'])</script>";*/
-                     echo $data['link'];
+                     $sil= $data['link'];               
+                    /*echo "<script>alert(".$sil.")</script>";
+                     echo $data['link'];*/
                 }
             }     
             ?>
@@ -202,13 +200,13 @@ if (!$dbcon) {
             if (mysqli_num_rows($result) > 0) {
                 while($data = mysqli_fetch_assoc($result)) { 
             ?>
-      
-        <div class="col-lg-2" data-aos="fade-right">
-        <img src=<?= "$sil"?>class="img-fluid" alt="">
+    
+    <div class="col-lg-2" data-aos="fade-right">
+        <img src="<?= $sil?>"  class="img-fluid" alt="">
         </div>
         <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
           <h3><?php 
-                    printf("%s", $data["desigination"]);
+                    printf("%s", $data["age"]);
                     ?></h3>
          <!-- <p class="fst-italic">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
@@ -222,7 +220,7 @@ if (!$dbcon) {
                     printf("%s", $data["staff_name"]);
                     ?></span></li>
                 <li><i class="bi bi-chevron-right"></i> <strong>Vidwan:</strong> <span><?php 
-                    printf("%s", $data["desigination"]);
+                    printf("%s", $data["age"]);
                     ?></span></li>
                 <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span><?php 
                     printf("%s", $data["mobile_no"]);
