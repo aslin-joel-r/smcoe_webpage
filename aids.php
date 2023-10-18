@@ -174,7 +174,10 @@ if (!$dbcon) {
 
           <div class="course-info d-flex justify-content-between align-items-center">
             <h5>Head of the Department</h5>
-            <p><a href="#">Dr.Berlin Shaheema</a></p>
+            <p><a href="faculty.php?staff_id=1388"
+                    <?php 
+                    printf("%s", $data["first_name"]);
+                    ?>">Dr.A.Berlin Shaheema</a></p>
           </div>
 
           <div class="course-info d-flex justify-content-between align-items-center">
@@ -309,12 +312,14 @@ if (!$dbcon) {
                     </div>
                   </div>
                   <div class="member-info">
-                    <h4 class="title"><a href="faculty.html">
+                  <h4 class="title"><a href="faculty.php?staff_id=<?= $data['staff_id']?>">
                     <?php 
                     printf("%s", $data["first_name"]);
                     ?>
                     </a></h4>
-                    <span>Assistant Professor</span>
+                    <span><?php 
+                    printf("%s", $data["desigination"]);
+                    ?></span>
                               </div>
                             </div>
                           </div>

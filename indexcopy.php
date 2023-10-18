@@ -1,3 +1,15 @@
+<?php
+$servername = "172.18.0.1";
+$username = "root";
+$password = "root";
+$db="mysql";
+$port="33070";  
+$dbcon = mysqli_connect($servername, $username, $password,$db,$port);
+if (!$dbcon) {
+    die("Connection failed: " .  mysqli_connect_error());
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -41,6 +53,36 @@
 
 <body>
 
+  <!-- Preloader -->
+
+  <div class="preloader">
+    <img src="https://webdocs.pages.dev/assets/img/animlogo1.gif" alt="Loading...">
+  </div>
+
+  <style>
+       /* Preloader Styles */
+       .preloader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.8);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999; /* Make sure it's on top of everything */
+    }
+
+  </style>
+  
+  <script>
+    window.onload = function() {
+        // Hide the preloader when the page is fully loaded
+        document.querySelector('.preloader').style.display = 'none';
+    }
+</script>
+
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center">
     <div class="container d-flex align-items-center justify-content-between">
@@ -68,19 +110,19 @@
             <ul>
               <li class="dropdown"><a href="#more-services" href="#"><span>Department - Under Graduate</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
-                  <li><a href="civil.html">Civil Engineering</a></li>
-                  <li><a href="cse.html">Computer Science and Engineering</a></li>
-                  <li><a href="ece.html">Electronics and Communication Engineering</a></li>
-                  <li><a href="eee.html">Electrical and Electronics Engineering</a></li>
-                  <li><a href="mech.html">Mechanical Engineering</a></li>
-                  <li><a href="aids.html">Artificial Intelligence and Data Science</a></li>
-                  <li><a href="sh.html">Science and Humanities</a></li>
+                  <li><a href="civil.php">Civil Engineering</a></li>
+                  <li><a href="cse.php">Computer Science and Engineering</a></li>
+                  <li><a href="ece.php">Electronics and Communication Engineering</a></li>
+                  <li><a href="eee.php">Electrical and Electronics Engineering</a></li>
+                  <li><a href="mech.php">Mechanical Engineering</a></li>
+                  <li><a href="aids.php">Artificial Intelligence and Data Science</a></li>
+                  <li><a href="sh.php">Science and Humanities</a></li>
                 </ul>
               <li class="dropdown"><a href="#more-services" href="#"><span>Department - Post Graduate</span> <i class="bi bi-chevron-right"></i></a>
                   <ul>
                     <li><a href="mecse.html">M.E Comuputer Science and Engineering</a></li>
                     <li><a href="meise.html">M.E Industrial Safety Engineering</a></li>
-                    <li class="dropdown"><a href="#more-services" href="#"><span>Master of Business Administration</span> <i class="bi bi-chevron-right"></i></a>
+                    <li class="dropdown"><a href="mba.html"><span>Master of Business Administration</span> <i class="bi bi-chevron-right"></i></a>
                       <ul>
                         <li><a href="#">Operations Management</a></li>
                         <li><a href="#">Human Resources Management</a></li>
@@ -100,8 +142,7 @@
               <ul>
                 <li><a href="research_codeofethics.html">Team & Code of Ethics</a></li>
                 <li><a href="research_publications.html">Publications</a></li>
-                <li><a href="#">Sponsored Projects</a></li>
-                <li><a href="#">Startup Policy</a></li>
+                <li><a href="https://webdocs.pages.dev/assets/docs/r&d/Starup-Policy.pdf">Startup Policy</a></li>
                 <li><a href="research_seedmoney.html">Stella Mary's Seed Money</a></li>
                 <li><a href="research_mou.html">MoU</a></li>
               </ul>
@@ -113,10 +154,7 @@
                 <li><a href="culturalclub.html">Cultural Club</a></li>
                 <li><a href="#">Literary Club</a></li>
                 <li><a href="#">Yoga Club</a></li>
-                <li><a href="#">Literary Club</a></li>
-                <li><a href="#">Yoga Club</a></li>
                 <li><a href="cfi.html">Centre For Innovation</a></li>
-                <li><a href="#">Cultural Club</a></li>
                 <li><a href="#">National Cadet Corps</a></li>
                 <li><a href="#">Juniour Red Cross</a></li>
                 <li><a href="#">Grievance Redressal Cell</a></li>
@@ -126,6 +164,7 @@
                 <li><a href="#">Institution Innovation Council</a></li>
                 <li><a href="#">Internal Complaint Cell</a></li>
                 <li><a href="research_codeofethics.html">Research and Development Cell</a></li>
+                <li><a href="placement_home.html">Career Guidance and Placement Training Cell</a></li>
                 <li><a href="#">Internal Complaint Cell</a></li>
                 <li><a href="mediacell.html">Media Cell</a></li>
               </ul>
@@ -134,10 +173,10 @@
               <li><a href="#">E-Learning</a></li>
               <li><a href="#">Internship</a></li>
               <li><a href="#">Campus Activities</a></li>
-              <li><a href="#">Library</a></li>
-              <li><a href="#">NPTEL</a></li>
-              <li><a href="#">DELNET</a></li>
-              <li><a href="#">Alumni Association</a></li>
+              <li><a href="https://www.infomirrorscloud.com/smce.webopac/Imt_frm_User_Login.aspx">Library</a></li>
+              <li><a href="https://nptel.ac.in">NPTEL</a></li>
+              <li><a href="https://delnet.in">DELNET</a></li>
+              <li><a href="alumni.html">Alumni Association</a></li>
               <li><a href="#">SWYAM - MOOC</a></li>
                 <ul>
           <li><a class="nav-link scrollto" href="placement_home.html">Placement</a></li>
@@ -146,7 +185,7 @@
           </ul>
             </ul>
           </li>
-          <li><a class="nav-link scrollto" href="#contact">Contact us</a></li>
+          <li><a class="nav-link scrollto" href="mandatorydisclosure.html">Mandatory Disclosure</a></li>
           <li><a class="getstarted scrollto" href="https://camps.stellamaryscoe.edu.in/CAMPS/CommonJSP/signin.jsp">CAMPS LOGIN</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -259,73 +298,220 @@
         </div>
       </div>
     </section><!-- End Counts Section -->
-
-    <section class="blog" data-scroll-index="4">
-      <div class="container">
-        <!-- header of section -->
-        <div class="section-title" data-aos="fade-up">
+    <!-- ======= Latest News & Events Section ======= -->
+    
+<!-- Latest News & Events Section -->
+<section class="blog" data-scroll-index="4">
+  <div class="container">
+      <!-- header of section -->
+      <div class="section-title" data-aos="fade-up">
           <h2>Latest News & Updates</h2>
-        </div>
+      </div>
 
-        <!-- blog items -->
-        <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+      <!-- Bootstrap Carousel -->
+      <div id="blogCarousel" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
-            <div class="carousel-item active">
-        <div class="row">
-          <div class="col-md-6 col-lg-4">
-            <div class="item">
-              <div class="img">
-                <img src="https://i.ibb.co/CKNmhMX/blog1.jpg" alt="">
+              <!-- Item 1 -->
+              <div class="carousel-item active">
+                  <div class="row">
+                      <!-- Slide 1 -->
+                      <div class="col-md-4">
+                          <div class="item">
+                              <div class="img">
+                                  <img src="https://i.ibb.co/YXV3zmh/blog3.jpg" alt="">
+                              </div>
+                              <div class="info">
+                                  <div class="date">
+                                      <span>25 <br> Dec</span>
+                                  </div>
+                                  <a href="#"><h5>Lorem Ipsum is simply dummy</h5></a>
+                                  <p>Lorem ipsum dolor sit amet conse ctetur, adipi sicing elit. Nisi sapiente hic fugiat delectus dicta delectus dicta.</p>
+                                  <a href="#0" class="more"><i class="fas bi-arrow-right"></i></a>
+                              </div>
+                          </div>
+                      </div>
+                      
+                      
+                      <!-- Slide 2 -->
+                      <div class="col-md-4">
+                          <div class="item">
+                              <div class="img">
+                                  <img src="https://i.ibb.co/YXV3zmh/blog3.jpg" alt="">
+                              </div>
+                              <div class="info">
+                                  <div class="date">
+                                      <span>29 <br> Dec</span>
+                                  </div>
+                                  <a href="#"><h5>Lorem Ipsum is simply dummy</h5></a>
+                                  <p>Lorem ipsum dolor sit amet conse ctetur, adipi sicing elit. Nisi sapiente hic fugiat delectus dicta delectus dicta.</p>
+                                  <a href="#0" class="more"><i class="fas bi-arrow-right"></i></a>
+                              </div>
+                          </div>
+                      </div>
+
+                      <!-- Slide 3 -->
+                      <div class="col-md-4">
+                          <div class="item">
+                              <div class="img">
+                                  <img src="https://i.ibb.co/YXV3zmh/blog3.jpg" alt="">
+                              </div>
+                              <div class="info">
+                                  <div class="date">
+                                      <span>30 <br> Dec</span>
+                                  </div>
+                                  <a href="#"><h5>Lorem Ipsum is simply dummy</h5></a>
+                                  <p>Lorem ipsum dolor sit amet conse ctetur, adipi sicing elit. Nisi sapiente hic fugiat delectus dicta delectus dicta.</p>
+                                  <a href="#0" class="more"><i class="fas bi-arrow-right"></i></a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
               </div>
-              <div class="info">
-                <div class="date">
-                  <span>05 <br> Nov</span>
+
+              <!-- Item 2 -->
+              <div class="carousel-item">
+                  <div class="row">
+                      <!-- Slide 4 -->
+                      <div class="col-md-4">
+                          <div class="item">
+                              <div class="img">
+                                  <img src="https://i.ibb.co/YXV3zmh/blog3.jpg" alt="">
+                              </div>
+                              <div class="info">
+                                  <div class="date">
+                                      <span>02 <br> Jan</span>
+                                  </div>
+                                  <a href="#"><h5>Lorem Ipsum is simply dummy</h5></a>
+                                  <p>Lorem ipsum dolor sit amet conse ctetur, adipi sicing elit. Nisi sapiente hic fugiat delectus dicta delectus dicta.</p>
+                                  <a href="#0" class="more"><i class="fas bi-arrow-right"></i></a>
+                              </div>
+                          </div>
+                      </div>
+
+
+                      <!--Slide 5 -->
+
+
+                      <div class="col-md-4">
+                        <div class="item">
+                            <div class="img">
+                                <img src="https://i.ibb.co/YXV3zmh/blog3.jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <div class="date">
+                                    <span>02 <br> Jan</span>
+                                </div>
+                                <a href="#"><h5>Lorem Ipsum is simply dummy</h5></a>
+                                <p>Lorem ipsum dolor sit amet conse ctetur, adipi sicing elit. Nisi sapiente hic fugiat delectus dicta delectus dicta.</p>
+                                <a href="#0" class="more"><i class="fas bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!--Slide 6-->
+
+
+
+                    <div class="col-md-4">
+                      <div class="item">
+                          <div class="img">
+                              <img src="https://i.ibb.co/YXV3zmh/blog3.jpg" alt="">
+                          </div>
+                          <div class="info">
+                              <div class="date">
+                                  <span>02 <br> Jan</span>
+                              </div>
+                              <a href="#"><h5>Lorem Ipsum is simply dummy</h5></a>
+                              <p>Lorem ipsum dolor sit amet conse ctetur, adipi sicing elit. Nisi sapiente hic fugiat delectus dicta delectus dicta.</p>
+                              <a href="#0" class="more"><i class="fas bi-arrow-right"></i></a>
+                          </div>
+                      </div>
+                  </div>
+
+
+                  </div>
+              </div>
+
+               <!-- Item 3 -->
+               <div class="carousel-item">
+                <div class="row">
+                    <!-- Slide 7 -->
+                    <div class="col-md-4">
+                        <div class="item">
+                            <div class="img">
+                                <img src="https://i.ibb.co/YXV3zmh/blog3.jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <div class="date">
+                                    <span>25 <br> Dec</span>
+                                </div>
+                                <a href="#"><h5>Lorem Ipsum is simply dummy</h5></a>
+                                <p>Lorem ipsum dolor sit amet conse ctetur, adipi sicing elit. Nisi sapiente hic fugiat delectus dicta delectus dicta.</p>
+                                <a href="#0" class="more"><i class="fas bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <div class="col-md-4">
+                      <div class="item">
+                          <div class="img">
+                              <img src="https://i.ibb.co/YXV3zmh/blog3.jpg" alt="">
+                          </div>
+                          <div class="info">
+                              <div class="date">
+                                  <span>25 <br> Dec</span>
+                              </div>
+                              <a href="#"><h5>Lorem Ipsum is simply dummy</h5></a>
+                              <p>Lorem ipsum dolor sit amet conse ctetur, adipi sicing elit. Nisi sapiente hic fugiat delectus dicta delectus dicta.</p>
+                              <a href="#0" class="more"><i class="fas bi-arrow-right"></i></a>
+                          </div>
+                      </div>
+                  </div>
+
+                    <!-- Slide 8 -->
+                    <div class="col-md-4">
+                        <div class="item">
+                            <div class="img">
+                                <img src="https://i.ibb.co/YXV3zmh/blog3.jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <div class="date">
+                                    <span>29 <br> Dec</span>
+                                </div>
+                                <a href="#"><h5>Lorem Ipsum is simply dummy</h5></a>
+                                <p>Lorem ipsum dolor sit amet conse ctetur, adipi sicing elit. Nisi sapiente hic fugiat delectus dicta delectus dicta.</p>
+                                <a href="#0" class="more"><i class="fas bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+            
                 </div>
-                <a href=""><h5>Lorem Ipsum is simply dummy</h5></a>
-                <p>Lorem ipsum dolor sit amet conse ctetur, adipi sicing elit. Nisi sapiente hic fugiat delectus dicta delectus dicta.</p>
-             
-                <a href="#0" class="more"><i class="fas bi-arrow-right"></i></a>
-              </div>
             </div>
           </div>
 
-          <div class="col-md-6 col-lg-4">
-              <div class="item">
-                <div class="img">
-                  <img src="https://i.ibb.co/m5yGbdR/blog2.jpg" alt="">
-                </div>
-                <div class="info">
-                  <div class="date">
-                    <span>19 <br> Dec</span>
-                  </div>
-                  <a href=""><h5>Lorem Ipsum is simply dummy</h5></a>
-                  <p>Lorem ipsum dolor sit amet conse ctetur, adipi sicing elit. Nisi sapiente hic fugiat delectus dicta delectus dicta.</p>
-                  <a href="#0" class="more"><i class="fas bi-arrow-right"></i></a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-6 col-lg-4">
-              <div class="item">
-                <div class="img">
-                  <img src="https://i.ibb.co/YXV3zmh/blog3.jpg" alt="">
-                </div>
-                <div class="info">
-                  <div class="date">
-                    <span>25 <br> Dec</span>
-                  </div>
-                  <a href=""><h5>Lorem Ipsum is simply dummy</h5></a>
-                  <p>Lorem ipsum dolor sit amet conse ctetur, adipi sicing elit. Nisi sapiente hic fugiat delectus dicta delectus dicta.</p>
-                  <a href="#0" class="more"><i class="fas bi-arrow-right"></i></a>
-                </div>
-              </div>
-            </div>
-        </div>
+          <!-- Left and right controls/icons -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#blogCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#blogCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+          </button>
       </div>
-    </section>
+  </div>
+</section>
 
+<script>
+  // Auto-slide the carousel every 2 seconds
+  $(document).ready(function(){
+      $('#blogCarousel').carousel({
+          interval: 2000
+      });
+  });
+</script>
 
-    
     <!-- ======= Services Section ======= -->
     <section id="services" class="services">
       <div class="container">
@@ -582,6 +768,10 @@
               <div class="col-lg-2 col-md-4 col-6">
                 <img src="https://webdocs.pages.dev/assets/img/cr/cts.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="200">
               </div>
+
+              <div class="col-lg-2 col-md-4 col-6">
+                <img src="https://webdocs.pages.dev/assets/img/cr/wipro.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="200">
+              </div>
     
               <div class="col-lg-2 col-md-4 col-6">
                 <img src="https://webdocs.pages.dev/assets/img/cr/exbt.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="300">
@@ -595,6 +785,9 @@
               </div>
               <div class="col-lg-2 col-md-4 col-6">
                 <img src="https://webdocs.pages.dev/assets/img/cr/shail.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="400">
+              </div>
+              <div class="col-lg-2 col-md-4 col-6">
+                <img src="https://webdocs.pages.dev/assets/img/cr/entelyst.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="400">
               </div>
               <div class="col-lg-2 col-md-4 col-6">
                 <img src="https://webdocs.pages.dev/assets/img/cr/INBOX.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="400">
@@ -1177,7 +1370,7 @@
                 <li><i class="bx bx-chevron-right"></i> <a href="#">ANTI RAGGING CELL</a></li>
                 <li><i class="bx bx-chevron-right"></i> <a href="#">GRIEVANCE REDRESSAL CELL</a></li>
                 <li><i class="bx bx-chevron-right"></i> <a href="#">INTERNAL COMPLIANCE CELL</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">MANDATORY DISCLOSURE</a></li>
+                <li><i class="bx bx-chevron-right "></i> <a href="mandatorydisclosure.html">MANDATORY DISCLOSURE</a></li>
               </ul>
             </div>
   
@@ -1185,10 +1378,10 @@
               <h4>QUICK LINKS 2</h4>
               <ul>
                 <li><i class="bx bx-chevron-right"></i> <a href="#">ONLINE ADMISSION</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">NAAC CERTIFICATE</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">NAAC SSR</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">AICTE Centralised Support System</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">Online Payment - Privacy Policy</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="https://webdocs.pages.dev/assets/docs/iqac/naac/NAAC%20CERTIFICATION%20-%20CYCLE%201.pdf">NAAC CERTIFICATE</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="https://webdocs.pages.dev/assets/docs/iqac/naac/NAAC%20SSR%20REPORT-CYCLE%201.pdf">NAAC SSR</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="https://css.aicte-india.org/login">AICTE Centralised Support System</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="OnlinePaymentPrivacyPolicy.html">Online Payment - Privacy Policy</a></li>
               </ul>
             </div>
 
@@ -1196,7 +1389,7 @@
               <h4>Downloads</h4>
               <ul>
                 <li><i class="bx bx-chevron-right"></i> <a href="#">Student Undertaking form</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">Placement Undertaking form</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="https://webdocs.pages.dev/assets/docs/cgptc/PlacementUndertaking.pdf">Placement Undertaking form</a></li>
                 <li><i class="bx bx-chevron-right"></i> <a href="#">Faculty Undertaking form</a></li>
                 <li><i class="bx bx-chevron-right"></i> <a href="https://webdocs.pages.dev/assets/docs/r&d/Proposal-Format-SM-SMS.docx">Stella Mary's Seed Money (Doc)</a></li>
                 <li><i class="bx bx-chevron-right"></i> <a href="https://webdocs.pages.dev/assets/docs/r&d/Proposal-Format-SM-SMS.pdf">Stella Mary's Seed Money (Pdf)</a></li>
@@ -1213,7 +1406,7 @@
             <!-- You can delete the links only if you purchased the pro version. -->
             <!-- Licensing information: https://bootstrapmade.com/license/ -->
             <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/vesperr-free-bootstrap-template/ -->
-            Designed & Maintained by <a href="https://stellamaryscoe.edu.in/">SMCE Media Cell</a>
+            Designed & Maintained by <a href="mediacell.html">SMCE Media Cell</a>
           </div>
         </div>
         <div class="col-lg-6">

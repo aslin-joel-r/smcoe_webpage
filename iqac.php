@@ -282,7 +282,7 @@ if (!$dbcon) {
             <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
               <div class="member" data-aos="fade-up" data-aos-delay="100">
                 <div class="member-img">
-                  <img src="https://webdocs.pages.dev/assets/img/CIVIL/teaching/MADHUMATHI.png" class="img-fluid" alt="">
+                  <img src="https://webdocs.pages.dev/assets/img/faculty/1278.png" class="img-fluid" alt="">
                   <div class="social">
                     <a href=""><i class="bi bi-twitter"></i></a>
                     <a href=""><i class="bi bi-facebook"></i></a>
@@ -301,7 +301,7 @@ if (!$dbcon) {
             <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
               <div class="member" data-aos="fade-up" data-aos-delay="100">
                 <div class="member-img">
-                  <img src="https://webdocs.pages.dev/assets/img/CIVIL/teaching/MADHUMATHI.png" class="img-fluid" alt="">
+                  <img src="https://webdocs.pages.dev/assets/img/faculty/1271.png" class="img-fluid" alt="">
                   <div class="social">
                     <a href=""><i class="bi bi-twitter"></i></a>
                     <a href=""><i class="bi bi-facebook"></i></a>
@@ -362,7 +362,7 @@ if (!$dbcon) {
             <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
               <div class="member" data-aos="fade-up" data-aos-delay="100">
                 <div class="member-img">
-                  <img src="https://webdocs.pages.dev/assets/img/CIVIL/teaching/MADHUMATHI.png" class="img-fluid" alt="">
+                  <img src="https://webdocs.pages.dev/assets/img/faculty/1079.png" class="img-fluid" alt="">
                   <div class="social">
                     <a href=""><i class="bi bi-twitter"></i></a>
                     <a href=""><i class="bi bi-facebook"></i></a>
@@ -380,7 +380,7 @@ if (!$dbcon) {
             <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
               <div class="member" data-aos="fade-up" data-aos-delay="100">
                 <div class="member-img">
-                  <img src="https://webdocs.pages.dev/assets/img/CIVIL/teaching/MADHUMATHI.png" class="img-fluid" alt="">
+                  <img src="https://webdocs.pages.dev/assets/img/faculty/1002.png" class="img-fluid" alt="">
                   <div class="social">
                     <a href=""><i class="bi bi-twitter"></i></a>
                     <a href=""><i class="bi bi-facebook"></i></a>
@@ -398,7 +398,7 @@ if (!$dbcon) {
             <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
                 <div class="member" data-aos="fade-up" data-aos-delay="100">
                   <div class="member-img">
-                    <img src="https://webdocs.pages.dev/assets/img/CIVIL/teaching/MADHUMATHI.png" class="img-fluid" alt="">
+                    <img src="https://webdocs.pages.dev/assets/img/faculty/1035.png" class="img-fluid" alt="">
                     <div class="social">
                       <a href=""><i class="bi bi-instagram"></i></a>
                       <a href=""><i class="bi bi-facebook"></i></a>

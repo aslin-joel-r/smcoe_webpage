@@ -245,7 +245,7 @@ if (!$dbcon) {
               <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
                 <div class="member" data-aos="fade-up" data-aos-delay="100">
                   <div class="member-img">
-                    <img src="https://webdocs.pages.dev/assets/img/CSE/teaching/PARTHEBAN.png" class="img-fluid" alt="">
+                    <img src="https://webdocs.pages.dev/assets/img/faculty/1026.png" class="img-fluid" alt="">
                     <div class="social">
                       <a href=""><i class="bi bi-twitter"></i></a>
                       <a href=""><i class="bi bi-facebook"></i></a>
@@ -263,7 +263,7 @@ if (!$dbcon) {
               <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
                   <div class="member" data-aos="fade-up" data-aos-delay="100">
                     <div class="member-img">
-                      <img src="https://webdocs.pages.dev/assets/img/CSE/teaching/PARTHEBAN.png" class="img-fluid" alt="">
+                      <img src="https://webdocs.pages.dev/assets/img/faculty/1131.png" class="img-fluid" alt="">
                       <div class="social">
                         <a href=""><i class="bi bi-instagram"></i></a>
                         <a href=""><i class="bi bi-facebook"></i></a>
@@ -280,7 +280,7 @@ if (!$dbcon) {
                 <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
                     <div class="member" data-aos="fade-up" data-aos-delay="100">
                       <div class="member-img">
-                        <img src="https://webdocs.pages.dev/assets/img/CSE/teaching/PARTHEBAN.png" class="img-fluid" alt="">
+                        <img src="https://webdocs.pages.dev/assets/img/faculty/1005.png" class="img-fluid" alt="">
                         <div class="social">
                           <a href=""><i class="bi bi-instagram"></i></a>
                           <a href=""><i class="bi bi-facebook"></i></a>
@@ -297,7 +297,7 @@ if (!$dbcon) {
                   <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
                     <div class="member" data-aos="fade-up" data-aos-delay="100">
                       <div class="member-img">
-                        <img src="https://webdocs.pages.dev/assets/img/CSE/teaching/PARTHEBAN.png" class="img-fluid" alt="">
+                        <img src="https://webdocs.pages.dev/assets/img/faculty/1049.png" class="img-fluid" alt="">
                         <div class="social">
                           <a href=""><i class="bi bi-instagram"></i></a>
                           <a href=""><i class="bi bi-facebook"></i></a>
@@ -331,7 +331,7 @@ if (!$dbcon) {
                   <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
                     <div class="member" data-aos="fade-up" data-aos-delay="100">
                       <div class="member-img">
-                        <img src="https://webdocs.pages.dev/assets/img/CSE/teaching/PARTHEBAN.png" class="img-fluid" alt="">
+                        <img src="https://webdocs.pages.dev/assets/img/faculty/1082.png" class="img-fluid" alt="">
                         <div class="social">
                           <a href=""><i class="bi bi-instagram"></i></a>
                           <a href=""><i class="bi bi-facebook"></i></a>
@@ -342,6 +342,23 @@ if (!$dbcon) {
                       <div class="member-info">
                         <h4 class="title"><a href="faculty.html">Mr.S.R.Rajkumar</a></h4>
                         <span>Assistant Professor, Mechanical Engineering</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                    <div class="member" data-aos="fade-up" data-aos-delay="100">
+                      <div class="member-img">
+                        <img src="https://webdocs.pages.dev/assets/img/CSE/teaching/PARTHEBAN.png" class="img-fluid" alt="">
+                        <div class="social">
+                          <a href=""><i class="bi bi-instagram"></i></a>
+                          <a href=""><i class="bi bi-facebook"></i></a>
+                          <a href=""><i class="bi bi-instagram"></i></a>
+                          <a href=""><i class="bi bi-linkedin"></i></a>
+                        </div>
+                      </div>
+                      <div class="member-info">
+                        <h4 class="title"><a href="faculty.html">Dr.Supriya</a></h4>
+                        <span>Assistant Professor, Artificial Intelligence and Data science</span>
                       </div>
                     </div>
                   </div>
@@ -374,7 +391,7 @@ if (!$dbcon) {
                         </div>
                       </div>
                       <div class="member-info">
-                        <h4 class="title"><a href="faculty.html">Dr.N.Kalaiselvi</a></h4>
+                        <h4 class="title"><a href="faculty.html">Mr.Sherin</a></h4>
                         <span>Assistant Professor, Science and Humanities</span>
                       </div>
                     </div>

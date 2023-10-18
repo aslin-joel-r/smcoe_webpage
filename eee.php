@@ -176,7 +176,11 @@ if (!$dbcon) {
 
           <div class="course-info d-flex justify-content-between align-items-center">
             <h5>Head of the Department</h5>
-            <p><a href="#"><Dr class="Gayathri"></Dr></a></p>
+            <p><a href="faculty.php?staff_id=1267"
+                    <?php 
+                    printf("%s", $data["first_name"]);
+                    ?>">
+                    Dr.A.R.Gayathri</a></p>
           </div>
 
           <div class="course-info d-flex justify-content-between align-items-center">

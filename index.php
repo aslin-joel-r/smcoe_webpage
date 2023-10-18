@@ -52,8 +52,6 @@ if (!$dbcon) {
 </head>
 
 <body>
-    <?php
-        printf("HELLO");
 
   <!-- Preloader -->
 
@@ -1436,8 +1434,6 @@ if (!$dbcon) {
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-?>
-
 
 </body>
 
