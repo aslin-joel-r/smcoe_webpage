@@ -1,3 +1,15 @@
+<?php
+$servername = "172.17.0.1";
+$username = "root";
+$password = "root";
+$db="mysql";
+$port="33070";  
+$dbcon = mysqli_connect($servername, $username, $password,$db,$port);
+if (!$dbcon) {
+    die("Connection failed: " .  mysqli_connect_error());
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,8 +22,8 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/favicon.png" rel="apple-touch-icon">
+  <link href="https://webdocs.pages.dev/assets/img/favicon.png" rel="icon">
+  <link href="https://webdocs.pages.dev/assets/img/favicon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -24,6 +36,8 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
@@ -39,6 +53,36 @@
 
 <body>
 
+  <!-- Preloader -->
+
+  <div class="preloader">
+    <img src="https://webdocs.pages.dev/assets/img/animlogo1.gif" alt="Loading...">
+  </div>
+
+  <style>
+       /* Preloader Styles */
+       .preloader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.8);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999; /* Make sure it's on top of everything */
+    }
+
+  </style>
+  
+  <script>
+    window.onload = function() {
+        // Hide the preloader when the page is fully loaded
+        document.querySelector('.preloader').style.display = 'none';
+    }
+</script>
+
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center">
     <div class="container d-flex align-items-center justify-content-between">
@@ -46,7 +90,7 @@
       <div class="logo">
         <!--<h1><a href="index.html">SMCE</a></h1>-->
         <!-- Uncomment below if you prefer to use an image logo -->
-        <a href="index.html"><img src="https://9509e6cb.webdocs.pages.dev/SMCE%20ERP.png" alt="" class="img-fluid"></a>
+        <a href="index.php"><img src="https://9509e6cb.webdocs.pages.dev/SMCE%20ERP.png" alt="" class="img-fluid"></a>
       </div>
       <nav id="navbar" class="navbar">
         <ul>
@@ -56,7 +100,7 @@
               <li><a href="Management.html">Management</a></li>
               <li><a href="principaldesk.html">Principal's Desk</a></li>
               <li><a href="oc.html">Organisation Chart</a></li>
-              <li><a href="iqac.html">IQAC</a></li>
+              <li><a href="iqac.php">IQAC</a></li>
               <li><a href="strategicplan.html">Strategic Plan</a></li>
               <li><a href="codeofconduct.html">Code of Conduct</a></li>
               <li><a href="mandatorydisclosure.html">mandatory Disclosure</a></li>
@@ -66,26 +110,26 @@
             <ul>
               <li class="dropdown"><a href="#more-services" href="#"><span>Department - Under Graduate</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
-                  <li><a href="civil.html">Civil Engineering</a></li>
-                  <li><a href="cse.html">Computer Science and Engineering</a></li>
-                  <li><a href="ece.html">Electronics and Communication Engineering</a></li>
-                  <li><a href="eee.html">Electrical and Electronics Engineering</a></li>
-                  <li><a href="mech.html">Mechanical Engineering</a></li>
-                  <li><a href="aids.html">Artificial Intelligence and Data Science</a></li>
-                  <li><a href="sh.html">Science and Humanities</a></li>
+                  <li><a href="civil.php">Civil Engineering</a></li>
+                  <li><a href="cse.php">Computer Science and Engineering</a></li>
+                  <li><a href="ece.php">Electronics and Communication Engineering</a></li>
+                  <li><a href="eee.php">Electrical and Electronics Engineering</a></li>
+                  <li><a href="mech.php">Mechanical Engineering</a></li>
+                  <li><a href="aids.php">Artificial Intelligence and Data Science</a></li>
+                  <li><a href="sh.php">Science and Humanities</a></li>
                 </ul>
               <li class="dropdown"><a href="#more-services" href="#"><span>Department - Post Graduate</span> <i class="bi bi-chevron-right"></i></a>
                   <ul>
-                    <li><a href="mecse.html">M.E Comuputer Science and Engineering</a></li>
-                    <li><a href="meise.html">M.E Industrial Safety Engineering</a></li>
-                    <li class="dropdown"><a href="#more-services" href="#"><span>Master of Business Administration</span> <i class="bi bi-chevron-right"></i></a>
+                    <li><a href="mecse.php">M.E Comuputer Science and Engineering</a></li>
+                    <li><a href="meise.php">M.E Industrial Safety Engineering</a></li>
+                    <li class="dropdown"><a href="mba.php"><span>Master of Business Administration</span> <i class="bi bi-chevron-right"></i></a>
                       <ul>
-                        <li><a href="#">Operations Management</a></li>
-                        <li><a href="#">Human Resources Management</a></li>
-                        <li><a href="#">Finncial Management</a></li>
-                        <li><a href="#">Business Analytics Management</a></li>
-                        <li><a href="#">Marketing Management</a></li>
-                        <li><a href="#">Logistics & Supply Chain Management</a></li>
+                        <li><a href="mba.php">Operations Management</a></li>
+                        <li><a href="mba.php">Human Resources Management</a></li>
+                        <li><a href="mba.php">Finncial Management</a></li>
+                        <li><a href="mba.php">Business Analytics Management</a></li>
+                        <li><a href="mba.php">Marketing Management</a></li>
+                        <li><a href="mba.php">Logistics & Supply Chain Management</a></li>
                       </ul>  
                   </ul>  
               <li><a href="placement_home.html">Placement</a></li>
@@ -96,29 +140,44 @@
             </ul>
             <li class="dropdown"><a href="#"><span>Research</span> <i class="bi bi-chevron-right"></i></a>
               <ul>
-                <li><a href="#">Code of Ethics</a></li>
-                <li><a href="#">Publications</a></li>
-                <li><a href="#">Sponsored Projects</a></li>
-                <li><a href="#">Startup Policy</a></li>
-                <li><a href="#">IPR CELL</a></li>
-                <li><a href="#">MoU</a></li>
+                <li><a href="research_codeofethics.html">Team & Code of Ethics</a></li>
+                <li><a href="research_publications.html">Publications</a></li>
+                <li><a href="https://webdocs.pages.dev/assets/docs/r&d/Starup-Policy.pdf">Startup Policy</a></li>
+                <li><a href="research_seedmoney.html">Stella Mary's Seed Money</a></li>
+                <li><a href="research_mou.html">MoU</a></li>
               </ul>
           <li><a class="nav-link scrollto" href="Sports.html">Sports</a></li>
           <li class="dropdown"><a href="#"><span>Students' Zone</span> <i class="bi bi-chevron-right"></i></a>
             <ul>
-              <li><a href="#">Clubs</a></li>
+              <li class="dropdown"><a href="#more-services" href="#"><span>Clubs & Cells</span> <i class="bi bi-chevron-right"></i></a>
+              <ul>
+                <li><a href="culturalclub.php">Cultural Club</a></li>
+                <li><a href="#">Literary Club</a></li>
+                <li><a href="#">Yoga Club</a></li>
+                <li><a href="cfi.php">Centre For Innovation</a></li>
+                <li><a href="#">National Cadet Corps</a></li>
+                <li><a href="#">Juniour Red Cross</a></li>
+                <li><a href="#">Grievance Redressal Cell</a></li>
+                <li><a href="#">Anti Ragging</a></li>
+                <li><a href="#">Entrepreneurship Development Cell</a></li>
+                <li><a href="#">Environmental Club</a></li>
+                <li><a href="#">Institution Innovation Council</a></li>
+                <li><a href="#">Internal Complaint Cell</a></li>
+                <li><a href="research_codeofethics.html">Research and Development Cell</a></li>
+                <li><a href="placement_home.html">Career Guidance and Placement Training Cell</a></li>
+                <li><a href="#">Internal Complaint Cell</a></li>
+                <li><a href="mediacell.html">Media Cell</a></li>
+              </ul>
               <li><a href="#">Professional Ethics</a></li>
               <li><a href="#">Capability Enhancement</a></li>
               <li><a href="#">E-Learning</a></li>
               <li><a href="#">Internship</a></li>
-              <li><a href="#">Sports</a></li>
               <li><a href="#">Campus Activities</a></li>
-              <li><a href="#">Library</a></li>
-              <li><a href="#">NPTEL</a></li>
-              <li><a href="#">DELNET</a></li>
-              <li><a href="#">Alumni Association</a></li>
+              <li><a href="https://www.infomirrorscloud.com/smce.webopac/Imt_frm_User_Login.aspx">Library</a></li>
+              <li><a href="https://nptel.ac.in">NPTEL</a></li>
+              <li><a href="https://delnet.in">DELNET</a></li>
+              <li><a href="alumni.php">Alumni Association</a></li>
               <li><a href="#">SWYAM - MOOC</a></li>
-              <li><a href="#">Sports</a></li>
                 <ul>
           <li><a class="nav-link scrollto" href="placement_home.html">Placement</a></li>
           <li><a class="nav-link scrollto" href="iqac.html">IQAC</a></li>    
@@ -126,8 +185,8 @@
           </ul>
             </ul>
           </li>
-          <li><a class="nav-link scrollto" href="#contact">Contact us</a></li>
-          <li><a class="getstarted scrollto" href="#CAMPS">CAMPS LOGIN</a></li>
+          <li><a class="nav-link scrollto" href="mandatorydisclosure.html">Mandatory Disclosure</a></li>
+          <li><a class="getstarted scrollto" href="https://camps.stellamaryscoe.edu.in/CAMPS/CommonJSP/signin.jsp">CAMPS LOGIN</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -141,10 +200,10 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Inner Page</h2>
+          <h2>MoU</h2>
           <ol>
-            <li><a href="index.html">Home</a></li>
-            <li>Inner Page</li>
+            <li><a href="index.php">Home</a></li>
+            <li>Mou</li>
           </ol>
         </div>
 

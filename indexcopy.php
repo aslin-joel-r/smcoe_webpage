@@ -90,7 +90,7 @@ if (!$dbcon) {
       <div class="logo">
         <!--<h1><a href="index.html">SMCE</a></h1>-->
         <!-- Uncomment below if you prefer to use an image logo -->
-        <a href="index.html"><img src="https://9509e6cb.webdocs.pages.dev/SMCE%20ERP.png" alt="" class="img-fluid"></a>
+        <a href="index.php"><img src="https://9509e6cb.webdocs.pages.dev/SMCE%20ERP.png" alt="" class="img-fluid"></a>
       </div>
       <nav id="navbar" class="navbar">
         <ul>
@@ -100,7 +100,7 @@ if (!$dbcon) {
               <li><a href="Management.html">Management</a></li>
               <li><a href="principaldesk.html">Principal's Desk</a></li>
               <li><a href="oc.html">Organisation Chart</a></li>
-              <li><a href="iqac.html">IQAC</a></li>
+              <li><a href="iqac.php">IQAC</a></li>
               <li><a href="strategicplan.html">Strategic Plan</a></li>
               <li><a href="codeofconduct.html">Code of Conduct</a></li>
               <li><a href="mandatorydisclosure.html">mandatory Disclosure</a></li>
@@ -120,16 +120,16 @@ if (!$dbcon) {
                 </ul>
               <li class="dropdown"><a href="#more-services" href="#"><span>Department - Post Graduate</span> <i class="bi bi-chevron-right"></i></a>
                   <ul>
-                    <li><a href="mecse.html">M.E Comuputer Science and Engineering</a></li>
-                    <li><a href="meise.html">M.E Industrial Safety Engineering</a></li>
-                    <li class="dropdown"><a href="mba.html"><span>Master of Business Administration</span> <i class="bi bi-chevron-right"></i></a>
+                    <li><a href="mecse.php">M.E Comuputer Science and Engineering</a></li>
+                    <li><a href="meise.php">M.E Industrial Safety Engineering</a></li>
+                    <li class="dropdown"><a href="mba.php"><span>Master of Business Administration</span> <i class="bi bi-chevron-right"></i></a>
                       <ul>
-                        <li><a href="#">Operations Management</a></li>
-                        <li><a href="#">Human Resources Management</a></li>
-                        <li><a href="#">Finncial Management</a></li>
-                        <li><a href="#">Business Analytics Management</a></li>
-                        <li><a href="#">Marketing Management</a></li>
-                        <li><a href="#">Logistics & Supply Chain Management</a></li>
+                        <li><a href="mba.php">Operations Management</a></li>
+                        <li><a href="mba.php">Human Resources Management</a></li>
+                        <li><a href="mba.php">Finncial Management</a></li>
+                        <li><a href="mba.php">Business Analytics Management</a></li>
+                        <li><a href="mba.php">Marketing Management</a></li>
+                        <li><a href="mba.php">Logistics & Supply Chain Management</a></li>
                       </ul>  
                   </ul>  
               <li><a href="placement_home.html">Placement</a></li>
@@ -151,10 +151,10 @@ if (!$dbcon) {
             <ul>
               <li class="dropdown"><a href="#more-services" href="#"><span>Clubs & Cells</span> <i class="bi bi-chevron-right"></i></a>
               <ul>
-                <li><a href="culturalclub.html">Cultural Club</a></li>
+                <li><a href="culturalclub.php">Cultural Club</a></li>
                 <li><a href="#">Literary Club</a></li>
                 <li><a href="#">Yoga Club</a></li>
-                <li><a href="cfi.html">Centre For Innovation</a></li>
+                <li><a href="cfi.php">Centre For Innovation</a></li>
                 <li><a href="#">National Cadet Corps</a></li>
                 <li><a href="#">Juniour Red Cross</a></li>
                 <li><a href="#">Grievance Redressal Cell</a></li>
@@ -176,7 +176,7 @@ if (!$dbcon) {
               <li><a href="https://www.infomirrorscloud.com/smce.webopac/Imt_frm_User_Login.aspx">Library</a></li>
               <li><a href="https://nptel.ac.in">NPTEL</a></li>
               <li><a href="https://delnet.in">DELNET</a></li>
-              <li><a href="alumni.html">Alumni Association</a></li>
+              <li><a href="alumni.php">Alumni Association</a></li>
               <li><a href="#">SWYAM - MOOC</a></li>
                 <ul>
           <li><a class="nav-link scrollto" href="placement_home.html">Placement</a></li>
