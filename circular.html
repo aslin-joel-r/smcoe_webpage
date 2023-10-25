@@ -146,41 +146,105 @@
     <!-- ======= Breadcrumbs Section ======= -->
    
 
-       <!-- News & Updates Traffic -->
-       <div class="card">
-        <div class="filter">
-          <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
-          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-            <li class="dropdown-header text-start">
-              <h6>Filter</h6>
-            </li>
+    <div class="section-full bg-white content-inner" style="background-image:url(images/background/bg6.jpg);background-position: left bottom;background-repeat: no-repeat; ">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 m-b0">
+                    <div class="sticky-top">
+                        <div class="widget recent-posts-entry">
+                            <h6 class="widget-title style-1">Events</h6>
+                            <div class="panel panel-default">
+                                <div class="panel panel-default">
+                                     <div class="panel-body">
+                                        <div class="row">
+                                            <div class="col-md-12 col-lg-12 col-xs-12">
+                                                <ul class="list-unstyled list-events demo1">
+                                                    <?php
+                                                    
+                                                    $qry_category='SELECT e_title,YEAR(e_date) year,e_date,e_desc,e_url,e_type,MONTH(e_date),DAY(e_date) dayevent_date,MONTHNAME(e_date),SUBSTR(MONTHNAME(e_date),1,3) smonth FROM `news_events` WHERE disp_type="lat_events" AND STATUS="1" ORDER BY sno DESC ';
+                                                    $qry_category="SELECT we.event_desc e_title,YEAR(we.event_date) YEAR,event_date e_date,event_desc e_desc,we.event_link e_url,'' e_type,MONTH(event_date) mevent_date,DAY(event_date) dayevent_date,MONTHNAME(event_date),SUBSTR(MONTHNAME(event_date),1,3) smonth FROM documentation.website_event we WHERE we.status>0 AND we.`event_type`='Event' AND NOW() BETWEEN we.doa AND we.doe ORDER BY we.order_no";
+                                                    mysqli_set_charset($con1,"utf8");
+                                                    $qry_category = mysqli_query($con1, $qry_category);
+                                                                                
+                                                    while ($rows_mastercategory = mysqli_fetch_assoc($qry_category))
+                                                                                {
+                                                                                    ?>
+                                                                                    <li class="news-item">
 
-            <li><a class="dropdown-item" href="#">Today</a></li>
-            <li><a class="dropdown-item" href="#">This Month</a></li>
-            <li><a class="dropdown-item" href="#">This Year</a></li>
-          </ul>
-        </div>
+                                                                                        <table cellpadding="4">
+<tr>
+<div class="list-events-title-date float-left text-center text-uppercase">
+<span class="list-events-title-date-day"> <?php echo $rows_mastercategory['dayevent_date'] ?></span>
+<span class="list-events-title-date-month"><?php echo $rows_mastercategory['smonth'] ?></span>
+</div>
 
-        <div class="card-body pb-0">
-          <h5 class="card-title">Circular &amp; Updates <span></span></h5>
+<a style="color:#48246e" target="_blank" href="<?php echo $rows_mastercategory['e_url'] ?>">
+    <?php echo $rows_mastercategory['e_title'] ?>
+    </a>
+    </tr>
+    </table>
+    
+    
+    
+                                                                                                           
+                                                                                                        </li>
+                                                                                                        <?php
+                                                                                                    }
+                                                                        ?>
+                                                                        
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
 
-          <div class="news">
-            <div class="post-item clearfix">
-              <img src="" alt="">
-              <h4><a href="assets/img/news-1.jpg">Nihil blanditiis at in nihil autem</a></h4>
-              <p>Sit recusandae non aspernatur laboriosam. Quia enim eligendi sed ut harum...</p>
-            </div>
-
-            <div class="post-item clearfix">
-              <img src="" alt="">
-              <h4><a href="assets/img/news-2.jpg">Quidem autem et impedit</a></h4>
-              <p>Illo nemo neque maiores vitae officiis cum eum turos elan dries werona nande...</p>
-            </div>
-
-          </div><!-- End sidebar recent posts-->
-
-        </div>
-      </div><!-- End News & Updates -->
+                                    <div class="col-lg-6 col-md-6 m-b0">
+                                        <div class="sticky-top">
+                                            <div class="widget recent-posts-entry">
+                                                <h6 class="widget-title style-1">Press Releases</h6>
+                                                <div class="panel panel-default">
+                                                    <div class="panel-body">
+                                                        <div class="row">
+                                                            <div class="col-md-12 col-lg-12 col-xs-12">
+                                                                <ul class="list-unstyled list-events demo2">
+                                                                    <?php
+                                                                                                $qry_category= "SELECT we.event_desc e_title,YEAR(we.event_date) year_no,event_date e_date,event_desc e_desc,we.event_link e_url,'' e_type,MONTH(event_date) mevent_date,DATE_FORMAT(event_date,'%d-%m-%Y') dayevent_date,MONTHNAME(event_date),SUBSTR(MONTHNAME(event_date),1,3) smonth FROM documentation.website_event we WHERE we.status>0 AND we.`event_type`='Press Release' AND NOW() BETWEEN we.doa AND we.doe ORDER BY we.order_no" ;
+                                                                                                mysqli_set_charset($con1,"utf8");
+                                                                                                $qry_category = mysqli_query($con1, $qry_category);
+                                                                                                
+                                                                                                while ($rows_mastercategory = mysqli_fetch_assoc($qry_category))
+                                                                                                {
+                                                                    ?>
+                                                                    <li class="news-item" style="margin-bottom:4px;">
+                                                                        <table cellpadding="4">
+                                                                            <tr>
+                                                                                 
+                                                                                <a style="color:#48246e" target="blank" href="<?php echo $rows_mastercategory['e_url'] ?>">
+                                                                                    <?php echo $rows_mastercategory['e_title'] ?> |
+                                                                                    <?php echo $rows_mastercategory['dayevent_date'] ?>
+                                                                                </a>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </li>
+                                                                    <?php
+                                                                        }
+                                                                    ?>
+                                                                    
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
       </div>
     </section><!-- End Breadcrumbs Section -->

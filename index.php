@@ -315,6 +315,15 @@ if (!$dbcon) {
               <div class="carousel-item active">
                   <div class="row">
                       <!-- Slide 1 -->
+                      <?php
+						$qry_category="SELECT we.event_desc e_title,YEAR(we.event_date) YEAR,event_date e_date,event_desc e_desc,we.event_link e_url,'' e_type,MONTH(event_date) mevent_date,DAY(event_date) dayevent_date,MONTHNAME(event_date),SUBSTR(MONTHNAME(event_date),1,3) smonth FROM documentation.website_event we WHERE we.status>0 AND we.`event_type`='Event' AND NOW() BETWEEN we.doa AND we.doe ORDER BY we.order_no";
+						mysqli_set_charset($dbcon,"utf8");
+						$qry_category = mysqli_query($dbcon, $qry_category);					
+						while ($data = mysqli_fetch_assoc($qry_category))
+                        {
+                                                                                                
+                        ?>
+                      <!-- Slide 1 -->
                       <div class="col-md-4">
                           <div class="item">
                               <div class="img">
@@ -322,14 +331,17 @@ if (!$dbcon) {
                               </div>
                               <div class="info">
                                   <div class="date">
-                                      <span>25 <br> Dec</span>
+                                      <span><?php printf("%s", $data["dayevent_date"]);?> <br> <?php  printf("%s", $data["smonth"]);?></span>
                                   </div>
-                                  <a href="#"><h5>Lorem Ipsum is simply dummy</h5></a>
-                                  <p>Lorem ipsum dolor sit amet conse ctetur, adipi sicing elit. Nisi sapiente hic fugiat delectus dicta delectus dicta.</p>
-                                  <a href="#0" class="more"><i class="fas bi-arrow-right"></i></a>
-                              </div>
-                          </div>
+                                  <a href="#"><h5><?php printf("%s", $data["e_title"]);?></a>
+                                  <p><?php printf("%s", $data["e_desc"]);?></p>
+                                  <a href="#0" class="more"><i class="fas bi-arrow-right"></i></a>                                                                                                        
+                            </div>                                                            
+                          </div>                                                                                         
                       </div>
+                      <?php 
+                            }
+                            ?>
                       
                       
                       <!-- Slide 2 -->
