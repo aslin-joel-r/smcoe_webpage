@@ -188,8 +188,8 @@ include("conn.php")
 <!-- ======= Breadcrumbs ======= -->
 <div class="breadcrumbs" data-aos="fade-in">
     <div class="container">
-      <h2>M.E Computer Science and Engineering</h2>
-      <p>Department focuses on the study and application of computing technologies, algorithms, and software systems to solve complex problems and drive technological innovation. </p>
+      <h2>Computer Science and Engineering</h2>
+      <p class="text-justify">Department focuses on the study and application of computing technologies, algorithms, and software systems to solve complex problems and drive technological innovation. </p>
     </div>
   </div><!-- End Breadcrumbs -->
 
@@ -199,8 +199,8 @@ include("conn.php")
 
       <div class="row">
         <div class="col-lg-8">
-          <img src="assets/img/cse.jpg" class="img-fluid" alt="">
-          
+          <img src="https://webdocs.pages.dev/assets/img/CSE/cse.jpg" class="img-fluid" alt="">
+         
         </div>
         <div class="col-lg-4">
 
@@ -214,28 +214,29 @@ include("conn.php")
 
           <div class="course-info d-flex justify-content-between align-items-center">
             <h5>Total Intake</h5>
-            <p>24</p>
+            <p>120</p>
           </div>
 
           <div class="course-info d-flex justify-content-between align-items-center">
             <h5>Budding Engineers</h5>
-            <p>20</p>
+            <p>200</p>
           </div>
 
           <div class="course-info d-flex justify-content-between align-items-center">
             <h5>Proud Alumni</h5>
-            <p>24</p>
+            <p>250</p>
           </div>
 
+          
         </div>
         <h3> Overview</h3>
-          <p>
-            The Department of Computer Science and Engineering was started in the year 2013. The strengths of the department include its high faculty-to-student ratio, state of the art facilities, renowned faculty, strong focus on undergraduate education balanced with leading-edge research, and emphasis on leadership, service, community and teamwork.
+        <p class="text-justify">
+          The Department of Computer Science and Engineering was started in the year 2013. The strengths of the department include its high faculty-to-student ratio, state of the art facilities, renowned faculty, strong focus on undergraduate education balanced with leading-edge research, and emphasis on leadership, service, community and teamwork.
 
 The Department strives with an outlined vision in producing socially responsible and employable engineers. It has a team of well qualified and highly experienced faculty members and technical staff who deliver their skills to the students through 360◦ teaching-learning environment which includes deployment of Module, Video Tutorials from NPTEL.
 
 The faculty members impart knowledge through curriculum based formal education and industry focused informal education which enhances the aptitude and reasoning skills of the students to make them readily employable. We strive for academic excellence in Computer Science and Engineering through a creative teaching-learning process. We create centers of excellence in leading areas of Computer Science and Engineering and transform students into technically competent, socially responsible and ethical Computer Science professionals. We incubate, apply and spread innovative ideas by collaborating with relevant industries. We attain these through continuous team work by a group of committed faculty, transforming the Computer Science and Engineering department as a leader in imparting Computer Science and Engineering education.
-          </p>
+        </p>
       </div>
 
     </div>
@@ -293,18 +294,18 @@ The faculty members impart knowledge through curriculum based formal education a
               <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
                 <div class="icon"><i class="bx bxl-dribbble"></i></div>
                 <h4 class="title"><a href="">VISION</a></h4>
-                <p class="description">To produce Computer Science professionals who can accomplish path-breaking solutions for a better society, through quality technical education, on gaining the required inter- personal, entrepreneurial and computing skills.</p>
+                <p class="description text-justify">To produce Computer Science professionals who can accomplish path-breaking solutions for a better society, through quality technical education, on gaining the required inter- personal, entrepreneurial and computing skills.</p>
               </div>
             </div>
-  
+
             <div class="col-md-6 col-lg-10 d-flex align-items-stretch mb-5 mb-lg-0">
               <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
                 <div class="icon"><i class="bx bx-file"></i></div>
                 <h4 class="title"><a href="">MISSION</a></h4>
-                <li>To impart a holistic and experiential learning experience by making use of innovative teaching methodologies.</li>
-                <li>To provide optimal technology solutions through collaborative and life-long learning for industry and societal needs with universal ethical values.</li>
-                <li>To nurture leadership skills and facilitate various co-curricular and extra-curricular activities to implant the spirit of entrepreneurship.</li>
-                <li>To provide industry-institute-interaction opportunities in order to motivate inter-disciplinary research capabilities with an inquiring mind.</li>
+               <li class="text-justify">To impart a holistic and experiential learning experience by making use of innovative teaching methodologies.</li>
+               <li class="text-justify">To provide optimal technology solutions through collaborative and life-long learning for industry and societal needs with universal ethical values.</li>
+               <li class="text-justify">To nurture leadership skills and facilitate various co-curricular and extra-curricular activities to implant the spirit of entrepreneurship.</li>
+               <li class="text-justify">To provide industry-institute-interaction opportunities in order to motivate inter-disciplinary research capabilities with an inquiring mind.</li>
               </div>
             </div>
   
@@ -313,7 +314,7 @@ The faculty members impart knowledge through curriculum based formal education a
         </div>
       </section><!-- End Services Section --></div>
                 <div class="col-lg-4 text-center order-1 order-lg-2">
-                  <img src="https://webdocs.pages.dev/assets/img/mecse/mecse.jpeg" alt="" class="img-fluid">
+                  <img src="assets/img/course-details-tab-1.png" alt="" class="img-fluid">
                 </div>
               </div>
             </div>
@@ -325,7 +326,7 @@ The faculty members impart knowledge through curriculum based formal education a
   
           <div class="section-title" data-aos="fade-up">
             <h2>Teaching Faculty</h2>
-            <p>The pillars of Computert Science and Engineering</p>
+            <p>The pillars of Computer Science and Engineering</p>
           </div>
   
           <div class="row justify-content-center">
@@ -356,15 +357,15 @@ The faculty members impart knowledge through curriculum based formal education a
                     <span><?php 
                     printf("%s", $data["desigination"]);
                     ?></span>
-                              </div>
-                            </div>
-                          </div>
-                        <?php
-                } 
-            }     
-                        ?>
-
-           
+                  </div>
+                </div>
+              </div>
+            <?php
+    } 
+}     
+            ?>
+             
+              
           </div>
         </div>
       </section><!-- End Team Section -->
@@ -386,7 +387,7 @@ The faculty members impart knowledge through curriculum based formal education a
             <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
               <div class="member" data-aos="fade-up" data-aos-delay="100">
                 <div class="member-img">
-                  <img src="assets/img/CSE/RAMYA.png" class="img-fluid" alt="">
+                  <img src="https://webdocs.pages.dev/assets/img/CSE/nonteaching/RAMYA.png" class="img-fluid" alt="">
                   <div class="social">
                     <a href=""><i class="bi bi-twitter"></i></a>
                     <a href=""><i class="bi bi-facebook"></i></a>
@@ -404,7 +405,7 @@ The faculty members impart knowledge through curriculum based formal education a
             <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
               <div class="member" data-aos="fade-up" data-aos-delay="100">
                 <div class="member-img">
-                  <img src="assets/img/CSE/DineshKumar.png" class="img-fluid" alt="">
+                  <img src="https://webdocs.pages.dev/assets/img/CSE/nonteaching/DineshKumar.png" class="img-fluid" alt="">
                   <div class="social">
                     <a href=""><i class="bi bi-twitter"></i></a>
                     <a href=""><i class="bi bi-facebook"></i></a>
@@ -412,7 +413,7 @@ The faculty members impart knowledge through curriculum based formal education a
                     <a href=""><i class="bi bi-linkedin"></i></a>
                   </div>
                 </div>
-                <div class="member-info">
+              <div class="member-info">
                   <h4>Mr.Dinesh Kumar</h4>
                   <span>Lab Instructor</span>
                 </div>
@@ -423,7 +424,7 @@ The faculty members impart knowledge through curriculum based formal education a
             <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
                 <div class="member" data-aos="fade-up" data-aos-delay="100">
                   <div class="member-img">
-                    <img src="assets/img/CSE/Gopi.png" class="img-fluid" alt="">
+                    <img src="https://webdocs.pages.dev/assets/img/CSE/nonteaching/Gopi.png" class="img-fluid" alt="">
                     <div class="social">
                       <a href=""><i class="bi bi-twitter"></i></a>
                       <a href=""><i class="bi bi-facebook"></i></a>
@@ -446,28 +447,29 @@ The faculty members impart knowledge through curriculum based formal education a
               <div class="row">
                 <div class="col-lg-8 details order-2 order-lg-1">
                   <h3>Common Computer Lab</h3>
-                  <p class="fst-italic">The Department of Computer Science and Engineering has a well-established Computer Practices Laboratory exclusively for First Year students. Computer Practices laboratory provides essential facilities to the students to enhance their knowledge in Programming. The common Lab is equipped with 125 Lenovo Desktop Computer with Intel i3 processor, Windows 7 Professional edition,4 LCD Projector, 2 ton carrier split AC-11,20 KVA UPS-2.</p>
+                  <p class="fst-italic text-justify">The Department of Computer Science and Engineering has a well-established Computer Practices Laboratory exclusively for First Year students. Computer Practices laboratory provides essential facilities to the students to enhance their knowledge in Programming. The common Lab is equipped with 125 Lenovo Desktop Computer with Intel i3 processor, Windows 7 Professional edition,4 LCD Projector, 2 ton carrier split AC-11,20 KVA UPS-2.</p>
                 </div>
                 <div class="col-lg-4 text-center order-1 order-lg-2">
-                  <img src="assets/img/CSE/CM.png" alt="" class="img-fluid">
+                  <img src="https://webdocs.pages.dev/assets/img/CSE/lab/CM.png" alt="" class="img-fluid">
                 </div>
               </div>
               <div class="row">
                 <div class="col-lg-8 details order-2 order-lg-1">
                   <h3>BigData Lab</h3>
-                  <p class="fst-italic">Big data lab is typically equipped with internet access. Computers in this lab are typically arranged in rows, so that every workstation has a similar view of one end of the room to facilitate lecturing or presentations, to facilitate small group work. The Big Data Lab is equipped with 40 Lenovo Desktop computers with Intel i7 Processor, 64 bit OS, 8GB Ram, on screen projector & centralized AC. Programming and Data Structures, Object Oriented Programming Systems, Operating Systems, Internet Programming, Grid and Cloud Computing Lab practical classes are conducted in this Laboratory.</p>
+                  <p class="fst-italic text-justify">Big data lab is typically equipped with internet access. Computers in this lab are typically arranged in rows, so that every workstation has a similar view of one end of the room to facilitate lecturing or presentations, to facilitate small group work. The Big Data Lab is equipped with 40 Lenovo Desktop computers with Intel i7 Processor, 64 bit OS, 8GB Ram, on screen projector & centralized AC. Programming and Data Structures, Object Oriented Programming Systems, Operating Systems, Internet Programming, Grid and Cloud Computing Lab practical classes are conducted in this Laboratory.</p>
                 </div>
                 <div class="col-lg-4 text-center order-1 order-lg-2">
-                  <img src="assets/img/CSE/BD.jpg" alt="" class="img-fluid">
+                  <img src="https://webdocs.pages.dev/assets/img/CSE/lab/BD.jpg" alt="" class="img-fluid">
                 </div>
               </div>
               <div class="row">
                 <div class="col-lg-8 details order-2 order-lg-1">
+                  <br>
                   <h3>Software Development Lab</h3>
-                  <p class="fst-italic"> Software Development Lab is typically equipped with internet access. Computers in this lab are typically arranged in rows, so that every workstation has a similar view of one end of the room to facilitate lecturing or presentations, to facilitate small group work. The Software Development Lab is equipped with 40 Dell Desktop computer with Intel i3 Processor, 32 bit OS,4 GB Ram and 3 AC. Compiler Laboratory and Database Management system, Software Development, Computer Graphics, Mobile Application Development and Network Laboratory practical classes are conducted in this Laboratory.</p>
+                  <p class="fst-italic text-justify"> Software Development Lab is typically equipped with internet access. Computers in this lab are typically arranged in rows, so that every workstation has a similar view of one end of the room to facilitate lecturing or presentations, to facilitate small group work. The Software Development Lab is equipped with 40 Dell Desktop computer with Intel i3 Processor, 32 bit OS,4 GB Ram and 3 AC. Compiler Laboratory and Database Management system, Software Development, Computer Graphics, Mobile Application Development and Network Laboratory practical classes are conducted in this Laboratory.</p>
                 </div>
                 <div class="col-lg-4 text-center order-1 order-lg-2">
-                  <img src="assets/img/CSE/SW.jpg" alt="" class="img-fluid">
+                  <img src="https://webdocs.pages.dev/assets/img/CSE/lab/SW.jpg" alt="" class="img-fluid">
                 </div>
               </div>
             </div>
@@ -621,13 +623,13 @@ The faculty members impart knowledge through curriculum based formal education a
               <div class="col-md-6 col-lg-4 d-flex align-items-center mb-5 mb-lg-0">
                 <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
                   <div class="icon"><i class="bx bx-world"></i></div>
-                  <h4 class="title"><a href="">Regulation 2021</a></h4>
+                  <h4 class="title"><a href="https://webdocs.pages.dev/assets/docs/cse/syllabus/2021.pdf">Regulation 2021</a></h4>
                   </div>
               </div>
               <div class="col-md-6 col-lg-4 d-md-flex align-items-stretch mb-lg-0 mb-lg-0">
                 <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
                   <div class="icon"><i class="bx bx-world"></i></div>
-                  <h4 class="title"><a href="">Regulation 2017</a></h4>
+                  <h4 class="title"><a href="https://webdocs.pages.dev/assets/docs/cse/syllabus/2017.pdf">Regulation 2017</a></h4>
                   </div>
                 </div>
             </div>
@@ -645,13 +647,13 @@ The faculty members impart knowledge through curriculum based formal education a
               <div class="col-md-7 col-lg-5 d-flex align-items-center mb-5 mb-lg-0">
                 <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
                   <div class="icon"><i class="bx bi-journal-richtext"></i></div>
-                  <h4 class="title"><a href="">Programme Outcomes</a></h4>
+                  <h4 class="title"><a href="https://webdocs.pages.dev/assets/docs/cse/po/Programme-Outcomes.pdf">Programme Outcomes</a></h4>
                   </div>
               </div>
               <div class="col-md-7 col-lg-5 d-md-flex align-items-stretch mb-lg-0 mb-lg-0">
                 <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
                   <div class="icon"><i class="bx bi-journal-richtext"></i></div>
-                  <h4 class="title"><a href="">Program Specfic Outcomes</a></h4>
+                  <h4 class="title"><a href="https://webdocs.pages.dev/assets/docs/cse/po/PSO-CSE.pdf">Program Specfic Outcomes</a></h4>
                   </div>
                 </div>
             </div>
@@ -669,25 +671,25 @@ The faculty members impart knowledge through curriculum based formal education a
               <div class="col-md-6 col-lg-5 d-flex align-items-center mb-5 mb-lg-0">
                 <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
                   <div class="icon"><i class="bx bi-calendar4-week"></i></div>
-                  <h4 class="title"><a href="">2018-19 ODD</a></h4>
+                  <h4 class="title"><a href="https://webdocs.pages.dev/assets/docs/cse/Calender/2018-19-odd.pdf">2018-19 ODD</a></h4>
                 </div>
               </div>
               <div class="col-md-6 col-lg-5 d-md-flex align-items-stretch mb-lg-0 mb-lg-0">
                 <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
                   <div class="icon"><i class="bx bi-calendar4-week"></i></div>
-                  <h4 class="title"><a href="">2018-19 EVEN</a></h4>
+                  <h4 class="title"><a href="https://webdocs.pages.dev/assets/docs/cse/Calender/2018-19-even.pdf">2018-19 EVEN</a></h4>
                 </div>
               </div>
               <div class="col-md-6 col-lg-5 d-flex align-items-center mb-5 mb-lg-0">
                 <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
                   <div class="icon"><i class="bx bi-calendar4-week"></i></div>
-                  <h4 class="title"><a href="">2019-20 ODD</a></h4>
+                  <h4 class="title"><a href="https://webdocs.pages.dev/assets/docs/cse/Calender/2019-20-odd.pdf">2019-20 ODD</a></h4>
                 </div>
               </div>
               <div class="col-md-6 col-lg-5 d-md-flex align-items-stretch mb-lg-0 mb-lg-0">
                 <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
                   <div class="icon"><i class="bx bi-calendar4-week"></i></div>
-                  <h4 class="title"><a href="">2019-20 EVEN</a></h4>
+                  <h4 class="title"><a href="https://webdocs.pages.dev/assets/docs/cse/Calender/2019-20-even.pdf">2019-20 EVEN</a></h4>
                 </div>
               </div>
               <div class="col-md-6 col-lg-5 d-flex align-items-center mb-5 mb-lg-0">
@@ -705,13 +707,13 @@ The faculty members impart knowledge through curriculum based formal education a
               <div class="col-md-6 col-lg-5 d-md-flex align-items-stretch mb-lg-0 mb-lg-0">
                 <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
                   <div class="icon"><i class="bx bi-calendar4-week"></i></div>
-                  <h4 class="title"><a href="">2021-22 ODD</a></h4>
+                  <h4 class="title"><a href="https://webdocs.pages.dev/assets/docs/cse/Calender/2021-22-odd.pdf">2021-22 ODD</a></h4>
                 </div>
               </div>
               <div class="col-md-6 col-lg-5 d-flex align-items-center mb-5 mb-lg-0">
                 <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
                   <div class="icon"><i class="bx bi-calendar4-week"></i></div>
-                  <h4 class="title"><a href="">2021-22 EVEN</a></h4>
+                  <h4 class="title"><a href="https://webdocs.pages.dev/assets/docs/cse/Calender/2021-22-even.pdf">2021-22 EVEN</a></h4>
                 </div>
               </div>
               <div class="col-md-6 col-lg-5 d-md-flex align-items-stretch mb-lg-0 mb-lg-0">
@@ -757,73 +759,73 @@ The faculty members impart knowledge through curriculum based formal education a
                             <div class="col-lg-3 col-md-4">
                               <div class="icon-box">
                                 <i class="ri-calendar-todo-line" style="color: #ffbb2c;"></i>
-                                <h3><a href="">APRIL 2016</a></h3>
+                                <h3><a href="https://webdocs.pages.dev/assets/docs/cse/NewsLetter/April-2016.pdf">APRIL 2016</a></h3>
                               </div>
                             </div>
                             <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
                               <div class="icon-box">
                                 <i class="ri-calendar-todo-line" style="color: #5578ff;"></i>
-                                <h3><a href="">NOVEMBER 2016</a></h3>
+                                <h3><a href="https://webdocs.pages.dev/assets/docs/cse/NewsLetter/November-2016.pdf">NOVEMBER 2016</a></h3>
                               </div>
                             </div>
                             <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
                               <div class="icon-box">
                                 <i class="ri-calendar-todo-line" style="color: #e80368;"></i>
-                                <h3><a href="">APRIL 2017</a></h3>
+                                <h3><a href="https://webdocs.pages.dev/assets/docs/cse/NewsLetter/April-2017.pdf">APRIL 2017</a></h3>
                               </div>
                             </div>
                             <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
                               <div class="icon-box">
                                 <i class="ri-calendar-todo-line" style="color: #e361ff;"></i>
-                                <h3><a href="">NOVEMBER 2017</a></h3>
+                                <h3><a href="https://webdocs.pages.dev/assets/docs/cse/NewsLetter/November-2017.pdf">NOVEMBER 2017</a></h3>
                               </div>
                             </div>
                             <div class="col-lg-3 col-md-4 mt-4">
                               <div class="icon-box">
                                 <i class="ri-calendar-todo-line" style="color: #47aeff;"></i>
-                                <h3><a href="">APRIL 2018</a></h3>
+                                <h3><a href="https://webdocs.pages.dev/assets/docs/cse/NewsLetter/April-2018.pdf">APRIL 2018</a></h3>
                               </div>
                             </div>
                             <div class="col-lg-3 col-md-4 mt-4">
                               <div class="icon-box">
                                 <i class="ri-calendar-todo-line" style="color: #ffa76e;"></i>
-                                <h3><a href="">NOVEMBER 2018</a></h3>
+                                <h3><a href="https://webdocs.pages.dev/assets/docs/cse/NewsLetter/November-2018.pdf">NOVEMBER 2018</a></h3>
                               </div>
                             </div>
                             <div class="col-lg-3 col-md-4 mt-4">
                               <div class="icon-box">
                                 <i class="ri-calendar-todo-line" style="color: #11dbcf;"></i>
-                                <h3><a href="">APRIL 2019</a></h3>
+                                <h3><a href="https://webdocs.pages.dev/assets/docs/cse/NewsLetter/April-2019.pdf">APRIL 2019</a></h3>
                               </div>
                             </div>
                             <div class="col-lg-3 col-md-4 mt-4">
                               <div class="icon-box">
                                 <i class="ri-calendar-todo-line" style="color: #4233ff;"></i>
-                                <h3><a href="">NOVEMBER 2019</a></h3>
+                                <h3><a href="https://webdocs.pages.dev/assets/docs/cse/NewsLetter/November-2019.pdf">NOVEMBER 2019</a></h3>
                               </div>
                             </div>
                             <div class="col-lg-3 col-md-4 mt-4">
                               <div class="icon-box">
                                 <i class="ri-calendar-todo-line" style="color: #b2904f;"></i>
-                                <h3><a href="">APRIL 2020</a></h3>
+                                <h3><a href="https://webdocs.pages.dev/assets/docs/cse/NewsLetter/April-2020.pdf">APRIL 2020</a></h3>
                               </div>
                             </div>
                             <div class="col-lg-3 col-md-4 mt-4">
                               <div class="icon-box">
                                 <i class="ri-calendar-todo-line" style="color: #b20969;"></i>
-                                <h3><a href="">NOVEMBER 2020</a></h3>
+                                <h3><a href="https://webdocs.pages.dev/assets/docs/cse/NewsLetter/November-2020.pdf">NOVEMBER 2020</a></h3>
                               </div>
                             </div>
                             <div class="col-lg-3 col-md-4 mt-4">
                               <div class="icon-box">
                                 <i class="ri-calendar-todo-line" style="color: #ff5828;"></i>
-                                <h3><a href="">APRIL 2021</a></h3>
+                                <h3><a href="https://webdocs.pages.dev/assets/docs/cse/NewsLetter/April-2021.pdf">APRIL 2021</a></h3>
                               </div>
                             </div>
                             <div class="col-lg-3 col-md-4 mt-4">
                               <div class="icon-box">
                                 <i class="ri-calendar-todo-line" style="color: #29cc61;"></i>
-                                <h3><a href="">NOVEMBER 2021</a></h3>
+                                <h3><a href="https://webdocs.pages.dev/assets/docs/cse/NewsLetter/November-2021.pdf">NOVEMBER 2021</a></h3>
                               </div>
                             </div>
                           </div>
@@ -846,67 +848,67 @@ The faculty members impart knowledge through curriculum based formal education a
                                     <div class="col-lg-3 col-md-4">
                                       <div class="icon-box">
                                         <i class="ri-file-list-3-line" style="color: #ffbb2c;"></i>
-                                        <h3><a href="">AJAX BASICS</a></h3>
+                                        <h3><a href="https://webdocs.pages.dev/assets/docs/cse/brochure/Ajax-Basics.pdf">AJAX BASICS</a></h3>
                                       </div>
                                     </div>
                                     <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
                                       <div class="icon-box">
                                         <i class="ri-file-list-3-line" style="color: #5578ff;"></i>
-                                        <h3><a href="">BOOTSTRAP</a></h3>
+                                        <h3><a href="https://webdocs.pages.dev/assets/docs/cse/brochure/Bootstarp.pdf">BOOTSTRAP</a></h3>
                                       </div>
                                     </div>
                                     <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
                                       <div class="icon-box">
                                         <i class="ri-database-2-line" style="color: #e80368;"></i>
-                                        <h3><a href="">HADOOP</a></h3>
+                                        <h3><a href="https://webdocs.pages.dev/assets/docs/cse/brochure/Hadoop.pdf">HADOOP</a></h3>
                                       </div>
                                     </div>
                                     <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
                                       <div class="icon-box">
                                         <i class="ri-file-list-3-line" style="color: #e361ff;"></i>
-                                        <h3><a href="">MACHINE LEARNING AND DATA ANALYTICS</a></h3>
+                                        <h3><a href="https://webdocs.pages.dev/assets/docs/cse/brochure/Machine-Learning-and-Data-Analytics.pdf">MACHINE LEARNING AND DATA ANALYTICS</a></h3>
                                       </div>
                                     </div>
                                     <div class="col-lg-3 col-md-4 mt-4">
                                       <div class="icon-box">
                                         <i class="ri-bar-chart-box-line" style="color: #47aeff;"></i>
-                                        <h3><a href="">MATLAB</a></h3>
+                                        <h3><a href="https://webdocs.pages.dev/assets/docs/cse/brochure/Matlab.pdf">MATLAB</a></h3>
                                       </div>
                                     </div>
                                     <div class="col-lg-3 col-md-4 mt-4">
                                       <div class="icon-box">
                                         <i class="ri-check-double-line" style="color: #ffa76e;"></i>
-                                        <h3><a href="">MOBILE APP DEVELOPMENT</a></h3>
+                                        <h3><a href="https://webdocs.pages.dev/assets/docs/cse/brochure/Mobile-App-Development.pdf">MOBILE APP DEVELOPMENT</a></h3>
                                       </div>
                                     </div>
                                     <div class="col-lg-3 col-md-4 mt-4">
                                       <div class="icon-box">
                                         <i class="ri-database-2-line" style="color: #11dbcf;"></i>
-                                        <h3><a href="">NETWORK STORAGE CONCEPTS</a></h3>
+                                        <h3><a href="https://webdocs.pages.dev/assets/docs/cse/brochure/Network-Storage-Concepts.pdf">NETWORK STORAGE CONCEPTS</a></h3>
                                       </div>
                                     </div>
                                     <div class="col-lg-3 col-md-4 mt-4">
                                       <div class="icon-box">
                                         <i class="ri-disc-line" style="color: #4233ff;"></i>
-                                        <h3><a href="">NS2</a></h3>
+                                        <h3><a href="https://webdocs.pages.dev/assets/docs/cse/brochure/NS2.pdf">NS2</a></h3>
                                       </div>
                                     </div>
                                     <div class="col-lg-3 col-md-4 mt-4">
                                       <div class="icon-box">
                                         <i class="ri-anchor-line" style="color: #b2904f;"></i>
-                                        <h3><a href="">U-TURN MOTIVATION OF ENGINEERS</a></h3>
+                                        <h3><a href="https://webdocs.pages.dev/assets/docs/cse/brochure/U-Turn-motivation-of-Engineers.pdf">U-TURN MOTIVATION OF ENGINEERS</a></h3>
                                       </div>
                                     </div>
                                     <div class="col-lg-3 col-md-4 mt-4">
                                       <div class="icon-box">
                                         <i class="ri-check-double-line" style="color: #b20969;"></i>
-                                        <h3><a href="">WEB DESIGNING USING WORDPRESS</a></h3>
+                                        <h3><a href="https://webdocs.pages.dev/assets/docs/cse/brochure/Web-Designing-Using-Word-Process.pdf">WEB DESIGNING USING WORDPRESS</a></h3>
                                       </div>
                                     </div>
                                     <div class="col-lg-3 col-md-4 mt-4">
                                       <div class="icon-box">
                                         <i class="ri-check-double-line" style="color: #ff5828;"></i>
-                                        <h3><a href="">WEB DEVELOPMENT</a></h3>
+                                        <h3><a href="https://webdocs.pages.dev/assets/docs/cse/brochure/Web-Development.pdf">WEB DEVELOPMENT</a></h3>
                                       </div>
                                     </div>
                                   </div>

@@ -1,15 +1,6 @@
-<?php
-$servername = "172.17.0.1";
-$username = "root";
-$password = "root";
-$db="mysql";
-$port="33070";  
-$dbcon = mysqli_connect($servername, $username, $password,$db,$port);
-if (!$dbcon) {
-    die("Connection failed: " .  mysqli_connect_error());
-}
+<?php 
+include("conn.php")
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -231,7 +222,7 @@ if (!$dbcon) {
       
       <div class="row">
       <?php
-            $sql = "SELECT link FROM camps.`staff_photo` sp WHERE sp.staff_id=".$_GET['staff_id'];
+            $sql = "SELECT CONCAT('https://webdocs.pages.dev/assets/img/faculty/',staff_master.staff_id,'.png') imglink FROM camps.`staff_photo` sp WHERE sp.staff_id=".$_GET['staff_id'];
             $result = mysqli_query($dbcon, $sql);
             if (mysqli_num_rows($result) > 0) {
                 while($data = mysqli_fetch_assoc($result)) {
@@ -250,7 +241,7 @@ if (!$dbcon) {
             ?>
     
     <div class="col-lg-2" data-aos="fade-right">
-        <img src="<?= $sil?>"  class="img-fluid" alt="">
+        <img src="https://webdocs.pages.dev/assets/img/faculty/<?= $_GET['staff_id']?>.png"  class="img-fluid" alt="">
         </div>
         <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
           <h3><?php 

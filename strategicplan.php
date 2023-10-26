@@ -1,15 +1,6 @@
-<?php
-$servername = "172.17.0.1";
-$username = "root";
-$password = "root";
-$db="mysql";
-$port="33070";  
-$dbcon = mysqli_connect($servername, $username, $password,$db,$port);
-if (!$dbcon) {
-    die("Connection failed: " .  mysqli_connect_error());
-}
+<?php 
+include("conn.php")
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -200,205 +191,130 @@ if (!$dbcon) {
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Management</h2>
+          <h2>Strategic Plan</h2>
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li>Management</li>
+            <li>Strategic Plan</li>
           </ol>
         </div>
 
       </div>
     </section><!-- End Breadcrumbs Section -->
 
-    <section class="Management">
+    <section class="strategicplan">
       <div class="container">
-        <!-- ======= Team Section ======= -->
-    <section id="team" class="team section-bg">
-        <div class="container">
-  
-          <div class="section-title" data-aos="fade-up">
-            <h2>Management</h2>
-            <p>The pillars of Stella Mary's College of Engineering</p>
+         <!-- Default Accordion -->
+         <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Scholarship for all eligible students 
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>#Continuous Process</strong> Upon the arrival fresh batch, the eligible students are supported officially in getting minority or other scholarship schemes.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Increasing Pass Percentage
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>#Continuous Process</strong> Adopting coaching methods to bring out the best from slow learners and make them pass.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                 Novelty in Teaching-Learning Process
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>#Continuous process</strong> Utilizing the wave of digital technology to take teaching learning process to a new level by implementing E-learning, E-library and E-governance.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                Resourceful work environment
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>#Continuous Process</strong> Provide a motivating work atmosphere for faculty and staff, where teaching and research achievements are recognized and rewarded.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                Attracting funds for research projects
+                  </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>#Applying to get the maximum funds</strong> To apply for funded research projects.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSix">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                Industry Funding
+                  </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>#2023-24</strong> To involve in industry funded research projects by signing MOU’S with industries.
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSeven">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                Research Centre
+                  </button>
+                </h2>
+                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>#By 2024</strong> Action plan to be drawn.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingEight">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                More UG and PG Degree programmes
+                  </button>
+                </h2>
+                <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>#After NBA accreditation</strong> Applying for more UG and PG programmes with Anna University.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingNine">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                Conservation of resources.
+                  </button>
+                </h2>
+                <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>#Continuous Process</strong> To practically implement sustainability, usage of energy and water inside the campus by incorporating necessary procedures and infrastructure.
+                </div>
+              </div>
+              
           </div>
-  
-          <div class="row">
-  
-            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-              <div class="member" data-aos="fade-up" data-aos-delay="100">
-                <div class="member-img">
-                  <img src="assets/img/admin/Chairman.png" class="img-fluid" alt="">
-                  <div class="social">
-                    <a href=""><i class="bi bi-twitter"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""><i class="bi bi-linkedin"></i></a>
-                  </div>
-                </div>
-                <div class="member-info">
-                  <h4>Dr.Nazerath Charles</h4>
-                  <span>Chairman</span>
-                </div>
-              </div>
-            </div>
-  
-            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-              <div class="member" data-aos="fade-up" data-aos-delay="200">
-                <div class="member-img">
-                  <img src="assets/img/admin/marystella.png" class="img-fluid" alt="">
-                  <div class="social">
-                    <!--<a href=""><i class="bi bi-twitter"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""><i class="bi bi-linkedin"></i></a>-->
-                  </div>
-                </div>
-                <div class="member-info">
-                  <h4>Late.Mrs.Mary Stella Charles</h4>
-                  <span>Secretary</span>
-                </div>
-              </div>
-            </div>
-  
-            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-              <div class="member" data-aos="fade-up" data-aos-delay="300">
-                <div class="member-img">
-                  <img src="assets/img/admin/CEO.png" class="img-fluid" alt="">
-                  <div class="social">
-                    <a href=""><i class="bi bi-twitter"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/carol-judeson-j-8695a61b/"><i class="bi bi-linkedin"></i></a>
-                  </div>
-                </div>
-                <div class="member-info">
-                  <h4>Mr.Carol Judeson</h4>
-                  <span>Chief Executive Officer</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-                <div class="member" data-aos="fade-up" data-aos-delay="300">
-                  <div class="member-img">
-                    <img src="assets/img/admin/VC.png" class="img-fluid" alt="">
-                    <div class="social">
-                      <a href=""><i class="bi bi-twitter"></i></a>
-                      <a href=""><i class="bi bi-facebook"></i></a>
-                      <a href=""><i class="bi bi-instagram"></i></a>
-                      <a href=""><i class="bi bi-linkedin"></i></a>
-                    </div>
-                  </div>
-                  <div class="member-info">
-                    <h4>Mrs.Sumitha C Judeson</h4>
-                    <span>Vice Chairman</span>
-                  </div>
-                </div>
-              </div>
-             <!-- <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-                <div class="member" data-aos="fade-up" data-aos-delay="300">
-                  <div class="member-img">
-                    <img src="assets/img/team/D.jpeg" class="img-fluid" alt="">
-                    <div class="social">
-                      <a href=""><i class="bi bi-twitter"></i></a>
-                      <a href=""><i class="bi bi-facebook"></i></a>
-                      <a href=""><i class="bi bi-instagram"></i></a>
-                      <a href="https://www.linkedin.com/in/dr-jenix-rino-j-42a92855/"><i class="bi bi-linkedin"></i></a>
-                    </div>
-                  </div>
-                  <div class="member-info">
-                    <h4>Dr.Jenix Rino</h4>
-                    <span>Director</span>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-                <div class="member" data-aos="fade-up" data-aos-delay="300">
-                  <div class="member-img">
-                    <img src="assets/img/team/PL.jpg" class="img-fluid" alt="">
-                    <div class="social">
-                      <a href=""><i class="bi bi-twitter"></i></a>
-                      <a href=""><i class="bi bi-facebook"></i></a>
-                      <a href=""><i class="bi bi-instagram"></i></a>
-                      <a href="https://www.linkedin.com/in/suresh-premil-kumar-smce-41b96611/"><i class="bi bi-linkedin"></i></a>
-                    </div>
-                  </div>
-                  <div class="member-info">
-                    <h4>Dr.Suresh Premil Kumar</h4>
-                    <span>Principal</span>
-                  </div>
-                </div>
-              </div>
-  
-            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-              <div class="member" data-aos="fade-up" data-aos-delay="400">
-                <div class="member-img">
-                  <img src="assets/img/team/AM.jpg" class="img-fluid" alt="">
-                  <div class="social">
-                    <a href=""><i class="bi bi-twitter"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""><i class="bi bi-linkedin"></i></a>
-                  </div>
-                </div>
-                <div class="member-info">
-                  <h4>Mrs.Melba Heni</h4>
-                  <span>Accounts Manager</span>
-                </div>
-              </div>
-            </div>
-  
-          </div>-->
-  
-        </div>
-      </section><!-- End Team Section -->
-  
       </div>
     </section>
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services">
-      <div class="container">
-
-        <div class="section-title" data-aos="fade-up">
-          <h2>STELLA MARY'S COLLEGE OF ENGINEERING</h2>
-          <p>Nova Educational Trust</p>
-        </div>
-
-        <div class="row">
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-              <div class="icon"><i class="bi-binoculars"></i></div>
-              <h4 class="title"><a href="">VISION</a></h4>
-              <p class="description">To emerge as a premiere institution, acknowledged as a centre for excellence imparting technical education, creating technocrats who can address the needs of the society through exploration and experimentation and uplift mankind.</p>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
-              <div class="icon"><i class="bi-card-list"></i></div>
-              <h4 class="title"><a href="">MISSION</a></h4>
-              <p class="description">To provide an education that transforms students, through rigorous course-work and by providing an understanding of the needs of the society and the industry.</p>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
-              <div class="icon"><i class="bx bx-receipt"></i></div>
-              <h4 class="title"><a href="">Trust</a></h4>
-              <p class="description">The college is run by nova educational trust started in the year 2007, to provide the highest quality educational and research facilities to the students across the country.</p>
-            </div>
-          </div>
-
-         <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
-              <div class="icon"><i class="bx bx-cube-alt"></i></div>
-              <h4 class="title"><a href="/Users/partheebanpon/Documents/Vesperr-2/Management.html">Sister Concern</a></h4>
-              <p class="description">The trust manages the premier educational institutions like Bapuji Memorial higher secondary school, Bapuji Memorial College of Education, Stella Mary’s College of Engineering and Stella Mary's CBSE School.</p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Services Section -->
 
   </main><!-- End #main -->
 

@@ -1,15 +1,6 @@
-<?php
-$servername = "172.17.0.1";
-$username = "root";
-$password = "root";
-$db="mysql";
-$port="33070";  
-$dbcon = mysqli_connect($servername, $username, $password,$db,$port);
-if (!$dbcon) {
-    die("Connection failed: " .  mysqli_connect_error());
-}
+<?php 
+include("conn.php")
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -200,53 +191,100 @@ if (!$dbcon) {
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Principal's Desk</h2>
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li>Principal's Desk</li>
-          </ol>
+            <header class="section-header">
+                <h2>Report 2017-2018</h2>
+                
+              </header>
         </div>
 
       </div>
     </section><!-- End Breadcrumbs Section -->
 
-    <section class="principaldesk" data-aos="fade-in">
-      <div class="container">
-       
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about shadow p-4">
-      <div class="container" data-aos="fade-up">
-        <div class="row align-items-start">
-          <div class="col-lg-4 order-1 order-lg-6" data-aos="fade-right" data-aos-delay="100">
-            <img src="assets/img/admin/Principal.png" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-7 pt-4 pt-lg-0 order-2 order-lg-1 justify-content-xl-start">
-            <span class="h3 d-inline-block">
-              <b class="font-weight-bold">Dr. R. SURESH PREMIL KUMAR</b>
-              <small class="h6 text-secondary">M.E, Ph.D</small>
-            </span>
-    
-            <p class="p-3 fst-italic text-justify"  >
-              <i class="bx bxs-quote-alt-left quote-icon-left text-secondary h4 mr-3"></i>
-              It is education that defines and differentiates the human being from the rest of the creatures. Education always plays a vital role in the overall development and personality of an individual. Having realized this importance, SMCE aims to impart strong knowledge to its students who are young and are in thirst for it. SMCE will constantly work to provide the best knowledge to its students, through a team of dedicated staff and experienced faculty. Students are sure to get a new and good academic experience at our institution which would turn them into a holistic personality at the end of their course.
-              <i class="bx bxs-quote-alt-right quote-icon-right text-secondary h4 ml-3"></i>
-            </p>
-            <!--<ul>
-              <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-              <li><i class="bi bi-check-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-              <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
-            </ul>
-            <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-            </p>
-          -->
-          </div>
-        </div>
+    <!-- ======= Recent Blog Posts Section ======= -->
+    <section id="recent-blog-posts" class="recent-blog-posts">
 
-      </div>
-    </section><!-- End About Section -->
-      </div>
-    </section>
+        <div class="container" data-aos="fade-up">
+  
+        
+  
+          <div class="row">
+  
+            <div class="col-lg-4">
+              <div class="post-box">
+                <div class="post-img"><img src="https://webdocs.pages.dev/assets/img/sports/2017-18/chess.jpg" class="img-fluid" alt=""></div>
+                <span class="post-date">23 February 2018</span>
+                <p class="text-justify">Stella Mary’s College of Engineering organized the Fourth Kanyakumari International FIDE Rate (Below 1500) Chess Tournament</p>
+              </div>
+            </div>
+  
+            <div class="col-lg-4">
+              <div class="post-box">
+                <div class="post-img"><img src="https://webdocs.pages.dev/assets/img/sports/2017-18/ing.jpg" class="img-fluid" alt=""></div>
+                <span class="post-date">11 December 2017</span>
+            <P class="text-justify">Stella Mary’s College of Engineering organized the Refresher Training Programme for PD’S & PET of Government & Aided Schools of Kanyakumari District</P>    
+            </div>
+            </div>
+  
+            <div class="col-lg-4">
+              <div class="post-box">
+                <div class="post-img"><img src="https://webdocs.pages.dev/assets/img/sports/2017-18/schooling.jpg" class="img-fluid" alt=""></div>
+                <span class="post-date">30 November 2017</span>
+                <p class="text-justify">Stella Mary’s College of Engineering organized the District level Tug of War Tournament</p>    
+            </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="post-box">
+                  <div class="post-img"><img src="https://webdocs.pages.dev/assets/img/sports/2017-18/chess.jpg" class="img-fluid" alt=""></div>
+                  <span class="post-date">25 November 2017</span>
+                  <p class="text-justify">Stella Mary’s College of Engineering organized the Kanayakumari District level Chess Tournament</p>    
+              </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="post-box">
+                  <div class="post-img"><img src="https://webdocs.pages.dev/assets/img/sports/2017-18/tt.jpg" class="img-fluid" alt=""></div>
+                  <span class="post-date">11 November 2017</span>
+                  <p class="text-justify">Stella Mary’s College of Engineering organized the State level Table Tennis Tournament</p>    
+              </div>
+              </div>
+
+              <div class="col-lg-4">
+                <div class="post-box">
+                  <div class="post-img"><img src="https://webdocs.pages.dev/assets/img/sports/2017-18/ttpz.jpg" class="img-fluid" alt=""></div>
+                  <span class="post-date">20,21 September 2017</span>
+                  <p class="text-justify">Stella Mary’s Men Table Tennis team won the Gold Medal in the Anna University,19th zone Table Tennis Tournament held at Stella Mary’s College of Engineering</p>    
+              </div>
+              </div>
+
+              <div class="col-lg-4">
+                <div class="post-box">
+                  <div class="post-img"><img src="https://webdocs.pages.dev/assets/img/sports/2017-18/tting.jpg" class="img-fluid" alt=""></div>
+                  <span class="post-date">20,21 September 2017</span>
+                  <p class="text-justify">Stella Mary’s College of Engineering organized the Anna University,19th zone Men & Women table Tennis Tournament </p>    
+              </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="post-box">
+                  <div class="post-img"><img src="https://webdocs.pages.dev/assets/img/sports/2017-18/med.jpg" class="img-fluid" alt=""></div>
+                  <span class="post-date">07,08 Auguest 2017</span>
+                  <p class="text-justify">Stella Mary’s Men Ball Badminton team won the Silver Medal in the Anna University,19th zone Ball Badminton Tournament held at Annai Vailankanni College of Engineering during</p>    
+              </div>
+              </div>
+
+
+              
+
+              
+
+            
+
+            
+  
+          </div>
+  
+        </div>
+  
+      </section><!-- End Recent Blog Posts Section -->
 
   </main><!-- End #main -->
 

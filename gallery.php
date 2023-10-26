@@ -1,15 +1,6 @@
-<?php
-$servername = "172.17.0.1";
-$username = "root";
-$password = "root";
-$db="mysql";
-$port="33070";  
-$dbcon = mysqli_connect($servername, $username, $password,$db,$port);
-if (!$dbcon) {
-    die("Connection failed: " .  mysqli_connect_error());
-}
+<?php 
+include("conn.php")
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -195,328 +186,169 @@ if (!$dbcon) {
 
   <main id="main">
 
-    <!-- ======= Breadcrumbs Section ======= -->
-    <section class="breadcrumbs">
-      <div class="container">
-
-        <div class="d-flex justify-content-between align-items-center">
-          <h2>Publications</h2>
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li>Publications</li>
-          </ol>
-        </div>
-
-      </div>
-    </section><!-- End Breadcrumbs Section -->
+    
 
     <section class="inner-page">
-      <div class="container">
-        
+    
 
-        <div class="section-title" data-aos="fade-up">
-          <h2>National & International Journals</h2>
-        <div class="card">
-            <div class="card-body">
-              <h5 class="card-title text-center">Staff Publications</h5>
-              <!--<p>Add <code>.table-borderless</code> for a table without borders.</p>-->
-              <!-- Active Table -->
-              <table class="table table-striped text-center table-hover">
-                <thead>
-                  <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Title of paper</th>
-                    <th scope="col">Author/s</th>
-                    <th scope="col">Department</th>
-                    <th scope="col">Journal</th>
-                    <th scope="col">Year of Publication</th>
-                    <th scope="col">ISSN No</th>
-                  </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                      <th scope="row">1</th>
-                      <td>Blockchain based cloud service security architecture with distributed machine learning for smart device traffic record transaction</td>
-                      <td>Dr.Pon.Partheeban</td>
-                      <td>CSE</td>
-                      <td>WILEY Concurrency and Computation - Practice and Experience</td>
-                      <td>2021</td>
-                      <td>1532-0634</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">2</th>
-                      <td>Bridie Kessler</td>
-                      <td>Developer</td>
-                      <td>35</td>
-                      <td>2014-12-05</td>
-                      <td>2021</td>
-                      <td>1532-0634</td>
-                    </tr>
-                   
-                  </tbody>
-                </table>
-              </div> 
-      </div>
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title text-center">Student Publications</h5>
-          <!--<p>Add <code>.table-borderless</code> for a table without borders.</p>-->
-          <!-- Active Table -->
-          <table class="table table-striped text-center table-hover">
-            <thead>
-              <tr>
-                <th scope="col">#</th>
-                <th scope="col">Title of paper</th>
-                <th scope="col">Author/s</th>
-                <th scope="col">Department</th>
-                <th scope="col">Journal</th>
-                <th scope="col">Year of Publication</th>
-                <th scope="col">ISSN No</th>
-              </tr>
-            </thead>
-            <tbody>
-                <tr>
-                  <th scope="row">1</th>
-                  <td>Blockchain based cloud service security architecture with distributed machine learning for smart device traffic record transaction</td>
-                  <td>Dr.Pon.Partheeban</td>
-                  <td>CSE</td>
-                  <td>WILEY Concurrency and Computation - Practice and Experience</td>
-                  <td>2021</td>
-                  <td>1532-0634</td>
-                </tr>
-                <tr>
-                  <th scope="row">2</th>
-                  <td>Bridie Kessler</td>
-                  <td>Developer</td>
-                  <td>35</td>
-                  <td>2014-12-05</td>
-                  <td>2021</td>
-                  <td>1532-0634</td>
-                </tr>
-               
-              </tbody>
-            </table>
-          </div>     
+      
+<!-- ======= Gallery Section ======= -->
+<section id="gallery" class="gallery">
+  <div class="container-fluid">
+
+    <div class="row gy-4 justify-content-center">
+
+      <div class="col-xl-3 col-lg-4 col-md-6">
+       
+        <div class="gallery-item h-100">
+          
+          <img src="https://webdocs.pages.dev/assets/img/aids/AIDS.jpg" class="img-fluid" alt="">
+          <div class="gallery-links d-flex align-items-center justify-content-center">
+            <a href="https://webdocs.pages.dev/assets/img/aids/AIDS.jpg" title="Computer Science and Engineering" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+            <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i> </a>
+          </div>
+        </div>
+      </div><!-- End Gallery Item -->
+      <div class="col-xl-3 col-lg-4 col-md-6">
+        <div class="gallery-item h-100">
+          <img src="https://webdocs.pages.dev/assets/img/aids/AIDS.jpg" class="img-fluid" alt="">
+          <div class="gallery-links d-flex align-items-center justify-content-center">
+            <a href="https://webdocs.pages.dev/assets/img/aids/AIDS.jpg" title="Gallery 2" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+            <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div>
+      </div><!-- End Gallery Item -->
+      <div class="col-xl-3 col-lg-4 col-md-6">
+        <div class="gallery-item h-100">
+          <img src="https://webdocs.pages.dev/assets/img/aids/AIDS.jpg" class="img-fluid" alt="">
+          <div class="gallery-links d-flex align-items-center justify-content-center">
+            <a href="https://webdocs.pages.dev/assets/img/aids/AIDS.jpg" title="Gallery 3" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+            <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div>
+      </div><!-- End Gallery Item -->
+      <div class="col-xl-3 col-lg-4 col-md-6">
+        <div class="gallery-item h-100">
+          <img src="https://webdocs.pages.dev/assets/img/aids/AIDS.jpg" class="img-fluid" alt="">
+          <div class="gallery-links d-flex align-items-center justify-content-center">
+            <a href="https://webdocs.pages.dev/assets/img/aids/AIDS.jpg" title="Gallery 4" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+            <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div>
+      </div><!-- End Gallery Item -->
+      <div class="col-xl-3 col-lg-4 col-md-6">
+        <div class="gallery-item h-100">
+          <img src="https://webdocs.pages.dev/assets/img/aids/AIDS.jpg" class="img-fluid" alt="">
+          <div class="gallery-links d-flex align-items-center justify-content-center">
+            <a href="https://webdocs.pages.dev/assets/img/aids/AIDS.jpg" title="Gallery 5" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+            <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div>
+      </div><!-- End Gallery Item -->
+      <div class="col-xl-3 col-lg-4 col-md-6">
+        <div class="gallery-item h-100">
+          <img src="https://webdocs.pages.dev/assets/img/CSE/cse.jpg" class="img-fluid" alt="">
+          <div class="gallery-links d-flex align-items-center justify-content-center">
+            <a href="https://webdocs.pages.dev/assets/img/CSE/cse.jpg" title="Gallery 6" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+            <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div>
+      </div><!-- End Gallery Item -->
+      <div class="col-xl-3 col-lg-4 col-md-6">
+        <div class="gallery-item h-100">
+          <img src="https://webdocs.pages.dev/assets/img/CSE/cse.jpg" class="img-fluid" alt="">
+          <div class="gallery-links d-flex align-items-center justify-content-center">
+            <a href="https://webdocs.pages.dev/assets/img/CSE/cse.jpg" title="Gallery 7" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+            <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div>
+      </div><!-- End Gallery Item -->
+      <div class="col-xl-3 col-lg-4 col-md-6">
+        <div class="gallery-item h-100">
+          <img src="https://webdocs.pages.dev/assets/img/CSE/cse.jpg" class="img-fluid" alt="">
+          <div class="gallery-links d-flex align-items-center justify-content-center">
+            <a href="https://webdocs.pages.dev/assets/img/CSE/cse.jpg" title="Gallery 8" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+            <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div>
+      </div><!-- End Gallery Item -->
+      <div class="col-xl-3 col-lg-4 col-md-6">
+        <div class="gallery-item h-100">
+          <img src="https://webdocs.pages.dev/assets/img/CSE/cse.jpg" class="img-fluid" alt="">
+          <div class="gallery-links d-flex align-items-center justify-content-center">
+            <a href="https://webdocs.pages.dev/assets/img/CSE/cse.jpg" title="Gallery 9" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+            <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div>
+      </div><!-- End Gallery Item -->
+      <div class="col-xl-3 col-lg-4 col-md-6">
+        <div class="gallery-item h-100">
+          <img src="assets/img/gallery/gallery-10.jpg" class="img-fluid" alt="">
+          <div class="gallery-links d-flex align-items-center justify-content-center">
+            <a href="assets/img/gallery/gallery-10.jpg" title="Gallery 10" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+            <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div>
+      </div><!-- End Gallery Item -->
+      <div class="col-xl-3 col-lg-4 col-md-6">
+        <div class="gallery-item h-100">
+          <img src="assets/img/gallery/gallery-11.jpg" class="img-fluid" alt="">
+          <div class="gallery-links d-flex align-items-center justify-content-center">
+            <a href="assets/img/gallery/gallery-11.jpg" title="Gallery 11" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+            <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div>
+      </div><!-- End Gallery Item -->
+      <div class="col-xl-3 col-lg-4 col-md-6">
+        <div class="gallery-item h-100">
+          <img src="assets/img/gallery/gallery-12.jpg" class="img-fluid" alt="">
+          <div class="gallery-links d-flex align-items-center justify-content-center">
+            <a href="assets/img/gallery/gallery-12.jpg" title="Gallery 12" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+            <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div>
+      </div><!-- End Gallery Item -->
+      <div class="col-xl-3 col-lg-4 col-md-6">
+        <div class="gallery-item h-100">
+          <img src="assets/img/gallery/gallery-13.jpg" class="img-fluid" alt="">
+          <div class="gallery-links d-flex align-items-center justify-content-center">
+            <a href="assets/img/gallery/gallery-13.jpg" title="Gallery 13" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+            <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div>
+      </div><!-- End Gallery Item -->
+      <div class="col-xl-3 col-lg-4 col-md-6">
+        <div class="gallery-item h-100">
+          <img src="assets/img/gallery/gallery-14.jpg" class="img-fluid" alt="">
+          <div class="gallery-links d-flex align-items-center justify-content-center">
+            <a href="assets/img/gallery/gallery-14.jpg" title="Gallery 14" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+            <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div>
+      </div><!-- End Gallery Item -->
+      <div class="col-xl-3 col-lg-4 col-md-6">
+        <div class="gallery-item h-100">
+          <img src="assets/img/gallery/gallery-15.jpg" class="img-fluid" alt="">
+          <div class="gallery-links d-flex align-items-center justify-content-center">
+            <a href="assets/img/gallery/gallery-15.jpg" title="Gallery 15" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+            <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div>
+      </div><!-- End Gallery Item -->
+      <div class="col-xl-3 col-lg-4 col-md-6">
+        <div class="gallery-item h-100">
+          <img src="assets/img/gallery/gallery-16.jpg" class="img-fluid" alt="">
+          <div class="gallery-links d-flex align-items-center justify-content-center">
+            <a href="assets/img/gallery/gallery-16.jpg" title="Gallery 16" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+            <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div>
+      </div><!-- End Gallery Item -->
+
+    </div>
+
   </div>
-
-
-  <div class="section-title" data-aos="fade-up">
-    <h2>Conference Publications</h2>
-  <div class="card">
-    <div class="card-body">
-      <h5 class="card-title text-center">Staff Publications</h5>
-      <!--<p>Add <code>.table-borderless</code> for a table without borders.</p>-->
-      <!-- Active Table -->
-      <table class="table table-striped text-center table-hover">
-        <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">Title of paper</th>
-            <th scope="col">Author/s</th>
-            <th scope="col">Department</th>
-            <th scope="col">Name of the Conference</th>
-            <th scope="col">Year of Publication</th>
-            <th scope="col">ISSN No</th>
-          </tr>
-        </thead>
-        <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td>Blockchain based cloud service security architecture with distributed machine learning for smart device traffic record transaction</td>
-              <td>Dr.Pon.Partheeban</td>
-              <td>CSE</td>
-              <td>WILEY Concurrency and Computation - Practice and Experience</td>
-              <td>2021</td>
-              <td>1532-0634</td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>Bridie Kessler</td>
-              <td>Developer</td>
-              <td>35</td>
-              <td>2014-12-05</td>
-              <td>2021</td>
-              <td>1532-0634</td>
-            </tr>
-           
-          </tbody>
-        </table>
-      </div>
-</div>
-<div class="card">
-  <div class="card-body">
-    <h5 class="card-title text-center">Student Publications</h5>
-    <!--<p>Add <code>.table-borderless</code> for a table without borders.</p>-->
-    <!-- Active Table -->
-    <table class="table table-striped text-center table-hover">
-      <thead>
-        <tr>
-          <th scope="col">#</th>
-          <th scope="col">Title of paper</th>
-          <th scope="col">Author/s</th>
-          <th scope="col">Department</th>
-          <th scope="col">Name of the Conference</th>
-          <th scope="col">Year of Publication</th>
-          <th scope="col">ISSN No</th>
-        </tr>
-      </thead>
-      <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Blockchain based cloud service security architecture with distributed machine learning for smart device traffic record transaction</td>
-            <td>Dr.Pon.Partheeban</td>
-            <td>CSE</td>
-            <td>WILEY Concurrency and Computation - Practice and Experience</td>
-            <td>2021</td>
-            <td>1532-0634</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Bridie Kessler</td>
-            <td>Developer</td>
-            <td>35</td>
-            <td>2014-12-05</td>
-            <td>2021</td>
-            <td>1532-0634</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-</div>
-
-
-
-<div class="section-title" data-aos="fade-up">
-  <h2>Patent</h2>
-<div class="card">
-  <div class="card-body">
-    <h5 class="card-title text-center">Staff Publications</h5>
-    <!--<p>Add <code>.table-borderless</code> for a table without borders.</p>-->
-    <!-- Active Table -->
-    <table class="table table-striped text-center table-hover">
-      <thead>
-        <tr>
-          <th scope="col">#</th>
-          <th scope="col">Title of Patent</th>
-          <th scope="col">Author/s</th>
-          <th scope="col">Department</th>
-          <th scope="col">Registration No</th>
-          <th scope="col">Year of Publication</th>
-          <th scope="col">Patent Status</th>
-        </tr>
-      </thead>
-      <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Blockchain based cloud service security architecture with distributed machine learning for smart device traffic record transaction</td>
-            <td>Dr.Pon.Partheeban</td>
-            <td>CSE</td>
-            <td>WILEY Concurrency and Computation - Practice and Experience</td>
-            <td>2021</td>
-            <td>1532-0634</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Bridie Kessler</td>
-            <td>Developer</td>
-            <td>35</td>
-            <td>2014-12-05</td>
-            <td>2021</td>
-            <td>1532-0634</td>
-          </tr>
-         
-        </tbody>
-      </table>
-    </div>
-</div>
-<div class="card">
-<div class="card-body">
-  <h5 class="card-title text-center">Student Publications</h5>
-  <!--<p>Add <code>.table-borderless</code> for a table without borders.</p>-->
-  <!-- Active Table -->
-  <table class="table table-striped text-center table-hover">
-    <thead>
-      <tr>
-        <th scope="col">#</th>
-        <th scope="col">Title of patent</th>
-        <th scope="col">Author/s</th>
-        <th scope="col">Department</th>
-        <th scope="col">Registration No</th>
-        <th scope="col">Year of Publication</th>
-        <th scope="col">Patent Status</th>
-      </tr>
-    </thead>
-    <tbody>
-        <tr>
-          <th scope="row">1</th>
-          <td>Blockchain based cloud service security architecture with distributed machine learning for smart device traffic record transaction</td>
-          <td>Dr.Pon.Partheeban</td>
-          <td>CSE</td>
-          <td>WILEY Concurrency and Computation - Practice and Experience</td>
-          <td>2021</td>
-          <td>1532-0634</td>
-        </tr>
-        <tr>
-          <th scope="row">2</th>
-          <td>Bridie Kessler</td>
-          <td>Developer</td>
-          <td>35</td>
-          <td>2014-12-05</td>
-          <td>2021</td>
-          <td>1532-0634</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</div>
-
-
-<div class="section-title" data-aos="fade-up">
-  <h2>Funded Projects</h2>
-<div class="card">
-  <div class="card-body">
-    <h5 class="card-title text-center">Staff Publications</h5>
-    <!--<p>Add <code>.table-borderless</code> for a table without borders.</p>-->
-    <!-- Active Table -->
-    <table class="table table-striped text-center table-hover">
-      <thead>
-        <tr>
-          <th scope="col">#</th>
-          <th scope="col">Title of the proposal</th>
-          <th scope="col">Invsteigator, Co-Investigator</th>
-          <th scope="col">Department</th>
-          <th scope="col">Date of Registration</th>
-          <th scope="col">Amount</th>
-          <th scope="col">Status</th>
-        </tr>
-      </thead>
-      <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Blockchain based cloud service security architecture with distributed machine learning for smart device traffic record transaction</td>
-            <td>Dr.Pon.Partheeban</td>
-            <td>CSE</td>
-            <td>WILEY Concurrency and Computation - Practice and Experience</td>
-            <td>2021</td>
-            <td>1532-0634</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Bridie Kessler</td>
-            <td>Developer</td>
-            <td>35</td>
-            <td>2014-12-05</td>
-            <td>2021</td>
-            <td>1532-0634</td>
-          </tr>
-         
-        </tbody>
-      </table>
-    </div>
-</div>
-
-
-
+</section><!-- End Gallery Section -->
 
 
     </section>
