@@ -3,7 +3,6 @@ include("conn.php")
 ?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -85,16 +84,16 @@ include("conn.php")
       </div>
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
+          <li><a class="nav-link scrollto active" href="index.php">Home</a></li>
           <li class="dropdown"><a href="#"><span>About Us</span> <i class="bi bi-chevron-right"></i></a>
             <ul>
-              <li><a href="Management.html">Management</a></li>
-              <li><a href="principaldesk.html">Principal's Desk</a></li>
-              <li><a href="oc.html">Organisation Chart</a></li>
+              <li><a href="Management.php">Management</a></li>
+              <li><a href="principaldesk.php">Principal's Desk</a></li>
+              <li><a href="oc.php">Organisation Chart</a></li>
               <li><a href="iqac.php">IQAC</a></li>
-              <li><a href="strategicplan.html">Strategic Plan</a></li>
-              <li><a href="codeofconduct.html">Code of Conduct</a></li>
-              <li><a href="mandatorydisclosure.html">mandatory Disclosure</a></li>
+              <li><a href="strategicplan.php">Strategic Plan</a></li>
+              <li><a href="codeofconduct.php">Code of Conduct</a></li>
+              <li><a href="mandatorydisclosure.php">mandatory Disclosure</a></li>
               <li><a href="#">Facts & Figures</a></li>
             </ul>
           <li class="dropdown"><a href="#"><span>Academics</span> <i class="bi bi-chevron-right"></i></a>
@@ -123,7 +122,7 @@ include("conn.php")
                         <li><a href="mba.php">Logistics & Supply Chain Management</a></li>
                       </ul>  
                   </ul>  
-              <li><a href="placement_home.html">Placement</a></li>
+              <li><a href="placement_home.php">Placement</a></li>
               <li><a href="#">Academic Time-Table</a></li>
               <li><a href="#">Academic Calender</a></li>
               <li><a href="#">Admission Criteria</a></li>
@@ -131,13 +130,13 @@ include("conn.php")
             </ul>
             <li class="dropdown"><a href="#"><span>Research</span> <i class="bi bi-chevron-right"></i></a>
               <ul>
-                <li><a href="research_codeofethics.html">Team & Code of Ethics</a></li>
-                <li><a href="research_publications.html">Publications</a></li>
+                <li><a href="research_codeofethics.php">Team & Code of Ethics</a></li>
+                <li><a href="research_publications.php">Publications</a></li>
                 <li><a href="https://webdocs.pages.dev/assets/docs/r&d/Starup-Policy.pdf">Startup Policy</a></li>
                 <li><a href="research_seedmoney.html">Stella Mary's Seed Money</a></li>
-                <li><a href="research_mou.html">MoU</a></li>
+                <li><a href="research_mou.php">MoU</a></li>
               </ul>
-          <li><a class="nav-link scrollto" href="Sports.html">Sports</a></li>
+          <li><a class="nav-link scrollto" href="Sports.php">Sports</a></li>
           <li class="dropdown"><a href="#"><span>Students' Zone</span> <i class="bi bi-chevron-right"></i></a>
             <ul>
               <li class="dropdown"><a href="#more-services" href="#"><span>Clubs & Cells</span> <i class="bi bi-chevron-right"></i></a>
@@ -154,10 +153,10 @@ include("conn.php")
                 <li><a href="#">Environmental Club</a></li>
                 <li><a href="#">Institution Innovation Council</a></li>
                 <li><a href="#">Internal Complaint Cell</a></li>
-                <li><a href="research_codeofethics.html">Research and Development Cell</a></li>
-                <li><a href="placement_home.html">Career Guidance and Placement Training Cell</a></li>
+                <li><a href="research_codeofethics.php">Research and Development Cell</a></li>
+                <li><a href="placement_home.php">Career Guidance and Placement Training Cell</a></li>
                 <li><a href="#">Internal Complaint Cell</a></li>
-                <li><a href="mediacell.html">Media Cell</a></li>
+                <li><a href="mediacell.php">Media Cell</a></li>
               </ul>
               <li><a href="#">Professional Ethics</a></li>
               <li><a href="#">Capability Enhancement</a></li>
@@ -170,13 +169,13 @@ include("conn.php")
               <li><a href="alumni.php">Alumni Association</a></li>
               <li><a href="#">SWYAM - MOOC</a></li>
                 <ul>
-          <li><a class="nav-link scrollto" href="placement_home.html">Placement</a></li>
-          <li><a class="nav-link scrollto" href="iqac.html">IQAC</a></li>    
+          <li><a class="nav-link scrollto" href="placement_home.php">Placement</a></li>
+          <li><a class="nav-link scrollto" href="iqac.php">IQAC</a></li>    
           <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
           </ul>
             </ul>
           </li>
-          <li><a class="nav-link scrollto" href="mandatorydisclosure.html">Mandatory Disclosure</a></li>
+          <li><a class="nav-link scrollto" href="mandatorydisclosure.php">Mandatory Disclosure</a></li>
           <li><a class="getstarted scrollto" href="https://camps.stellamaryscoe.edu.in/CAMPS/CommonJSP/signin.jsp">CAMPS LOGIN</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -572,7 +571,7 @@ include("conn.php")
           <div class="col-md-6 d-flex align-items-stretch">
             <div class="card" style='background-image: url("https://webdocs.pages.dev/assets/img/CIVIL/civil.jpg");' data-aos="fade-up" data-aos-delay="100">
               <div class="card-body">
-                <h5 class="card-title"><a href="">Civil Engineering</a></h5>
+                <h5 class="card-title"><a href="civil.php">Civil Engineering</a></h5>
                 <p class="card-text text-justify">Department specializes in the design, construction, and maintenance of physical structures and infrastructure, such as buildings, bridges, roads, and water supply systems</p>
                 <div class="view-more"><a href="civil.php"><i class="bi bi-arrow-right"></i> View More</a></div>
               </div>
@@ -581,7 +580,7 @@ include("conn.php")
           <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
             <div class="card" style='background-image: url("https://webdocs.pages.dev/assets/img/CSE/cse.jpg");' data-aos="fade-up" data-aos-delay="200">
               <div class="card-body">
-                <h5 class="card-title"><a href="">Computer Science and Engineering</a></h5>
+                <h5 class="card-title"><a href="cse.php">Computer Science and Engineering</a></h5>
                 <p class="card-text text-justify">Department focuses on the study and application of computing technologies, algorithms, and software systems to solve complex problems and drive technological innovation.</p>
                 <div class="view-more"><a href="cse.php"><i class="bi bi-arrow-right"></i> View More</a></div>
               </div>
@@ -591,7 +590,7 @@ include("conn.php")
           <div class="col-md-6 d-flex align-items-stretch mt-4">
             <div class="card" style='background-image: url("https://webdocs.pages.dev/assets/img/ece/ece.jpg");' data-aos="fade-up" data-aos-delay="100">
               <div class="card-body">
-                <h5 class="card-title"><a href="">Electronics and Communication Engineering</a></h5>
+                <h5 class="card-title"><a href="ece.php">Electronics and Communication Engineering</a></h5>
                 <p class="card-text text-justify">Department specializes in the design, development, and implementation of electronic systems, communication networks, and signal processing technologies to enable efficient information transmission and exchange.</p>
                 <div class="view-more"><a href="ece.php"><i class="bi bi-arrow-right"></i> View More</a></div>
               </div>
@@ -600,7 +599,7 @@ include("conn.php")
           <div class="col-md-6 d-flex align-items-stretch mt-4">
             <div class="card" style='background-image: url("https://webdocs.pages.dev/assets/img/eee/eee.jpg");' data-aos="fade-up" data-aos-delay="100">
               <div class="card-body">
-                <h5 class="card-title"><a href="">Electrical and Electronics Engineering</a></h5>
+                <h5 class="card-title"><a href="eee.php">Electrical and Electronics Engineering</a></h5>
                 <p class="card-text text-justify">Department focuses on the study and application of electrical principles, systems, and devices to design, develop, and optimize power generation, distribution, and electronic systems for various industries and applications.</p>
                 <div class="view-more"><a href="eee.php"><i class="bi bi-arrow-right"></i> View More</a></div>
               </div>
@@ -609,7 +608,7 @@ include("conn.php")
           <div class="col-md-6 d-flex align-items-stretch mt-4">
             <div class="card" style='background-image: url("https://webdocs.pages.dev/assets/img/mech/mech.jpg");' data-aos="fade-up" data-aos-delay="100">
               <div class="card-body">
-                <h5 class="card-title"><a href="">Mechanical Engineering</a></h5>
+                <h5 class="card-title"><a href="mech.php">Mechanical Engineering</a></h5>
                 <p class="card-text text-justify">Department encompasses the design, analysis, and manufacturing of mechanical systems and devices, including engines, machines, and structures, to address diverse engineering challenges and improve efficiency and functionality.</p>
                 <div class="view-more"><a href="mech.php"><i class="bi bi-arrow-right"></i> View More</a></div>
               </div>
@@ -618,7 +617,7 @@ include("conn.php")
           <div class="col-md-6 d-flex align-items-stretch mt-4">
             <div class="card" style='background-image: url("https://webdocs.pages.dev/assets/img/aids/AIDS.jpg");' data-aos="fade-up" data-aos-delay="100">
               <div class="card-body">
-                <h5 class="card-title"><a href="">Artifical Intelligence and Data Science</a></h5>
+                <h5 class="card-title"><a href="aids.php">Artifical Intelligence and Data Science</a></h5>
                 <p class="card-text text-justify">The Department of Artificial Intelligence and Data Science pioneers cutting-edge algorithms and technologies to extract valuable insights from complex data, driving innovation across various industries.</p>
                 <div class="view-more"><a href="aids.php"><i class="bi bi-arrow-right"></i> View More</a></div>
               </div>
@@ -627,7 +626,7 @@ include("conn.php")
           <div class="col-md-6 d-flex align-items-stretch mt-4">
             <div class="card" style='background-image: url("https://webdocs.pages.dev/assets/img/sh/sh.png");' data-aos="fade-up" data-aos-delay="100">
               <div class="card-body">
-                <h5 class="card-title"><a href="">Science and Humanities</a></h5>
+                <h5 class="card-title"><a href="sh.php">Science and Humanities</a></h5>
                 <p class="card-text text-justify">The Department of Science and Humanities fosters a strong foundation in fundamental sciences and liberal arts, nurturing well-rounded individuals equipped with both scientific knowledge and critical thinking skills.</p>
                 <div class="view-more"><a href="sh.php"><i class="bi bi-arrow-right"></i> View More</a></div>
               </div>
@@ -636,7 +635,7 @@ include("conn.php")
           <div class="col-md-6 d-flex align-items-stretch mt-4">
             <div class="card" style='background-image: url("https://webdocs.pages.dev/assets/img/mba/mba.jpg");' data-aos="fade-up" data-aos-delay="100">
               <div class="card-body">
-                <h5 class="card-title"><a href="">Master of Business Administration</a></h5>
+                <h5 class="card-title"><a href="mba.php">Master of Business Administration</a></h5>
                 <p class="card-text text-justify">Department provides comprehensive business education, equipping students with leadership skills and strategic management knowledge to excel in a variety of corporate and entrepreneurial roles.</p>
                 <div class="view-more"><a href="mba.php"><i class="bi bi-arrow-right"></i> View More</a></div>
               </div>
@@ -645,7 +644,7 @@ include("conn.php")
           <div class="col-md-6 d-flex align-items-stretch mt-4">
             <div class="card" style='background-image: url("https://webdocs.pages.dev/assets/img/meis/is.jpg");' data-aos="fade-up" data-aos-delay="100">
               <div class="card-body">
-                <h5 class="card-title"><a href="">M.E Industrial Safety Engineering</a></h5>
+                <h5 class="card-title"><a href="meise.php">M.E Industrial Safety Engineering</a></h5>
                 <p class="card-text text-justify">Department equips students with advanced knowledge and skills in risk assessment, safety management, and regulatory compliance to effectively address and mitigate workplace hazards, ensuring the overall safety and well-being of personnel and the environment.</p>
                 <div class="view-more"><a href="meise.php"><i class="bi bi-arrow-right"></i> View More</a></div>
               </div>
@@ -654,7 +653,7 @@ include("conn.php")
           <div class="col-md-6 d-flex align-items-stretch mt-4">
             <div class="card" style='background-image: url("https://webdocs.pages.dev/assets/img/mecse/mecse.jpeg");' data-aos="fade-up" data-aos-delay="100">
               <div class="card-body">
-                <h5 class="card-title"><a href="">M.E Computer Science and Engineering</a></h5>
+                <h5 class="card-title"><a href="mecse.php">M.E Computer Science and Engineering</a></h5>
                 <p class="card-text text-justify">Department offers an advanced curriculum that combines computer science theory and engineering principles, empowering students to innovate, design, and develop cutting-edge software and hardware solutions for complex technological challenges.</p>
                 <div class="view-more"><a href="mecse.php"><i class="bi bi-arrow-right"></i> View More</a></div>
               </div>
@@ -677,73 +676,73 @@ include("conn.php")
           <div class="col-lg-3 col-md-4">
             <div class="icon-box">
               <i class="ri-check-double-line" style="color: #ffbb2c;"></i>
-              <h3><a href="facilities.html">ICT Class Room</a></h3>
+              <h3><a href="facilities.php">ICT Class Room</a></h3>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
             <div class="icon-box">
               <i class="ri-check-double-line" style="color: #5578ff;"></i>
-              <h3><a href="facilities.html">Library</a></h3>
+              <h3><a href="facilities.php">Library</a></h3>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
             <div class="icon-box">
               <i class="ri-check-double-line" style="color: #e80368;"></i>
-              <h3><a href="facilities.html">BigData Laboratory</a></h3>
+              <h3><a href="facilities.php">BigData Laboratory</a></h3>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
             <div class="icon-box">
               <i class="ri-check-double-line" style="color: #e361ff;"></i>
-              <h3><a href="facilities.html">Conference Hall</a></h3>
+              <h3><a href="facilities.php">Conference Hall</a></h3>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 mt-4">
             <div class="icon-box">
               <i class="ri-check-double-line" style="color: #47aeff;"></i>
-              <h3><a href="facilities.html">Seminar Hall</a></h3>
+              <h3><a href="facilities.php">Seminar Hall</a></h3>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 mt-4">
             <div class="icon-box">
               <i class="ri-check-double-line" style="color: #ffa76e;"></i>
-              <h3><a href="facilities.html">Boys Hostel</a></h3>
+              <h3><a href="facilities.php">Boys Hostel</a></h3>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 mt-4">
             <div class="icon-box">
               <i class="ri-check-double-line" style="color: #11dbcf;"></i>
-              <h3><a href="facilities.html">Girls Hostel</a></h3>
+              <h3><a href="facilities.php">Girls Hostel</a></h3>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 mt-4">
             <div class="icon-box">
               <i class="ri-check-double-line" style="color: #4233ff;"></i>
-              <h3><a href="facilities.html">Transport</a></h3>
+              <h3><a href="facilities.php">Transport</a></h3>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 mt-4">
             <div class="icon-box">
               <i class="ri-check-double-line" style="color: #b2904f;"></i>
-              <h3><a href="facilities.html">Cafeteria</a></h3>
+              <h3><a href="facilities.php">Cafeteria</a></h3>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 mt-4">
             <div class="icon-box">
               <i class="ri-check-double-line" style="color: #b20969;"></i>
-              <h3><a href="facilities.html">Sports</a></h3>
+              <h3><a href="facilities.php">Sports</a></h3>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 mt-4">
             <div class="icon-box">
               <i class="ri-check-double-line" style="color: #ff5828;"></i>
-              <h3><a href="facilities.html">Campus Activities</a></h3>
+              <h3><a href="facilities.php">Campus Activities</a></h3>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 mt-4">
             <div class="icon-box">
               <i class="ri-check-double-line" style="color: #29cc61;"></i>
-              <h3><a href="facilities.html">Student Zone</a></h3>
+              <h3><a href="facilities.php">Student Zone</a></h3>
             </div>
           </div>
         </div>
@@ -1373,7 +1372,7 @@ include("conn.php")
                 <li><i class="bx bx-chevron-right"></i> <a href="#">ANTI RAGGING CELL</a></li>
                 <li><i class="bx bx-chevron-right"></i> <a href="#">GRIEVANCE REDRESSAL CELL</a></li>
                 <li><i class="bx bx-chevron-right"></i> <a href="#">INTERNAL COMPLIANCE CELL</a></li>
-                <li><i class="bx bx-chevron-right "></i> <a href="mandatorydisclosure.html">MANDATORY DISCLOSURE</a></li>
+                <li><i class="bx bx-chevron-right "></i> <a href="mandatorydisclosure.php">MANDATORY DISCLOSURE</a></li>
               </ul>
             </div>
   
@@ -1384,7 +1383,7 @@ include("conn.php")
                 <li><i class="bx bx-chevron-right"></i> <a href="https://webdocs.pages.dev/assets/docs/iqac/naac/NAAC%20CERTIFICATION%20-%20CYCLE%201.pdf">NAAC CERTIFICATE</a></li>
                 <li><i class="bx bx-chevron-right"></i> <a href="https://webdocs.pages.dev/assets/docs/iqac/naac/NAAC%20SSR%20REPORT-CYCLE%201.pdf">NAAC SSR</a></li>
                 <li><i class="bx bx-chevron-right"></i> <a href="https://css.aicte-india.org/login">AICTE Centralised Support System</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="OnlinePaymentPrivacyPolicy.html">Online Payment - Privacy Policy</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="OnlinePaymentPrivacyPolicy.php">Online Payment - Privacy Policy</a></li>
               </ul>
             </div>
 

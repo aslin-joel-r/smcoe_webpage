@@ -3,7 +3,6 @@ include("conn.php")
 ?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -85,16 +84,16 @@ include("conn.php")
       </div>
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
+          <li><a class="nav-link scrollto active" href="index.php">Home</a></li>
           <li class="dropdown"><a href="#"><span>About Us</span> <i class="bi bi-chevron-right"></i></a>
             <ul>
-              <li><a href="Management.html">Management</a></li>
-              <li><a href="principaldesk.html">Principal's Desk</a></li>
-              <li><a href="oc.html">Organisation Chart</a></li>
+              <li><a href="Management.php">Management</a></li>
+              <li><a href="principaldesk.php">Principal's Desk</a></li>
+              <li><a href="oc.php">Organisation Chart</a></li>
               <li><a href="iqac.php">IQAC</a></li>
-              <li><a href="strategicplan.html">Strategic Plan</a></li>
-              <li><a href="codeofconduct.html">Code of Conduct</a></li>
-              <li><a href="mandatorydisclosure.html">mandatory Disclosure</a></li>
+              <li><a href="strategicplan.php">Strategic Plan</a></li>
+              <li><a href="codeofconduct.php">Code of Conduct</a></li>
+              <li><a href="mandatorydisclosure.php">mandatory Disclosure</a></li>
               <li><a href="#">Facts & Figures</a></li>
             </ul>
           <li class="dropdown"><a href="#"><span>Academics</span> <i class="bi bi-chevron-right"></i></a>
@@ -123,7 +122,7 @@ include("conn.php")
                         <li><a href="mba.php">Logistics & Supply Chain Management</a></li>
                       </ul>  
                   </ul>  
-              <li><a href="placement_home.html">Placement</a></li>
+              <li><a href="placement_home.php">Placement</a></li>
               <li><a href="#">Academic Time-Table</a></li>
               <li><a href="#">Academic Calender</a></li>
               <li><a href="#">Admission Criteria</a></li>
@@ -131,13 +130,13 @@ include("conn.php")
             </ul>
             <li class="dropdown"><a href="#"><span>Research</span> <i class="bi bi-chevron-right"></i></a>
               <ul>
-                <li><a href="research_codeofethics.html">Team & Code of Ethics</a></li>
-                <li><a href="research_publications.html">Publications</a></li>
+                <li><a href="research_codeofethics.php">Team & Code of Ethics</a></li>
+                <li><a href="research_publications.php">Publications</a></li>
                 <li><a href="https://webdocs.pages.dev/assets/docs/r&d/Starup-Policy.pdf">Startup Policy</a></li>
                 <li><a href="research_seedmoney.html">Stella Mary's Seed Money</a></li>
-                <li><a href="research_mou.html">MoU</a></li>
+                <li><a href="research_mou.php">MoU</a></li>
               </ul>
-          <li><a class="nav-link scrollto" href="Sports.html">Sports</a></li>
+          <li><a class="nav-link scrollto" href="Sports.php">Sports</a></li>
           <li class="dropdown"><a href="#"><span>Students' Zone</span> <i class="bi bi-chevron-right"></i></a>
             <ul>
               <li class="dropdown"><a href="#more-services" href="#"><span>Clubs & Cells</span> <i class="bi bi-chevron-right"></i></a>
@@ -154,10 +153,10 @@ include("conn.php")
                 <li><a href="#">Environmental Club</a></li>
                 <li><a href="#">Institution Innovation Council</a></li>
                 <li><a href="#">Internal Complaint Cell</a></li>
-                <li><a href="research_codeofethics.html">Research and Development Cell</a></li>
-                <li><a href="placement_home.html">Career Guidance and Placement Training Cell</a></li>
+                <li><a href="research_codeofethics.php">Research and Development Cell</a></li>
+                <li><a href="placement_home.php">Career Guidance and Placement Training Cell</a></li>
                 <li><a href="#">Internal Complaint Cell</a></li>
-                <li><a href="mediacell.html">Media Cell</a></li>
+                <li><a href="mediacell.php">Media Cell</a></li>
               </ul>
               <li><a href="#">Professional Ethics</a></li>
               <li><a href="#">Capability Enhancement</a></li>
@@ -170,13 +169,13 @@ include("conn.php")
               <li><a href="alumni.php">Alumni Association</a></li>
               <li><a href="#">SWYAM - MOOC</a></li>
                 <ul>
-          <li><a class="nav-link scrollto" href="placement_home.html">Placement</a></li>
-          <li><a class="nav-link scrollto" href="iqac.html">IQAC</a></li>    
+          <li><a class="nav-link scrollto" href="placement_home.php">Placement</a></li>
+          <li><a class="nav-link scrollto" href="iqac.php">IQAC</a></li>    
           <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
           </ul>
             </ul>
           </li>
-          <li><a class="nav-link scrollto" href="mandatorydisclosure.html">Mandatory Disclosure</a></li>
+          <li><a class="nav-link scrollto" href="mandatorydisclosure.php">Mandatory Disclosure</a></li>
           <li><a class="getstarted scrollto" href="https://camps.stellamaryscoe.edu.in/CAMPS/CommonJSP/signin.jsp">CAMPS LOGIN</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -293,7 +292,7 @@ include("conn.php")
                     </div>
                   </div>
                   <div class="member-info">
-                    <h4 class="title"><a href="faculty.html">Dr.Pon.Partheeban</a></h4>
+                    <h4 class="title"><a href="faculty.php?staff_id=1026">Dr.Pon.Partheeban</a></h4>
                     <span>Convener, Assistant Professor, Computer Science and Engineering</span>
                   </div>
                 </div>
@@ -311,7 +310,7 @@ include("conn.php")
                       </div>
                     </div>
                     <div class="member-info">
-                      <h4 class="title"><a href="faculty.html">Dr.R.K.Madhumathi</a></h4>
+                      <h4 class="title"><a href="faculty.php?staff_id=1131">Dr.R.K.Madhumathi</a></h4>
                       <span>Assistant Professor, CIVIL Engineering</span>
                     </div>
                   </div>
@@ -328,7 +327,7 @@ include("conn.php")
                         </div>
                       </div>
                       <div class="member-info">
-                        <h4 class="title"><a href="faculty.html">Dr.A.Selva Reegan</a></h4>
+                        <h4 class="title"><a href="faculty.php?staff_id=1005">Dr.A.Selva Reegan</a></h4>
                         <span>Assistant Professor, Computer Science and Engineering</span>
                       </div>
                     </div>
@@ -345,7 +344,7 @@ include("conn.php")
                         </div>
                       </div>
                       <div class="member-info">
-                        <h4 class="title"><a href="faculty.html">Ms.V.Jino Shiny</a></h4>
+                        <h4 class="title"><a href="faculty.php?staff_id=1049">Ms.V.Jino Shiny</a></h4>
                         <span>Assistant Professor, Electronics and Communication Engineering</span>
                       </div>
                     </div>
@@ -362,7 +361,7 @@ include("conn.php")
                         </div>
                       </div>
                       <div class="member-info">
-                        <h4 class="title"><a href="faculty.html">Dr.A.R.Gayathri</a></h4>
+                        <h4 class="title"><a href="faculty.php?staff_id=1267">Dr.A.R.Gayathri</a></h4>
                         <span>Assistant Professor, Electrical and Electronics Engineering</span>
                       </div>
                     </div>
@@ -379,7 +378,7 @@ include("conn.php")
                         </div>
                       </div>
                       <div class="member-info">
-                        <h4 class="title"><a href="faculty.html">Mr.S.R.Rajkumar</a></h4>
+                        <h4 class="title"><a href="faculty.php?staff_id=1082">Mr.S.R.Rajkumar</a></h4>
                         <span>Assistant Professor, Mechanical Engineering</span>
                       </div>
                     </div>
@@ -396,7 +395,7 @@ include("conn.php")
                         </div>
                       </div>
                       <div class="member-info">
-                        <h4 class="title"><a href="faculty.html">Dr.Supriya</a></h4>
+                        <h4 class="title"><a href="faculty.php?staff_id=1296">Dr.Supriya</a></h4>
                         <span>Assistant Professor, Artificial Intelligence and Data science</span>
                       </div>
                     </div>
@@ -413,7 +412,7 @@ include("conn.php")
                         </div>
                       </div>
                       <div class="member-info">
-                        <h4 class="title"><a href="faculty.html">Dr.L.Mary Novena</a></h4>
+                        <h4 class="title"><a href="faculty.php?staff_id=1275">Dr.L.Mary Novena</a></h4>
                         <span>Assistant Professor, Science and Humanities</span>
                       </div>
                     </div>
@@ -430,7 +429,7 @@ include("conn.php")
                         </div>
                       </div>
                       <div class="member-info">
-                        <h4 class="title"><a href="faculty.html">Mr.Sherin</a></h4>
+                        <h4 class="title"><a href="faculty.php?staff_id=1393">Mr.Sherin</a></h4>
                         <span>Assistant Professor, Science and Humanities</span>
                       </div>
                     </div>

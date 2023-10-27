@@ -1,18 +1,8 @@
-<?php
-$servername = "172.17.0.1";
-$username = "root";
-$password = "root";
-$db="mysql";
-$port="33070";  
-$dbcon = mysqli_connect($servername, $username, $password,$db,$port);
-if (!$dbcon) {
-    die("Connection failed: " .  mysqli_connect_error());
-}
+<?php 
+include("conn.php")
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -94,16 +84,16 @@ if (!$dbcon) {
       </div>
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
+          <li><a class="nav-link scrollto active" href="index.php">Home</a></li>
           <li class="dropdown"><a href="#"><span>About Us</span> <i class="bi bi-chevron-right"></i></a>
             <ul>
-              <li><a href="Management.html">Management</a></li>
-              <li><a href="principaldesk.html">Principal's Desk</a></li>
-              <li><a href="oc.html">Organisation Chart</a></li>
+              <li><a href="Management.php">Management</a></li>
+              <li><a href="principaldesk.php">Principal's Desk</a></li>
+              <li><a href="oc.php">Organisation Chart</a></li>
               <li><a href="iqac.php">IQAC</a></li>
-              <li><a href="strategicplan.html">Strategic Plan</a></li>
-              <li><a href="codeofconduct.html">Code of Conduct</a></li>
-              <li><a href="mandatorydisclosure.html">mandatory Disclosure</a></li>
+              <li><a href="strategicplan.php">Strategic Plan</a></li>
+              <li><a href="codeofconduct.php">Code of Conduct</a></li>
+              <li><a href="mandatorydisclosure.php">mandatory Disclosure</a></li>
               <li><a href="#">Facts & Figures</a></li>
             </ul>
           <li class="dropdown"><a href="#"><span>Academics</span> <i class="bi bi-chevron-right"></i></a>
@@ -132,7 +122,7 @@ if (!$dbcon) {
                         <li><a href="mba.php">Logistics & Supply Chain Management</a></li>
                       </ul>  
                   </ul>  
-              <li><a href="placement_home.html">Placement</a></li>
+              <li><a href="placement_home.php">Placement</a></li>
               <li><a href="#">Academic Time-Table</a></li>
               <li><a href="#">Academic Calender</a></li>
               <li><a href="#">Admission Criteria</a></li>
@@ -140,13 +130,13 @@ if (!$dbcon) {
             </ul>
             <li class="dropdown"><a href="#"><span>Research</span> <i class="bi bi-chevron-right"></i></a>
               <ul>
-                <li><a href="research_codeofethics.html">Team & Code of Ethics</a></li>
-                <li><a href="research_publications.html">Publications</a></li>
+                <li><a href="research_codeofethics.php">Team & Code of Ethics</a></li>
+                <li><a href="research_publications.php">Publications</a></li>
                 <li><a href="https://webdocs.pages.dev/assets/docs/r&d/Starup-Policy.pdf">Startup Policy</a></li>
                 <li><a href="research_seedmoney.html">Stella Mary's Seed Money</a></li>
-                <li><a href="research_mou.html">MoU</a></li>
+                <li><a href="research_mou.php">MoU</a></li>
               </ul>
-          <li><a class="nav-link scrollto" href="Sports.html">Sports</a></li>
+          <li><a class="nav-link scrollto" href="Sports.php">Sports</a></li>
           <li class="dropdown"><a href="#"><span>Students' Zone</span> <i class="bi bi-chevron-right"></i></a>
             <ul>
               <li class="dropdown"><a href="#more-services" href="#"><span>Clubs & Cells</span> <i class="bi bi-chevron-right"></i></a>
@@ -163,10 +153,10 @@ if (!$dbcon) {
                 <li><a href="#">Environmental Club</a></li>
                 <li><a href="#">Institution Innovation Council</a></li>
                 <li><a href="#">Internal Complaint Cell</a></li>
-                <li><a href="research_codeofethics.html">Research and Development Cell</a></li>
-                <li><a href="placement_home.html">Career Guidance and Placement Training Cell</a></li>
+                <li><a href="research_codeofethics.php">Research and Development Cell</a></li>
+                <li><a href="placement_home.php">Career Guidance and Placement Training Cell</a></li>
                 <li><a href="#">Internal Complaint Cell</a></li>
-                <li><a href="mediacell.html">Media Cell</a></li>
+                <li><a href="mediacell.php">Media Cell</a></li>
               </ul>
               <li><a href="#">Professional Ethics</a></li>
               <li><a href="#">Capability Enhancement</a></li>
@@ -179,13 +169,13 @@ if (!$dbcon) {
               <li><a href="alumni.php">Alumni Association</a></li>
               <li><a href="#">SWYAM - MOOC</a></li>
                 <ul>
-          <li><a class="nav-link scrollto" href="placement_home.html">Placement</a></li>
-          <li><a class="nav-link scrollto" href="iqac.html">IQAC</a></li>    
+          <li><a class="nav-link scrollto" href="placement_home.php">Placement</a></li>
+          <li><a class="nav-link scrollto" href="iqac.php">IQAC</a></li>    
           <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
           </ul>
             </ul>
           </li>
-          <li><a class="nav-link scrollto" href="mandatorydisclosure.html">Mandatory Disclosure</a></li>
+          <li><a class="nav-link scrollto" href="mandatorydisclosure.php">Mandatory Disclosure</a></li>
           <li><a class="getstarted scrollto" href="https://camps.stellamaryscoe.edu.in/CAMPS/CommonJSP/signin.jsp">CAMPS LOGIN</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -212,7 +202,7 @@ if (!$dbcon) {
             <div class="col-md-6 d-flex align-items-stretch">
               <div class="card">
                 <div class="card-img">
-                  <img src="assets/img/facilities/events-1.jpg" alt="...">
+                  <img src="https://webdocs.pages.dev/assets/img/facilities/events-1.jpg" alt="...">
                 </div>
                 <div class="card-body">
                   <h5 class="card-title"><a href="">ICT Class Room</a></h5>
@@ -224,7 +214,7 @@ if (!$dbcon) {
             <div class="col-md-6 d-flex align-items-stretch">
                 <div class="card">
                   <div class="card-img">
-                    <img src="assets/img/facilities/Lib.jpeg" alt="...">
+                    <img src="https://webdocs.pages.dev/assets/img/facilities/Lib.jpeg" alt="...">
                   </div>
                   <div class="card-body">
                     <h5 class="card-title"><a href="">Library</a></h5>
@@ -236,7 +226,7 @@ if (!$dbcon) {
               <div class="col-md-6 d-flex align-items-stretch">
                 <div class="card">
                   <div class="card-img">
-                    <img src="assets/img/facilities/transport.jpeg" alt="...">
+                    <img src="https://webdocs.pages.dev/assets/img/facilities/events-2.jpg" alt="...">
                   </div>
                   <div class="card-body">
                     <h5 class="card-title"><a href="">Transport</a></h5>
@@ -248,7 +238,7 @@ if (!$dbcon) {
               <div id="" class="col-md-6 d-flex align-items-stretch">
                 <div class="card">
                   <div class="card-img">
-                    <img src="assets/img/facilities/bhostel.jpeg" alt="...">
+                    <img src="https://webdocs.pages.dev/assets/img/facilities/bhostel.jpeg" alt="...">
                   </div>
                   <div class="card-body">
                     <h5 class="card-title"><a href="">Boys Hostel</a></h5>
@@ -260,7 +250,7 @@ if (!$dbcon) {
               <div class="col-md-6 d-flex align-items-stretch">
                 <div class="card">
                   <div class="card-img">
-                    <img src="assets/img/facilities/ghostel.jpeg" alt="...">
+                    <img src="https://webdocs.pages.dev/assets/img/facilities/ghostel.jpeg" alt="...">
                   </div>
                   <div class="card-body">
                     <h5 class="card-title"><a href="">Girls Hostel</a></h5>
@@ -272,7 +262,7 @@ if (!$dbcon) {
               <div class="col-md-6 d-flex align-items-stretch">
                 <div class="card">
                   <div class="card-img">
-                    <img src="assets/img/facilities/canteen.jpeg" alt="...">
+                    <img src="https://webdocs.pages.dev/assets/img/facilities/canteen.jpeg" alt="...">
                   </div>
                   <div class="card-body">
                     <h5 class="card-title"><a href="">Cafeteria</a></h5>
@@ -284,7 +274,7 @@ if (!$dbcon) {
               <div class="col-md-6 d-flex align-items-stretch">
                 <div class="card">
                   <div class="card-img">
-                    <img src="assets/img/Culturals/sports2.jpg" alt="...">
+                    <img src="https://webdocs.pages.dev/assets/img/facilities/events-1.jpg" alt="...">
                   </div>
                   <div class="card-body">
                     <h5 class="card-title"><a href="">Sports</a></h5>
@@ -296,7 +286,7 @@ if (!$dbcon) {
               <div class="col-md-6 d-flex align-items-stretch">
                 <div class="card">
                   <div class="card-img">
-                    <img src="assets/img/facilities/conference.jpeg" alt="...">
+                    <img src="https://webdocs.pages.dev/assets/img/facilities/conference.jpeg" alt="...">
                   </div>
                   <div class="card-body">
                     <h5 class="card-title"><a href="">Conference Hall</a></h5>
@@ -308,7 +298,7 @@ if (!$dbcon) {
               <div class="col-md-6 d-flex align-items-stretch">
                 <div class="card">
                   <div class="card-img">
-                    <img src="assets/img/facilities/seminar.jpeg" alt="...">
+                    <img src="https://webdocs.pages.dev/assets/img/facilities/seminar.jpeg" alt="...">
                   </div>
                   <div class="card-body">
                     <h5 class="card-title"><a href="">Seminar Hall</a></h5>
@@ -320,7 +310,7 @@ if (!$dbcon) {
               <div class="col-md-6 d-flex align-items-stretch">
                 <div class="card">
                   <div class="card-img">
-                    <img src="assets/img/CSE/BD.jpg" alt="...">
+                    <img src="https://webdocs.pages.dev/assets/img/facilities/events-1.jpg" alt="...">
                   </div>
                   <div class="card-body">
                     <h5 class="card-title"><a href="">BigData Laboratory</a></h5>
@@ -332,7 +322,7 @@ if (!$dbcon) {
               <div class="col-md-6 d-flex align-items-stretch">
                 <div class="card">
                   <div class="card-img">
-                    <img src="assets/img/CSE/BD.jpg" alt="...">
+                    <img src="https://webdocs.pages.dev/assets/img/facilities/events-1.jpg" alt="...">
                   </div>
                   <div class="card-body">
                     <h5 class="card-title"><a href="">Campus Activities</a></h5>
@@ -344,7 +334,7 @@ if (!$dbcon) {
             <div class="col-md-6 d-flex align-items-stretch">
               <div class="card">
                 <div class="card-img">
-                  <img src="assets/img/facilities/events-2.jpg" alt="...">
+                  <img src="https://webdocs.pages.dev/assets/img/facilities/events-2.jpg" alt="...">
                 </div>
                 <div class="card-body">
                   <h5 class="card-title"><a href="">Student Zone</a></h5>

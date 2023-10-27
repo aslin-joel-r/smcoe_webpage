@@ -205,7 +205,7 @@ if (!$dbcon) {
           <h1 data-aos="fade-up">STELLA MARY'S COLLEGE OF ENGINEERING</h1>
             <h5 class="resume-item text-justify" data-aos="fade-up" data-aos-delay="400"><Strong>“Accredited by NAAC and NBA(Mech & CSE)", </Strong>is promoted by the Nova Educational Trust & established by well known business entrepreneur of Kanyakumari, Tamil Nadu, Dr.Nazareth Charles.</h5>
             <div data-aos="fade-up" data-aos-delay="800">
-            <a href="Management.html" class="btn-get-started scrollto">Know More</a>
+            <a href="Management.php" class="btn-get-started scrollto">Know More</a>
           </div>
         </div>
         <div class="col-lg-5 order-lg-2 hero-img justify-content-xl-start" data-aos="fade-left" data-aos-delay="200">

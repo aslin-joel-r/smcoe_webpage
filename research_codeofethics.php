@@ -3,7 +3,6 @@ include("conn.php")
 ?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -85,16 +84,16 @@ include("conn.php")
       </div>
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
+          <li><a class="nav-link scrollto active" href="index.php">Home</a></li>
           <li class="dropdown"><a href="#"><span>About Us</span> <i class="bi bi-chevron-right"></i></a>
             <ul>
-              <li><a href="Management.html">Management</a></li>
-              <li><a href="principaldesk.html">Principal's Desk</a></li>
-              <li><a href="oc.html">Organisation Chart</a></li>
+              <li><a href="Management.php">Management</a></li>
+              <li><a href="principaldesk.php">Principal's Desk</a></li>
+              <li><a href="oc.php">Organisation Chart</a></li>
               <li><a href="iqac.php">IQAC</a></li>
-              <li><a href="strategicplan.html">Strategic Plan</a></li>
-              <li><a href="codeofconduct.html">Code of Conduct</a></li>
-              <li><a href="mandatorydisclosure.html">mandatory Disclosure</a></li>
+              <li><a href="strategicplan.php">Strategic Plan</a></li>
+              <li><a href="codeofconduct.php">Code of Conduct</a></li>
+              <li><a href="mandatorydisclosure.php">mandatory Disclosure</a></li>
               <li><a href="#">Facts & Figures</a></li>
             </ul>
           <li class="dropdown"><a href="#"><span>Academics</span> <i class="bi bi-chevron-right"></i></a>
@@ -123,7 +122,7 @@ include("conn.php")
                         <li><a href="mba.php">Logistics & Supply Chain Management</a></li>
                       </ul>  
                   </ul>  
-              <li><a href="placement_home.html">Placement</a></li>
+              <li><a href="placement_home.php">Placement</a></li>
               <li><a href="#">Academic Time-Table</a></li>
               <li><a href="#">Academic Calender</a></li>
               <li><a href="#">Admission Criteria</a></li>
@@ -131,13 +130,13 @@ include("conn.php")
             </ul>
             <li class="dropdown"><a href="#"><span>Research</span> <i class="bi bi-chevron-right"></i></a>
               <ul>
-                <li><a href="research_codeofethics.html">Team & Code of Ethics</a></li>
-                <li><a href="research_publications.html">Publications</a></li>
+                <li><a href="research_codeofethics.php">Team & Code of Ethics</a></li>
+                <li><a href="research_publications.php">Publications</a></li>
                 <li><a href="https://webdocs.pages.dev/assets/docs/r&d/Starup-Policy.pdf">Startup Policy</a></li>
                 <li><a href="research_seedmoney.html">Stella Mary's Seed Money</a></li>
-                <li><a href="research_mou.html">MoU</a></li>
+                <li><a href="research_mou.php">MoU</a></li>
               </ul>
-          <li><a class="nav-link scrollto" href="Sports.html">Sports</a></li>
+          <li><a class="nav-link scrollto" href="Sports.php">Sports</a></li>
           <li class="dropdown"><a href="#"><span>Students' Zone</span> <i class="bi bi-chevron-right"></i></a>
             <ul>
               <li class="dropdown"><a href="#more-services" href="#"><span>Clubs & Cells</span> <i class="bi bi-chevron-right"></i></a>
@@ -154,10 +153,10 @@ include("conn.php")
                 <li><a href="#">Environmental Club</a></li>
                 <li><a href="#">Institution Innovation Council</a></li>
                 <li><a href="#">Internal Complaint Cell</a></li>
-                <li><a href="research_codeofethics.html">Research and Development Cell</a></li>
-                <li><a href="placement_home.html">Career Guidance and Placement Training Cell</a></li>
+                <li><a href="research_codeofethics.php">Research and Development Cell</a></li>
+                <li><a href="placement_home.php">Career Guidance and Placement Training Cell</a></li>
                 <li><a href="#">Internal Complaint Cell</a></li>
-                <li><a href="mediacell.html">Media Cell</a></li>
+                <li><a href="mediacell.php">Media Cell</a></li>
               </ul>
               <li><a href="#">Professional Ethics</a></li>
               <li><a href="#">Capability Enhancement</a></li>
@@ -170,13 +169,13 @@ include("conn.php")
               <li><a href="alumni.php">Alumni Association</a></li>
               <li><a href="#">SWYAM - MOOC</a></li>
                 <ul>
-          <li><a class="nav-link scrollto" href="placement_home.html">Placement</a></li>
-          <li><a class="nav-link scrollto" href="iqac.html">IQAC</a></li>    
+          <li><a class="nav-link scrollto" href="placement_home.php">Placement</a></li>
+          <li><a class="nav-link scrollto" href="iqac.php">IQAC</a></li>    
           <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
           </ul>
             </ul>
           </li>
-          <li><a class="nav-link scrollto" href="mandatorydisclosure.html">Mandatory Disclosure</a></li>
+          <li><a class="nav-link scrollto" href="mandatorydisclosure.php">Mandatory Disclosure</a></li>
           <li><a class="getstarted scrollto" href="https://camps.stellamaryscoe.edu.in/CAMPS/CommonJSP/signin.jsp">CAMPS LOGIN</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -214,9 +213,9 @@ include("conn.php")
   
             <div class="col-lg-6">
               <div class="member d-flex align-items-start">
-                <div class="pic"><img src="assets/img/CIVIL/MADHUMATHI.png" class="img-fluid" alt=""></div>
+                <div class="pic"><img src="https://webdocs.pages.dev/assets/img/faculty/1131.png" class="img-fluid" alt=""></div>
                 <div class="member-info">
-                  <h4 class="title"><a href="">Dr.R.K.Madhumathi</a></h4>
+                  <h4 class="title"><a href="faculty.php?staff_id=1131">Dr.R.K.Madhumathi</a></h4>
                   <span>Joint Director - Research </span>
                   <p>Department of Civil Engineering</p>
                   <div class="social">
@@ -229,9 +228,9 @@ include("conn.php")
   
             <div class="col-lg-6 mt-4 mt-lg-0">
               <div class="member d-flex align-items-start">
-                <div class="pic"><img src="assets/img/CIVIL/ASHNI.png" class="img-fluid" alt=""></div>
+                <div class="pic"><img src="https://webdocs.pages.dev/assets/img/faculty/1296.png" class="img-fluid" alt=""></div>
                 <div class="member-info">
-                  <h4 class="title"><a href="">Dr.M.Supriya</a></h4>
+                  <h4 class="title"><a href="faculty.php?staff_id=1296">Dr.M.Supriya</a></h4>
                   <span>Assistant Professor</span>
                   <p>Department of Computer Science and Engineering </p>
                   <div class="social">
@@ -244,9 +243,9 @@ include("conn.php")
 
             <div class="col-lg-6 mt-4 mt-lg-0">
               <div class="member d-flex align-items-start">
-                <div class="pic"><img src="assets/img/r&d/BijuGeorge.png" class="img-fluid" alt=""></div>
+                <div class="pic"><img src="https://webdocs.pages.dev/assets/img/faculty/1269.png" class="img-fluid" alt=""></div>
                 <div class="member-info">
-                  <h4 class="title"><a href="">Mr.G.Biju George</a></h4>
+                  <h4 class="title"><a href="faculty.php?staff_id=1269">Mr.G.Biju George</a></h4>
                   <span>Assistant Professor</span>
                   <p>Department of Electronics and Communication Engineering</p>
                   <div class="social">
@@ -259,10 +258,10 @@ include("conn.php")
 
             <div class="col-lg-6 mt-4 mt-lg-0">
               <div class="member d-flex align-items-start">
-                <div class="pic"><img src="assets/img/CIVIL/ASHNI.png" class="img-fluid" alt=""></div>
+                <div class="pic"><img src="https://webdocs.pages.dev/assets/img/faculty/1265.png" class="img-fluid" alt=""></div>
                 <div class="member-info">
                  
-                  <h4 class="title"><a href="">Ms.A.Anne Steffy Beula</a></h4>
+                  <h4 class="title"><a href="faculty.php?staff_id=1265">Ms.A.Annie Steffy Beula</a></h4>
                   <span>Assistant Professor</span>
                   <p>Department of Electrical and Electronics Engineering</p>
                   <div class="social">
@@ -278,7 +277,7 @@ include("conn.php")
                 <div class="pic"><img src="https://webdocs.pages.dev/assets/img/faculty/1270.png" class="img-fluid" alt=""></div>
                 <div class="member-info">
                  
-                  <h4 class="title"><a href="">Mr.I.P.Rakhesh</a></h4>
+                  <h4 class="title"><a href="faculty.php?staff_id=1270">Mr.I.P.Rakhesh</a></h4>
                   <span>Assistant Professor</span>
                   <p>Department of Mechanical Engineering</p>
                   <div class="social">
@@ -291,10 +290,10 @@ include("conn.php")
 
             <div class="col-lg-6 mt-4 mt-lg-0">
               <div class="member d-flex align-items-start">
-                <div class="pic"><img src="assets/img/CIVIL/ASHNI.png" class="img-fluid" alt=""></div>
+                <div class="pic"><img src="https://webdocs.pages.dev/assets/img/faculty/1276.png" class="img-fluid" alt=""></div>
                 <div class="member-info">
               
-                  <h4 class="title"><a href="">Dr.M.Benjamin</a></h4>
+                  <h4 class="title"><a href="faculty.php?staff_id=1276">Dr.M.Benjamin</a></h4>
                   <span>Assistant Professor</span>
                   <p>Department of Science and Humanities</p>
                   <div class="social">
@@ -307,10 +306,10 @@ include("conn.php")
 
             <div class="col-lg-6 mt-4 mt-lg-0">
               <div class="member d-flex align-items-start">
-                <div class="pic"><img src="assets/img/CIVIL/ASHNI.png" class="img-fluid" alt=""></div>
+                <div class="pic"><img src="https://webdocs.pages.dev/assets/img/faculty/1275.png" class="img-fluid" alt=""></div>
                 <div class="member-info">
               
-                  <h4 class="title"><a href="">Dr.L.Mary Novena</a></h4>
+                  <h4 class="title"><a href="faculty.php?staff_id=1275">Dr.L.Mary Novena</a></h4>
                   <span>Assistant Professor</span>
                   <p>Department of Science and Humanities</p>
                   <div class="social">
@@ -323,10 +322,10 @@ include("conn.php")
   
             <div class="col-lg-6 mt-4 mt-lg-0">
               <div class="member d-flex align-items-start">
-                <div class="pic"><img src="assets/img/CSE/PARTHEBAN.png" class="img-fluid" alt=""></div>
+                <div class="pic"><img src="https://webdocs.pages.dev/assets/img/faculty/1093.png" class="img-fluid" alt=""></div>
                 <div class="member-info">
                  
-                  <h4 class="title"><a href="">Ms.A.L.Merlin Sheela</a></h4>
+                  <h4 class="title"><a href="faculty.php?staff_id=1093">Ms.A.L.Merlin Sheela</a></h4>
                   <span>Assistant Professor</span>
                   <p>Department of Science and Humanities</p>
                   <div class="social">
@@ -339,10 +338,10 @@ include("conn.php")
   
             <div class="col-lg-6 mt-4 mt-lg-0">
               <div class="member d-flex align-items-start">
-                <div class="pic"><img src="assets/img/CSE/SHINYMALAR.png" class="img-fluid" alt=""></div>
+                <div class="pic"><img src="https://webdocs.pages.dev/assets/img/faculty/1107.png" class="img-fluid" alt=""></div>
                 <div class="member-info">
                   
-                  <h4 class="title"><a href="">Dr.S.A.Sumi</a></h4>
+                  <h4 class="title"><a href="faculty.php?staff_id=1107">Dr.S.A.Sumi</a></h4>
                   <span>Assistant Professor</span>
                   <p>Department of Science and Humanities</p>
                   <div class="social">
