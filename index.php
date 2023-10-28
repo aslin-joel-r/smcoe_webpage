@@ -133,7 +133,7 @@ include("conn.php")
                 <li><a href="research_codeofethics.php">Team & Code of Ethics</a></li>
                 <li><a href="research_publications.php">Publications</a></li>
                 <li><a href="https://webdocs.pages.dev/assets/docs/r&d/Starup-Policy.pdf">Startup Policy</a></li>
-                <li><a href="research_seedmoney.html">Stella Mary's Seed Money</a></li>
+                <li><a href="research_seedmoney.php">Stella Mary's Seed Money</a></li>
                 <li><a href="research_mou.php">MoU</a></li>
               </ul>
           <li><a class="nav-link scrollto" href="Sports.php">Sports</a></li>
@@ -195,7 +195,7 @@ include("conn.php")
           <h1 data-aos="fade-up">STELLA MARY'S COLLEGE OF ENGINEERING</h1>
             <h5 class="resume-item text-justify" data-aos="fade-up" data-aos-delay="400"><Strong>“Accredited by NAAC and NBA(Mech & CSE)", </Strong>is promoted by the Nova Educational Trust & established by well known business entrepreneur of Kanyakumari, Tamil Nadu, Dr.Nazareth Charles.</h5>
             <div data-aos="fade-up" data-aos-delay="800">
-            <a href="Management.html" class="btn-get-started scrollto">Know More</a>
+            <a href="Management.php" class="btn-get-started scrollto">Know More</a>
           </div>
         </div>
         <div class="col-lg-5 order-lg-2 hero-img justify-content-xl-start" data-aos="fade-left" data-aos-delay="200">
@@ -317,7 +317,7 @@ include("conn.php")
                       <div class="col-md-4">
                           <div class="item">
                               <div class="img">
-                                  <img src="https://i.ibb.co/YXV3zmh/blog3.jpg" alt="">
+                                  <img src="https://webdocs.pages.dev/assets/img/news/Graduation.jpg" alt="">
                               </div>
                               <div class="info">
                                   <div class="date">
@@ -551,7 +551,7 @@ include("conn.php")
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
               <div class="icon"><i class="bx bx-world"></i></div>
-              <h4 class="title"><a href="Management.html">MANAGEMENT</a></h4>
+              <h4 class="title"><a href="Management.php">MANAGEMENT</a></h4>
               <p class="description text-justify">The college is run by Nova Educational Trust established in the year 2007, to provide high quality technical education and research facilities to the students across the country.</p>
             </div>
           </div>
@@ -1408,13 +1408,13 @@ include("conn.php")
             <!-- You can delete the links only if you purchased the pro version. -->
             <!-- Licensing information: https://bootstrapmade.com/license/ -->
             <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/vesperr-free-bootstrap-template/ -->
-            Designed & Maintained by <a href="mediacell.html">SMCE Media Cell</a>
+            Designed & Maintained by <a href="mediacell.php">SMCE Media Cell</a>
           </div>
         </div>
         <div class="col-lg-6">
           <nav class="footer-links text-lg-right text-center pt-2 pt-lg-0">
-            <a href="/Users/partheebanpon/Documents/Vesperr-2/index.html" class="scrollto">Home</a>
-            <a href="/Users/partheebanpon/Documents/Vesperr-2/index.html" class="scrollto">About</a>
+            <a href="index.php" class="scrollto">Home</a>
+            <a href="" class="scrollto">About</a>
             <a href="#">Privacy Policy</a>
             <a href="">Terms of Use</a>
           </nav>

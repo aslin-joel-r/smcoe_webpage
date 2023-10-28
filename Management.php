@@ -216,7 +216,7 @@ include("conn.php")
             <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
               <div class="member" data-aos="fade-up" data-aos-delay="100">
                 <div class="member-img">
-                  <img src="assets/img/admin/Chairman.png" class="img-fluid" alt="">
+                  <img src="https://webdocs.pages.dev/assets/img/admin/Chairman.png" class="img-fluid" alt="">
                   <div class="social">
                     <a href=""><i class="bi bi-twitter"></i></a>
                     <a href=""><i class="bi bi-facebook"></i></a>
@@ -234,7 +234,7 @@ include("conn.php")
             <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
               <div class="member" data-aos="fade-up" data-aos-delay="200">
                 <div class="member-img">
-                  <img src="assets/img/admin/marystella.png" class="img-fluid" alt="">
+                  <img src="https://webdocs.pages.dev/assets/img/admin/marystella.png" class="img-fluid" alt="">
                   <div class="social">
                     <!--<a href=""><i class="bi bi-twitter"></i></a>
                     <a href=""><i class="bi bi-facebook"></i></a>
@@ -252,7 +252,7 @@ include("conn.php")
             <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
               <div class="member" data-aos="fade-up" data-aos-delay="300">
                 <div class="member-img">
-                  <img src="assets/img/admin/CEO.png" class="img-fluid" alt="">
+                  <img src="https://webdocs.pages.dev/assets/img/admin/CEO.png" class="img-fluid" alt="">
                   <div class="social">
                     <a href=""><i class="bi bi-twitter"></i></a>
                     <a href=""><i class="bi bi-facebook"></i></a>
@@ -269,7 +269,7 @@ include("conn.php")
             <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
                 <div class="member" data-aos="fade-up" data-aos-delay="300">
                   <div class="member-img">
-                    <img src="assets/img/admin/VC.png" class="img-fluid" alt="">
+                    <img src="https://webdocs.pages.dev/assets/img/admin/VC.png" class="img-fluid" alt="">
                     <div class="social">
                       <a href=""><i class="bi bi-twitter"></i></a>
                       <a href=""><i class="bi bi-facebook"></i></a>
