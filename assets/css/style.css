@@ -1678,7 +1678,7 @@ h6 {
 
 /*--------------------------------------------------------------
 # Preloader
---------------------------------------------------------------*/
+--------------------------------------------------------------
 #preloader {
   position: fixed;
   top: 0;
@@ -1712,7 +1712,7 @@ h6 {
   100% {
     transform: rotate(360deg);
   }
-}
+}*/
 
 /*--------------------------------------------------------------
 # Disable aos animation delay on mobile devices
@@ -2966,26 +2966,16 @@ h6 {
   margin-right: .5rem;
   width:3rem
 }
-
-
-
-
-
-
-
 .contactus-slider-HES-Base, .contactus-slider-HES-Base-APJCountry {
   color: #fff;
   width: 54px;
   font-size: 18px;
   font-family:Roboto-Medium
 }
-
-
 .contact-slider *, .contact-slider ::after, .contact-slider ::before {
   -webkit-box-sizing: border-box;
   box-sizing:border-box
 }
-
 .contact-slider .stretched-link::after {
   position: absolute;
   top: 0;
@@ -2997,14 +2987,11 @@ h6 {
   content: "";
   background-color:transparent
 }
-
-
 .contactus-slider-HES-Base {
   writing-mode: vertical-rl;
   -ms-writing-mode: bt-rl;
   transform:rotate(-180deg)
 }
-
 .contactus-slider-HES-Base-APJCountry {
   writing-mode: vertical-rl;
   -ms-writing-mode: bt-rl
@@ -3015,4 +3002,291 @@ h6 {
 
 .text-justify{
   text-align: justify;
+}
+
+
+/*--------------------------------------------------------------
+# Sports Report
+--------------------------------------------------------------*/
+.recent-blog-posts .post-box {
+  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
+  transition: 0.3s;
+  height: 100%;
+  overflow: hidden;
+  padding: 30px;
+  border-radius: 8px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.recent-blog-posts .post-box .post-img {
+  overflow: hidden;
+  margin: -30px -30px 15px -30px;
+  position: relative;
+}
+
+.recent-blog-posts .post-box .post-img img {
+  transition: 0.5s;
+}
+
+.recent-blog-posts .post-box .post-date {
+  font-size: 16px;
+  font-weight: 600;
+  color: rgba(1, 41, 112, 0.6);
+  display: block;
+  margin-bottom: 10px;
+}
+
+.recent-blog-posts .post-box .post-title {
+  font-size: 24px;
+  color: #012970;
+  font-weight: 700;
+  margin-bottom: 18px;
+  position: relative;
+  transition: 0.3s;
+}
+
+.recent-blog-posts .post-box .readmore {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  line-height: 1;
+  transition: 0.3s;
+}
+
+.recent-blog-posts .post-box .readmore i {
+  line-height: 0;
+  margin-left: 4px;
+  font-size: 18px;
+}
+
+.recent-blog-posts .post-box:hover .post-title {
+  color: #4154f1;
+}
+
+.recent-blog-posts .post-box:hover .post-img img {
+  transform: rotate(6deg) scale(1.2);
+}
+
+
+/*--------------------------------------------------------------
+# Features Section
+--------------------------------------------------------------*/
+.clubs .nav-tabs {
+  border: 0;
+}
+
+.clubs .nav-link {
+  border: 0;
+  padding: 25px 20px;
+  color: var(--color-secondary);
+  box-shadow: 5px 5px 25px rgba(var(--color-secondary-rgb), 0.15);
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: 0s;
+  cursor: pointer;
+  height: 100%;
+}
+
+.clubs .nav-link i {
+  font-size: 32px;
+  line-height: 0;
+}
+
+.clubs .nav-link h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 10px 0 0 0;
+  color: var(--color-secondary);
+}
+
+.clubs .nav-link:hover {
+  color: var(--color-primary);
+}
+
+.clubs .nav-link.active {
+  transition: 0.3s;
+  background: var(--color-secondary) linear-gradient(rgba(var(--color-primary-rgb), 0.95), rgba(var(--color-primary-rgb), 0.6));
+  border-color: var(--color-primary);
+}
+
+.clubs .nav-link.active h4 {
+  color: var(--color-white);
+}
+
+.clubs .nav-link.active i {
+  color: var(--color-white) !important;
+}
+
+.clubs .tab-content {
+  margin-top: 30px;
+}
+
+.clubs .tab-pane.active {
+  animation: fadeIn 0.5s ease-out;
+}
+
+.clubs .tab-pane h3 {
+  font-weight: 600;
+  font-size: 36px;
+  color: var(--color-secondary);
+}
+
+.clubs .tab-pane ul {
+  list-style: none;
+  padding: 0;
+}
+
+.clubs .tab-pane ul li {
+  padding-bottom: 10px;
+}
+
+.clubs .tab-pane ul i {
+  font-size: 24px;
+  margin-right: 4px;
+  color: var(--color-primary);
+}
+
+.clubs .tab-pane p:last-child {
+  margin-bottom: 0;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* News & Updates */
+
+
+.blog img{
+  max-width: 100%;
+}
+.blog-head {
+margin-bottom: 70px;
+}
+
+.blog-head h6{
+color: #f05907;
+position: relative;
+display: inline-block;
+text-transform: capitalize;
+}
+
+.blog-head h6:after, .blog-head h6:before{
+position: absolute;
+content: "";
+width: 50px;
+height: 3px;
+background: #f05907;
+top: 50%;
+}
+
+.blog-head h6:after{
+right: 120%;
+}
+
+.blog-head h6:before{
+left: 120%;
+}
+
+.overlay{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.5);
+z-index: 0;
+}
+.blog{
+background-color: #f7f7f7;
+    padding: 100px 0;
+  min-height: 100vh;
+}
+
+.blog .item{
+background-color: #fff;
+box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+border-radius: 10px;
+overflow: hidden;
+position: relative;
+}
+
+.blog .item .more{
+position: absolute;
+right: 30px;
+bottom: 20px;
+box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+color: #5fcf80;
+font-size: 19px;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+line-height: 40px;
+text-align: center;
+transform: translate(0 , 100px);
+transition: all 0.3s ease-in-out;
+}
+
+.blog .item:hover .more{
+transform: translate(0 , 0)
+}
+
+.blog .item:hover .img img{
+transition: all 0.4s ease;
+}
+
+.blog .item:hover .img img{
+transform: rotate(-5deg) scale(1.2 , 1.2);
+}
+
+.blog .item .img{
+clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%, 0 75%);
+}
+
+.blog .item .info{
+padding: 30px;
+position: relative;
+}
+
+.blog .item .info .date{
+position: absolute;
+left: calc(50% - 25px);
+top: -54px;
+width: 50px;
+height: 50px;
+line-height: 20px;
+text-align: center;
+background-color: #3498db;
+color: #fff;
+padding: 5px;
+transform: rotate(45deg);
+}
+
+.blog .item .info .date span {
+  transform: rotate(-45deg);
+  display: inline-block;
+}
+.blog .item .info h5:hover{
+color: #5fcf80;
+}
+
+.blog .item .info .user{
+margin-top: 20px;
+color: #5fcf80;
+}
+
+.blog .item .info .user i{
+margin-right: 5px;
+font-size: 14px;
 }
